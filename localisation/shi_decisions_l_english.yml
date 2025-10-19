@@ -1,0 +1,23 @@
+﻿l_english:
+
+SHIsinicization: "Sinicization Efforts"
+SHIsinicization_desc: "With the establishment of the Xiyang Dynasty, Akigahai wishes to further solidify her rule over the conquered territories. For this purpose the empire's administrators must carry out sinicization efforts in select provinces, replacing their barbaric language with more fitting names."
+
+sinicization_sanfrancisco: "Sinicize San Francisco"
+sinicization_losangeles: "Sinicize The Boneyard"
+sinicization_sacramento: "Sinicize Sac-City"
+sinicization_san_diego: "Sinicize the Dayglow"
+sinicization_redding: "Sinicize Redding"
+
+SHIcpc: "Central Committee of the CPC "
+SHIcpc_desc: "\n\n\n\n\n\n\n£GFX_cpc_central_committee_icon \n\n\n\n\n\n\n\n\nThe Central Committee of the Communist Party of China is the highest organ within the party, tasked with carrying out the resolutions of the party and directing party work, the Central Committee is headed by the §RChairman§! himself, with his most loyal and high ranking people filling the other seats.\n\n§WThe Current Popularity Of The Party Is:§! §R[?stability_raw]%§! [stability_text]"
+
+stability_text_abysmal: "§RAbysmal§!"
+stability_text_low: "§tLow§!"
+stability_text_moderate: "§YModerate§!"
+stability_text_high: "§7High§!"
+stability_text_veryhigh: "§GVery High§!"
+stability_text_paramount: "§CParamount§!"
+
+mission_citizen_demands: "Citizens make demands!"
+cpc_popular_concessions: "Give popular concessions"

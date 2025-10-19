@@ -1,0 +1,18 @@
+spriteTypes = {
+
+frameAnimatedSpriteType = {
+
+	name = "GFX_portrait_SHI_MAO"
+
+	texturefile = "gfx/leaders/SHI/portrait_SHI_MAO.dds"
+
+	noOfFrames = 80
+
+	animation_rate_fps = 8
+
+	looping = yes
+
+	play_on_show = yes
+
+}
+}

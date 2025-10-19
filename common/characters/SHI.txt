@@ -1,0 +1,240 @@
+characters = {
+	SHI_emperor = {
+		name = SHI_EMPEROR_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_emperor
+			}
+		}
+		country_leader = {
+			ideology = technocracy
+			desc = SHI_EMPEROR_DESC
+			traits = {
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	SHI_MAO = {
+		name = SHI_MAO_NAME
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SHI_MAO
+			}
+		}
+		country_leader = {
+			ideology = technocracy
+			desc = SHI_MAO_DESC
+			traits = {
+				sentient_ai
+				paramount_leader
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	SHI_technocratic_council = {
+		name = SHI_technocratic_council_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_technocratic_council
+			}
+		}
+		country_leader = {
+			ideology = technocracy
+			desc = SHI_technocratic_council_DESC
+			traits = {
+				techno_council
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	SHI_Akigahai = {
+		name = SHI_AKIGAHAI_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_SHI_leader
+			}
+		}
+		country_leader = {
+			desc = SHI_AKIGAHAI_DESC
+			ideology = militarist_oligarchy
+			traits = {
+				expert_negotiator
+				political_workhorse
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	SHI_lo_pan = {
+		name = SHI_LO_PAN_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Lo_Pan
+			}
+		}
+		country_leader = {
+			desc = SHI_LO_PAN_DESC
+			ideology = warlordship
+			expire = "2292.1.1.12"
+			id = -1
+			traits = {
+				#settlement_protector #Unit leader trait, not leader trait, it has no function
+				cruel_tyrant
+			}
+		}
+	}
+	SHI_dragon = {
+		name = SHI_DRAGON_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_dragon
+			}
+		}
+		#country_leader = {
+		#	ideology = survivalism
+		#	expire = "2292.1.1.12"
+		#	desc = SHI_DRAGON_DESC
+		#	id = -1
+		#	traits = {
+		#		#settlement_protector
+		#		local_patriot
+		#	}
+		#}
+	}
+	SHI_xian = {
+		name = SHI_XIAN_NAME
+		portraits = {
+			civilian = {
+				small = GFX_idea_SHI_researcher
+			}
+			army = {
+				small = GFX_idea_SHI_researcher
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = SHI_xian_idea_token
+			ledger = army
+			allowed = {
+				original_tag = SHI
+			}
+			available = {
+				has_completed_focus = shi_fund_engineering
+			}
+
+			traits = {
+				shi_researcher_reborn
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	SHI_Norton = {
+		name = SHI_NORTON_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_SHI_Nortan
+			}
+		}
+		country_leader = {
+			desc = SHI_NORTON_DESC
+			ideology = feudalism
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	SHI_Chang_Ho ={
+		name = SHI_CHANG_HO_NAME
+		portraits = {
+			navy = {
+				large = GFX_Portrait_Ghoul_Generic_9
+			}
+			army = {
+				large = GFX_Portrait_Ghoul_Generic_9
+			}
+		}
+		navy_leader = {
+			traits = { bold caustic_personality }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 2
+			legacy_id = -1
+			desc = SHI_CHANG_HO_DESC
+		}
+	}
+	SHI_Xu_Luqi = {
+		name = SHI_XU_LUQI_NAME
+		gender = female
+		portraits = {
+			army {
+				large = GFX_Portrait_Settler_Generic_16
+			}
+		}
+		corps_commander = {
+			traits = { intelligent_trait logistics_wizard }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+			desc = SHI_XU_LUQI_DESC
+		}
+	}
+	SHI_Knight_Gou = {
+		name = SHI_KNIGHT_GOU_NAME
+		portraits = {
+			army = {
+				large = GFX_Portrait_Brotherhood_Generic_6
+			}
+		}
+		corps_commander = {
+			traits = { charismatic_trait fortress_buster }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			desc = SHI_KNIGHT_GOU_DESC
+		}
+	}
+	SHI_Hung_Wei_Lo = {
+		name = SHI_HUNG_WEI_LO_NAME
+		portraits = {
+			navy = {
+				large = GFX_Portrait_SHI_Kung_Pow
+			}
+			army = {
+				large = GFX_Portrait_SHI_Kung_Pow
+			}
+		}
+		#corps_commander = {
+		#	traits = { lucky_trait }
+		#	skill = 1
+		#	attack_skill = 1
+		#	defense_skill = 1
+		#	planning_skill = 1
+		#	logistics_skill = 1
+		#	legacy_id = -1
+		#	desc = SHI_HUNG_WEI_LO_DESC
+		#}
+		#navy_leader = {
+		#	traits = { cuts_corners media_personality }
+		#	skill = 1
+		#	attack_skill = 1
+		#	defense_skill = 1
+		#	maneuvering_skill = 1
+		#	coordination_skill = 1
+		#	legacy_id = -1
+		#	desc = SHI_HUNG_WEI_LO_DESC
+		#}
+	}
+}

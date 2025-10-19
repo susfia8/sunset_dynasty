@@ -1,0 +1,52 @@
+ideas = {
+    country = {
+    shi_support = {
+        picture = shi_support
+        allowed = {
+            always = yes
+        }
+        removal_cost = -1
+        available = {
+            always = yes
+        }
+        modifier = {
+            army_attack_factor = 0.05
+            army_defence_factor = 0.05
+        }
+    }
+
+    convince_population = {
+        picture = shi_support
+        allowed = {
+            always = yes
+        }
+        removal_cost = -1
+        available = {
+            always = yes
+        }
+        modifier = {
+            army_attack_factor = -0.05
+            army_defence_factor = -0.05
+            stability_weekly = -0.05
+            surrender_limit = -0.2
+        }
+    }
+
+    sway_soldiers = {
+        picture = shi_support
+        allowed = {
+            always = yes
+        }
+        removal_cost = -1
+        available = {
+            always = yes
+        }
+        modifier = {
+            army_attack_factor = -0.05
+            army_defence_factor = -0.05
+            war_support_weekly = -0.05
+            recruitable_population_factor = -0.05
+        }
+    }
+}
+}

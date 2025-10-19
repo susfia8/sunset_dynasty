@@ -1,0 +1,11 @@
+SHIcpc = {
+	priority = 8
+	icon = GFX_decision_SHI_cpc_icon
+	visible = {
+		has_completed_focus = SHI_serve_the_people
+	}
+	visible_when_empty = yes
+	allowed = {
+		always = yes
+	}
+}

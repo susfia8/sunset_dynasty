@@ -1,0 +1,160 @@
+﻿add_namespace = sd_shi
+
+country_event = {
+    id = sd_shi.1
+    title = sd_shi.1.t
+    desc = sd_shi.1.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.1.a
+    }
+}
+
+country_event = {
+    id = sd_shi.2
+    title = sd_shi.2.t
+    desc = sd_shi.2.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.2.a
+    }
+}
+
+country_event = {
+    id = sd_shi.3
+    title = sd_shi.3.t
+    desc = sd_shi.3.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.3.a
+    }
+}
+
+country_event = {
+    id = sd_shi.4
+    title = sd_shi.4.t
+    desc = sd_shi.4.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.4.a
+        set_cosmetic_tag = SHI_AKG
+                hidden_effect = {
+            scoped_sound_effect = SHI_Big_Gong
+        }
+    }
+}
+
+country_event = {
+    id = sd_shi.5
+    title = sd_shi.5.t
+    desc = sd_shi.5.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.5.a
+        set_country_flag = communist_branch_allowed
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = shi_new_focuses
+        country_event = { id = sd_shi.6 }
+    }
+    option = {
+        name = sd_shi.5.b
+        set_country_flag = technocracy_branch_allowed
+        mark_focus_tree_layout_dirty = yes
+        set_cosmetic_tag = SHI_TEC
+        custom_effect_tooltip = shi_new_focuses
+    }
+}
+
+country_event = {
+    id = sd_shi.6
+    title = sd_shi.6.t
+    desc = sd_shi.6.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.6.a
+    }
+}
+
+country_event = {
+    id = sd_shi.7
+    title = sd_shi.7.t
+    desc = sd_shi.7.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.7.a
+    }
+}
+
+country_event = {
+    id = sd_shi.8
+    title = sd_shi.8.t
+    desc = sd_shi.8.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.8.a
+        custom_effect_tooltip = new_identity.tt
+		set_country_flag = mao_rule
+		mark_focus_tree_layout_dirty = yes
+		set_cosmetic_tag = SHI_SFS
+		promote_character = SHI_MAO
+        remove_ideas = SHI_the_emperor
+        set_party_name = {
+            ideology = intellectuals
+            long_name = CPC_NAME_LONG
+            name = CPC_NAME_SHORT
+        }
+    }
+}
+
+country_event = {
+    id = sd_shi.9
+    title = sd_shi.9.t
+    desc = sd_shi.9.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.9.a
+    }
+    option = {
+        name = sd_shi.9.b
+        set_cosmetic_tag = SHI_MAO2
+    }
+    option = {
+        name = sd_shi.9.c
+        set_cosmetic_tag = SHI_MAO3
+    }
+    option = {
+        name = sd_shi.9.f
+        set_cosmetic_tag = SHI_MAO4
+    }
+    option = {
+        name = sd_shi.9.e
+        set_cosmetic_tag = SHI_MAO5
+    }
+}

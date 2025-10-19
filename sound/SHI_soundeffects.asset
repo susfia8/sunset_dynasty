@@ -1,0 +1,17 @@
+soundeffect = {
+	name = "SHI_Big_Gong"
+	sounds = {
+		sound = SHI_Big_Gong_sound
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+	fade_out = 0.01
+}
+sound = {
+	name = "SHI_Big_Gong_sound"
+	file = "events/Gong_Sound_Effect_4.wav"
+	always_load = yes
+}

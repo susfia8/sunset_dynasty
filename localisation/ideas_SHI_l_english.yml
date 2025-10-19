@@ -1,0 +1,36 @@
+﻿l_english:
+
+shi_akigahai_rulership: "§0Akigahai's Rule§!"
+shi_akigahai_rulership_desc: "Akigahai's rule is based on ancient chinese norms and processes, with a focus on the meritocratic examination system and the role of the state in public works and harmony of society. But don't be fooled, Akigahai's rule is absolute and any opposition to the state is met with strong retaliation. Legitimizing her government through the §CMandate of Heaven§!, Akigahai must balance the wellbeing of the people and the repressive absolutist monarchy."
+
+shi_new_dragon_school: "§BDragon School§!"
+shi_new_dragon_school_desc: "The new §BDragon School§! is now the armed forces of the state, answering only to the §0absolute monarch§!, the School emphasizes extreme loyalty and rigorous training. The focus on quality over quantity makes the armed forces a formidable force to be reckoned with."
+currencyxiyangtreasurenote: "Xiyang Treasure Note"
+currencyxiyangtreasurenote_info: "Modifiers:\n   Passive Caps: §G+15§!\n\n"
+capdisplayxiyangtreasurenotetxt: "£currency_xiyangtreasurenote_text_icon"
+
+shi_steel_palace: "§0Steel Palace§!"
+shi_steel_palace_desc: "\n\n\n\n£GFX_steel_palace_icon \n\n\n\n\nThe §0Steel Palace§! has been in use for decades as the stronghold of the Emperor, now with Akigahai in charge, the palace has been renovated into a magnificent piece of classical Chinese architecture. The adorned complex stands as the seat of power of the nation and a symbol of prosperity."
+
+shi_support: "Shi Support"
+stability_from_var: "CPC Popularity"
+
+shi_san_fran_municipality: "§CSan Francisco Municipality§!"
+shi_san_fran_municipality_desc: "\n\n\n\n£GFX_san_francisco_icon \n\n\n\n\nThis State is part of the §CSan Francisco Municipality§! under the §RPeople's Republic§!.\n\nAs a direct-administered municipality, a special division for large urban areas, the province is directly affiliated to the Central Government and is governed by a Mayor under the Party Committee Secretary."
+
+shi_san_fran_central_government: "§RSeat of The Central Government§!"
+shi_san_fran_central_government_desc: "\n\n\n\n£GFX_central_government_icon \n\n\n\n\nAfter extensive work, §CSan Francisco§! was made into a honorable seat for the §RCentral Government§!. With the most important government buildings around a central square, the highly organized §CSan Francisco§! is a city with no equal."
+
+shi_cpc_party_rule: "§RCPC's Party Rule§!"
+shi_cpc_party_rule_desc: "The rule of the new §RCommunist Party of China§! must remain popular within the population and ensure stability of the state, managing the intricacies of the new world while restoring old world practices and institutions."
+
+shi_communist_economy: "§CThe People's Economy§!"
+shi_communist_economy_desc: "The party must keep a close look on the state of the economy if they want to achieve broad popularity, following communist principles, there is great emphasis on economic development and achieving a socialist mode of production."
+
+convince_population: "Communist Propaganda"
+sway_soldiers: "Soldier Desertions"
+
+shi_north_cali_province: "§CNorth California Province§!"
+shi_north_cali_province_desc: "\n\n\n\n£GFX_north_cali_icon \n\n\n\n\nThis State is part of the §CNorth California Province§! under the §RPeople's Republic§!.\n\n§WProvincial Capital:§! §CNavarro§!\n\nProvinces are the most common form of province-level governments. The legislative bodies of the provinces are the Provincial People's Congresses. The executive branch is the Provincial People's Government, led by a Governor."
+
+shi_technate: "§CThe Technate§!"

@@ -1,0 +1,73 @@
+SHIsinicization = {
+
+	sinicization_sanfrancisco = {
+	icon = GFX_goal_generic_focus
+	visible = { owns_state = 163 }
+	available = {
+	owns_state = 163
+    has_completed_focus = SHI_sinicization
+    }
+	fire_only_once = yes
+	complete_effect = {
+		set_province_name = { id = 2422 name = SHI_SAN_FRANCISCO }
+        163 = { set_state_name = SHI_SAN_FRANCISCO }
+		}
+	}
+
+	sinicization_losangeles = {
+	icon = GFX_goal_generic_focus
+	visible = { owns_state = 350 }
+	available = {
+	owns_state = 350
+    has_completed_focus = SHI_sinicization
+    }
+	fire_only_once = yes
+	complete_effect = {
+		set_province_name = { id = 2404 name = SHI_LOS_ANGELES }
+        350 = { set_state_name = SHI_LOS_ANGELES }
+		}
+	}
+
+	sinicization_sacramento = {
+	icon = GFX_goal_generic_focus
+	visible = { owns_state = 135 }
+	available = {
+	owns_state = 135
+    has_completed_focus = SHI_sinicization
+    }
+	fire_only_once = yes
+	complete_effect = {
+		set_province_name = { id = 2428 name = SHI_SACRAMENTO }
+        135 = { set_state_name = SHI_SACRAMENTO }
+		}
+	}
+
+	sinicization_san_diego = {
+	icon = GFX_goal_generic_focus
+	visible = { owns_state = 63 }
+	available = {
+	owns_state = 63
+    has_completed_focus = SHI_sinicization
+    }
+	fire_only_once = yes
+	complete_effect = {
+		set_province_name = { id = 2652 name = SHI_SAN_DIEGO }
+        63 = { set_state_name = SHI_SAN_DIEGO }
+		}
+	}
+
+	sinicization_redding = {
+	icon = GFX_goal_generic_focus
+	visible = { owns_state = 141 }
+	available = {
+	owns_state = 141
+    has_completed_focus = SHI_sinicization
+    }
+	fire_only_once = yes
+	complete_effect = {
+		set_province_name = { id = 4933 name = SHI_REDDING }
+        141 = { set_state_name = SHI_REDDING }
+		}
+	}
+
+}

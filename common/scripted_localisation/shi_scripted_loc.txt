@@ -1,0 +1,27 @@
+defined_text = {
+	name = stability_text
+    text = {
+        trigger = { check_variable = { stability_raw < 10 } }
+        localization_key = stability_text_abysmal
+    }
+    text = {
+        trigger = { check_variable = { stability_raw < 25 } }
+        localization_key = stability_text_low
+    }
+    text = {
+        trigger = { check_variable = { stability_raw < 51 } }
+        localization_key = stability_text_moderate
+    }
+	text = {
+        trigger = { check_variable = { stability_raw < 75 } }
+        localization_key = stability_text_high
+    }
+	text = {
+        trigger = { check_variable = { stability_raw < 96 } }
+        localization_key = stability_text_veryhigh
+    }
+    text = {
+        trigger = { check_variable = { stability_raw > 95 } }
+        localization_key = stability_text_paramount
+    }
+}

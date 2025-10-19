@@ -1,0 +1,431 @@
+spriteTypes = {
+
+spriteType = {
+	name = "GFX_goal_big_trouble"
+	texturefile = "gfx/interface/goals/big_trouble.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_brahmin_barons"
+	texturefile = "gfx/interface/goals/shi_brahmin_barons.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_city_restoration"
+	texturefile = "gfx/interface/goals/shi_city_restoration.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_farming_state"
+	texturefile = "gfx/interface/goals/shi_farming_state.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_new_law_code"
+	texturefile = "gfx/interface/goals/shi_new_law_code.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_renovate_steel_palace"
+	texturefile = "gfx/interface/goals/shi_renovate_steel_palace.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_state_research"
+	texturefile = "gfx/interface/goals/shi_state_research.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_tax_standardization"
+	texturefile = "gfx/interface/goals/shi_tax_standardization.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_worthy_navy"
+	texturefile = "gfx/interface/goals/shi_worthy_navy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_infrastucture"
+	texturefile = "gfx/interface/goals/shi_infrastucture.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_chinese_architecture"
+	texturefile = "gfx/interface/goals/shi_chinese_architecture.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_storm_steel_palace"
+	texturefile = "gfx/interface/goals/shi_storm_steel_palace.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_supreme"
+	texturefile = "gfx/interface/goals/shi_supreme.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_imperial_bureaucracy"
+	texturefile = "gfx/interface/goals/shi_imperial_bureaucracy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_meritocracy"
+	texturefile = "gfx/interface/goals/shi_meritocracy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_all_under_heaven"
+	texturefile = "gfx/interface/goals/shi_all_under_heaven.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_mandate_of_heaven"
+	texturefile = "gfx/interface/goals/shi_mandate_of_heaven.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_sinicization"
+	texturefile = "gfx/interface/goals/shi_sinicization.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_chinese_folk_religion"
+	texturefile = "gfx/interface/goals/shi_chinese_folk_religion.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_absolutism"
+	texturefile = "gfx/interface/goals/shi_absolutism.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_dragon_of_the_west_coast"
+	texturefile = "gfx/interface/goals/shi_dragon_of_the_west_coast.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_purge_opposition"
+	texturefile = "gfx/interface/goals/shi_purge_opposition.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_rituals_allegiance"
+	texturefile = "gfx/interface/goals/shi_rituals_allegiance.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_dragons_inner_circle"
+	texturefile = "gfx/interface/goals/shi_dragons_inner_circle.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_dragon_ascends"
+	texturefile = "gfx/interface/goals/shi_dragon_ascends.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_mandate_of_tradition"
+	texturefile = "gfx/interface/goals/shi_mandate_of_tradition.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_dragon_school_reborn"
+	texturefile = "gfx/interface/goals/shi_dragon_school_reborn.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_barbarians_all_around"
+	texturefile = "gfx/interface/goals/shi_barbarians_all_around.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_northward_expansion"
+	texturefile = "gfx/interface/goals/shi_northward_expansion.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_elite_dragon_warriors"
+	texturefile = "gfx/interface/goals/shi_elite_dragon_warriors.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_march_inland"
+	texturefile = "gfx/interface/goals/shi_march_inland.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_dragons_airforce"
+	texturefile = "gfx/interface/goals/shi_dragons_airforce.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_dragon_against_bear"
+	texturefile = "gfx/interface/goals/shi_dragon_against_bear.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_new_great_wall"
+	texturefile = "gfx/interface/goals/shi_new_great_wall.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_consolidation"
+	texturefile = "gfx/interface/goals/shi_consolidation.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cefeng_system"
+	texturefile = "gfx/interface/goals/shi_cefeng_system.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc"
+	texturefile = "gfx/interface/goals/shi_cpc.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_back_to_basics"
+	texturefile = "gfx/interface/goals/shi_back_to_basics.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_salvage_archives"
+	texturefile = "gfx/interface/goals/shi_salvage_archives.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_convince"
+	texturefile = "gfx/interface/goals/shi_cpc_convince.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_emperor"
+	texturefile = "gfx/interface/goals/shi_cpc_emperor.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_inner_circle"
+	texturefile = "gfx/interface/goals/shi_cpc_inner_circle.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_marxism_leninism"
+	texturefile = "gfx/interface/goals/shi_cpc_marxism_leninism.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_new_identity"
+	texturefile = "gfx/interface/goals/shi_cpc_new_identity.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_little_beijing"
+	texturefile = "gfx/interface/goals/shi_cpc_little_beijing.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_not_palace"
+	texturefile = "gfx/interface/goals/shi_cpc_not_palace.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_great_hall"
+	texturefile = "gfx/interface/goals/shi_cpc_great_hall.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_peoples_court"
+	texturefile = "gfx/interface/goals/shi_cpc_peoples_court.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_our_own_square"
+	texturefile = "gfx/interface/goals/shi_cpc_our_own_square.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_san_francisco_municipality"
+	texturefile = "gfx/interface/goals/shi_cpc_san_francisco_municipality.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_san_francisco_adress"
+	texturefile = "gfx/interface/goals/shi_cpc_san_francisco_adress.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_new_vanguard"
+	texturefile = "gfx/interface/goals/shi_cpc_new_vanguard.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_selective_membership"
+	texturefile = "gfx/interface/goals/shi_cpc_selective_membership.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_democratic_centralism"
+	texturefile = "gfx/interface/goals/shi_cpc_democratic_centralism.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_public_manifesto"
+	texturefile = "gfx/interface/goals/shi_cpc_public_manifesto.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_uphold_mao_zedong_thought"
+	texturefile = "gfx/interface/goals/shi_cpc_uphold_mao_zedong_thought.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_meritocracy"
+	texturefile = "gfx/interface/goals/shi_cpc_meritocracy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_serve_the_people"
+	texturefile = "gfx/interface/goals/shi_cpc_serve_the_people.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_arise"
+	texturefile = "gfx/interface/goals/shi_cpc_arise.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_no_mercenaries"
+	texturefile = "gfx/interface/goals/shi_cpc_no_mercenaries.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_brawler"
+	texturefile = "gfx/interface/goals/shi_cpc_brawler.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_basher"
+	texturefile = "gfx/interface/goals/shi_cpc_basher.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_chinese_rifle"
+	texturefile = "gfx/interface/goals/shi_cpc_chinese_rifle.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_running"
+	texturefile = "gfx/interface/goals/shi_cpc_running.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_empower_peasantry"
+	texturefile = "gfx/interface/goals/shi_cpc_empower_peasantry.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_countryside_encircles_cities"
+	texturefile = "gfx/interface/goals/shi_cpc_countryside_encircles_cities.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_north_california"
+	texturefile = "gfx/interface/goals/shi_cpc_north_california.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_sword"
+	texturefile = "gfx/interface/goals/shi_cpc_sword.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_soviet_gun"
+	texturefile = "gfx/interface/goals/shi_cpc_soviet_gun.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_warrior"
+	texturefile = "gfx/interface/goals/shi_cpc_warrior.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_convince_population"
+	texturefile = "gfx/interface/goals/shi_cpc_convince_population.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_sway_soldiers"
+	texturefile = "gfx/interface/goals/shi_cpc_sway_soldiers.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_unite_together"
+	texturefile = "gfx/interface/goals/shi_cpc_unite_together.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_final_struggle"
+	texturefile = "gfx/interface/goals/shi_cpc_final_struggle.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_crossroad"
+	texturefile = "gfx/interface/goals/shi_cpc_crossroad.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_nevada"
+	texturefile = "gfx/interface/goals/shi_cpc_nevada.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_land_reform"
+	texturefile = "gfx/interface/goals/shi_cpc_land_reform.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_voluntary_collectivization"
+	texturefile = "gfx/interface/goals/shi_cpc_voluntary_collectivization.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_literacy"
+	texturefile = "gfx/interface/goals/shi_cpc_literacy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_workshop"
+	texturefile = "gfx/interface/goals/shi_cpc_workshop.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_electrification"
+	texturefile = "gfx/interface/goals/shi_cpc_electrification.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_control_trade"
+	texturefile = "gfx/interface/goals/shi_cpc_control_trade.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_state_projects"
+	texturefile = "gfx/interface/goals/shi_cpc_state_projects.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_self_sufficiency"
+	texturefile = "gfx/interface/goals/shi_cpc_self_sufficiency.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_technocracy"
+	texturefile = "gfx/interface/goals/shi_technocracy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_technocratic_state"
+	texturefile = "gfx/interface/goals/shi_technocratic_state.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_local_elections"
+	texturefile = "gfx/interface/goals/shi_local_elections.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_leadership_expertise"
+	texturefile = "gfx/interface/goals/shi_leadership_expertise.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_science_at_the_helm"
+	texturefile = "gfx/interface/goals/shi_science_at_the_helm.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_accountable_officials"
+	texturefile = "gfx/interface/goals/shi_accountable_officials.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_meritocratic_bureaucracy"
+	texturefile = "gfx/interface/goals/shi_meritocratic_bureaucracy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cybernetic_governance"
+	texturefile = "gfx/interface/goals/shi_cybernetic_governance.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_rationalize_economy"
+	texturefile = "gfx/interface/goals/shi_rationalize_economy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_advanced_education"
+	texturefile = "gfx/interface/goals/shi_advanced_education.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_tech_agriculture"
+	texturefile = "gfx/interface/goals/shi_tech_agriculture.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_algorithmic_resource_allocation"
+	texturefile = "gfx/interface/goals/shi_algorithmic_resource_allocation.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_codify_rationality"
+	texturefile = "gfx/interface/goals/shi_codify_rationality.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_tech_census"
+	texturefile = "gfx/interface/goals/shi_tech_census.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_above_petty_politics"
+	texturefile = "gfx/interface/goals/shi_above_petty_politics.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_expert_committees"
+	texturefile = "gfx/interface/goals/shi_expert_committees.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_evidence_based_policies"
+	texturefile = "gfx/interface/goals/shi_evidence_based_policies.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_rank_by_merit"
+	texturefile = "gfx/interface/goals/shi_rank_by_merit.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_automation_initiative"
+	texturefile = "gfx/interface/goals/shi_automation_initiative.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_citizenship_by_merit"
+	texturefile = "gfx/interface/goals/shi_citizenship_by_merit.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_update_emperor"
+	texturefile = "gfx/interface/goals/shi_update_emperor.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_advanced_manufacturing"
+	texturefile = "gfx/interface/goals/shi_advanced_manufacturing.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_supreme_council"
+	texturefile = "gfx/interface/goals/shi_supreme_council.dds"
+}
+}

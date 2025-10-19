@@ -1,0 +1,32 @@
+spriteTypes = {
+	spriteType = {
+			name = "GFX_steel_palace_icon"
+			texturefile = "gfx/texticons/steel_palace_icon.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_cpc_central_committee_icon"
+			texturefile = "gfx/texticons/SHI_cpc_central_committee.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_cpc_seal_icon"
+			texturefile = "gfx/texticons/SHI_cpc_seal_icon.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_san_francisco_icon"
+			texturefile = "gfx/texticons/SHI_san_francisco_icon.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_central_government_icon"
+			texturefile = "gfx/texticons/SHI_central_government_icon.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_north_cali_icon"
+			texturefile = "gfx/texticons/SHI_north_cali_icon.dds"
+			legacy_lazy_load = no
+		}
+	}

@@ -1,0 +1,2712 @@
+####################################################
+####################################################
+
+focus_tree = {
+	id = nf_shi
+	country = {
+		factor= 0
+		modifier = {
+			add = 100
+			tag = SHI
+		}
+	}
+	default = no
+
+	#### First Part
+
+	focus = {
+		id = shi_origin
+		icon = GFX_goal_shi_icon_3
+		cost = 7
+		x = 15
+		y = 1
+        completion_reward = {
+			country_event = {
+				id = nf_shi.8
+			}
+		}
+	}
+
+	focus = {
+		id = shi_chosen_one
+		icon = GFX_goal_shi_icon_1
+		cost = 7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shi_origin
+		}
+		relative_position_id = shi_origin
+		completion_reward = {
+			country_event = {
+				id = nf_shi.9
+			}
+		}
+	}
+
+	focus = {
+		id = shi_dream_of_the_bear_chamber
+		icon = GFX_goal_shi_icon_6
+		cost = 7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shi_chosen_one
+		}
+		relative_position_id = shi_chosen_one
+		completion_reward = {
+			country_event = {
+				id = nf_shi.10
+			}
+		}
+	}
+
+	focus = {
+		id = shi_schools_debate
+		icon = GFX_goal_shi_icon_7
+		x = 0
+		y = 1
+		relative_position_id = shi_dream_of_the_bear_chamber
+		prerequisite = {
+			focus = shi_dream_of_the_bear_chamber
+		}
+		cost = 35
+		completion_reward = {
+			country_event = nf_shi.11
+		}
+	}
+
+	focus = {
+		id = shi_lessons_war
+		icon = GFX_goal_shi_icon_5
+		x = 1
+		y = 1
+		available = {
+			NAT = {
+				exists = no
+			}
+		}
+		relative_position_id = shi_schools_debate
+		prerequisite = {
+			focus = shi_schools_debate
+		}
+		cost = 35
+		completion_reward = {
+			country_event = nf_shi.14
+		}
+	}
+
+	focus = {
+		id = shi_thinking_of_future
+		icon = GFX_goal_shi_icon_4
+		x = -1
+		y = 1
+		relative_position_id = shi_schools_debate
+		prerequisite = {
+			focus = shi_schools_debate
+		}
+		cost = 35
+		completion_reward = {
+			country_event = nf_shi.15
+		}
+	}
+
+	focus = {
+		id = shi_legalist_debate
+		icon = GFX_goal_shi_focus_golden_dragon
+		x = 1
+		y = 1
+		relative_position_id = shi_thinking_of_future
+		prerequisite = {
+			focus = shi_thinking_of_future
+			focus = shi_lessons_war
+		}
+		cost = 35
+		completion_reward = {
+			country_event = nf_shi.18
+		}
+	}
+
+	focus = {
+		id = shi_debate_over_social_heierarchy
+		icon = GFX_goal_NCN_Mormon_Book
+		x = 0
+		y = 1
+		relative_position_id = shi_legalist_debate
+		prerequisite = {
+			focus = shi_legalist_debate
+		}
+		cost = 35
+		completion_reward = {
+			country_event = nf_shi.16
+		}
+	}
+
+	focus = {
+		id = shi_resolve_power_struggle
+		icon = GFX_goal_big_trouble
+		x = 0
+		y = 1
+		relative_position_id = shi_debate_over_social_heierarchy
+		# Requires 2/3 of the Pre-Req focuses
+		prerequisite = {
+			focus = shi_debate_over_social_heierarchy
+		}
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = shi_debate_over_social_heierarchy }
+			}
+		}
+		cost = 35
+		completion_reward = {
+			country_event = nf_shi.17
+		}
+	}
+#### Shared Part
+
+	focus = {
+		id = shi_fuel_seaweed
+		icon = GFX_goal_generic_boat_anchor
+		cost = 35
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = shi_dream_of_the_bear_chamber
+		}
+		relative_position_id = shi_dream_of_the_bear_chamber
+		completion_reward = {
+			511 = {
+				add_resource = {
+					type = energy
+					amount = 16
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = shi_navarro_farms
+		icon = GFX_goal_cotton_2
+		cost = 35
+		x = 3
+		y = 1
+		available = {
+			NAT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			core_compliance = {
+				occupied_country_tag = NAT
+				value > 95
+			}
+		}
+		prerequisite = {
+			focus = shi_dream_of_the_bear_chamber
+		}
+		relative_position_id = shi_dream_of_the_bear_chamber
+		completion_reward = {
+			NAT = {
+				ROOT = {
+					core_owned_states_of_prev = yes
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = NAT
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			56 = {
+				add_resource = {
+					type = water
+					amount = 10
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SHI_ncr_banking
+		icon = GFX_goal_NCR_Shady_Sands
+		x = -1
+		y = 1
+		relative_position_id = shi_fuel_seaweed
+		prerequisite = {
+			focus = shi_fuel_seaweed
+		}
+		cost = 35
+		available = {
+			NCR = {
+				exists = yes
+			}
+		}
+		bypass = {
+			NCR = {
+				exists = no
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+			NCR = { news_event = nf_shi.13 }
+		}
+	}
+
+	focus = {
+		id = shi_ncr_golden_circle_trade
+		icon = GFX_goal_generic_creature_brahmin
+		x = 0
+		y = 1
+		relative_position_id = SHI_ncr_banking
+		prerequisite = {
+			focus = SHI_ncr_banking
+		}
+		cost = 35
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			163 = {
+				add_state_modifier = {
+					modifier = {
+						caps_node_base_modifier = 0.3
+					}
+				}
+				set_temp_variable = {
+					development_to_add = 1
+				}
+				add_development_to_node = yes
+			}
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = SHI_brotherhood_bunker
+		icon = GFX_goal_bos_flag_shi
+		x = 1
+		y = 1
+		relative_position_id = shi_fuel_seaweed
+		prerequisite = {
+			focus = shi_fuel_seaweed
+		}
+		cost = 35
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.10
+			}
+			BOS = {
+				news_event = nf_shi.12
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				ahead_reduction = 1
+				category = infantry_tech_category
+			}
+		}
+	}
+
+	focus = {
+		id = shi_vertibirds
+		icon = GFX_goal_generic_vertibird
+		x = 0
+		y = 1
+		relative_position_id = shi_navarro_farms
+		prerequisite = {
+			focus = shi_navarro_farms
+		}
+		cost = 35
+		available = {
+			NAT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		completion_reward = {
+			set_technology = {
+				air_tech_level_scientific = 1
+				vertibird_unlock_tech = 1
+			}
+		}
+	}
+
+	focus = {
+		id = shi_fund_engineering
+		icon = GFX_goal_generic_what_is_plasma_anyway
+		x = 0
+		y = 1
+		relative_position_id = SHI_brotherhood_bunker
+		prerequisite = {
+			focus = SHI_ncr_banking
+		}
+		prerequisite = {
+			focus = SHI_brotherhood_bunker
+		}
+		cost = 35
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+			activate_advisor = SHI_xian_idea_token
+		}
+	}
+
+	focus = {
+		id = shi_open_lo_pan_temple
+		icon = GFX_goal_pal_yakuza
+		x = -1
+		y = 1
+		relative_position_id = shi_fund_engineering
+		prerequisite = {
+			focus = shi_ncr_golden_circle_trade
+			focus = shi_fund_engineering
+		}
+		cost = 35
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 0.5
+				uses = 3
+				category = spec_force_equipment_tech_category
+				category = power_armor_tech_category
+			}
+			add_popularity = {
+				ideology = elites
+				popularity = 0.10
+			}
+		}
+	}
+
+	focus = {
+		id = shi_brotherhood_armor_advice
+		icon = GFX_goal_bos_generic_stripped_pa
+		x = 0
+		y = 1
+		available = {
+			NAT = {
+				exists = no
+			}
+		}
+		relative_position_id = shi_vertibirds
+		prerequisite = {
+			focus = shi_vertibirds
+		}
+		cost = 35
+		completion_reward = {
+			hidden_effect = {	# Make sure any change to this is reflected in the tooltip correctly
+				set_technology = {
+					texas_brotherhood_pa_tech = 1
+				}
+				add_equipment_to_stockpile = {
+					type = power_armor_equipment_tbh	#NOTE# this armor is called Chinese PA for SHI, equipment was not added before tech
+					amount = 400
+					producer = SHI
+				}
+			}
+			custom_effect_tooltip = shi_armor_tt
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.10
+			}
+		}
+	}
+
+#####################################################
+################### Lo Pan Branch ###################
+#####################################################
+
+	focus = {
+		id = shi_ncr_friendship
+		icon = GFX_goal_NCR_Propaganda_3
+		x = -1	#NOTE# adjusted for alternative
+		y = 1
+		relative_position_id = shi_resolve_power_struggle
+		mutually_exclusive = {
+			focus = shi_ncr_rejected
+		}
+		prerequisite = {
+			focus = shi_resolve_power_struggle
+		}
+		available = {
+			has_government = ruler
+			NCR = {
+				exists = yes
+				NOT = { has_war_with = SHI }
+			}
+			OR = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = shi_ncr_nwp_tt
+						has_global_flag = shi_ncr_wp
+					}
+				}
+				is_in_faction_with = NCR
+			}
+			OR = {
+				is_subject = no
+				is_subject_of = NCR
+			}
+		}
+		allow_branch = {
+			has_country_flag = lo_pan_rule
+		}
+		cost = 50
+		completion_reward = {
+			add_country_leader_trait = ncr_best_friend
+			ask_to_join_new_california = yes
+			set_cosmetic_tag = SHI_NCR
+		}
+	}
+
+	focus = {
+		id = shi_ncr_rejected
+		icon = GFX_goal_NCR_Long_march	#NOTE# still not working, replaced from NCR focus
+		x = 1
+		y = 1
+		relative_position_id = shi_resolve_power_struggle
+		prerequisite = {
+			focus = shi_resolve_power_struggle
+		}
+		available = {
+			NOT = {
+				SHI = {
+					is_in_faction_with = NCR
+				}
+			}
+			has_government = ruler
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = shi_ncr_wp_tt
+					has_global_flag = shi_ncr_wp
+				}
+				has_war = yes
+			}
+		}
+		mutually_exclusive = {
+			focus = shi_ncr_friendship
+		}
+		allow_branch = {
+			has_country_flag = lo_pan_rule
+		}
+		cost = 50
+		completion_reward = {
+			add_political_power = -100
+			add_war_support = 0.20
+		}
+	}
+
+	focus = {
+		id = shi_ncr_frienemies
+		icon = GFX_goal_pal_yakuza
+		x = 0
+		y = 2
+		relative_position_id = shi_resolve_power_struggle
+		prerequisite = {
+			focus = shi_ncr_rejected
+			focus = shi_ncr_friendship
+		}
+		available = {
+			OR = {
+				NOT = {
+					SHI = { is_ally_with = NCR}
+				}
+				NOT = {
+					country_exists = NCR
+				}
+			}
+		}
+		cost = 50
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = united_kingdom_shi
+				add_idea = shi_dojo_truce
+			}
+			add_command_power = 75
+			set_party_name = { ideology = ruler  name = SHI_united_front_short long_name = SHI_united_front_long }
+		}
+	}
+
+	#Post-NCR
+	focus = {
+		id = shi_bay_control
+		icon = GFX_goal_shi_icon_2
+		x = 0
+		y = 2
+		relative_position_id = shi_ncr_frienemies
+		prerequisite = {
+			focus = shi_ncr_frienemies
+		}
+		available = {
+			has_war = no
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = shi_ncr_wp_tt
+					has_global_flag = shi_ncr_wp
+				}
+				NCR = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+			}
+		}
+		cost = 50
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_valid_state_for_arms_factory = yes
+					is_valid_state_for_civilian_factory = yes
+					is_core_of = SHI
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard		#NOTE# should be correct
+					level = 2
+					instant_build = yes
+				}
+			}
+			country_event = nf_shi.26
+		}
+	}
+
+#####################################################
+################### Akigahai Branch #################
+#####################################################
+		focus = {
+			id = SHI_dragon_ascends
+			icon = GFX_goal_shi_dragon_ascends
+			cost = 20
+		relative_position_id = shi_resolve_power_struggle
+		x = 0
+		y = 1
+			prerequisite = {focus = shi_resolve_power_struggle}
+			allow_branch = {
+			has_country_flag = akigahai_rule
+		}
+			completion_reward = {
+					add_political_power = 100
+					add_popularity = {
+						ideology = elites
+						popularity = 0.10
+					}
+		}
+	}
+
+		focus = {
+			id = SHI_mandate_of_tradition
+			icon = GFX_goal_shi_mandate_of_tradition
+			cost = 20
+		relative_position_id = SHI_dragon_ascends
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_dragon_ascends}
+			completion_reward = {
+					add_dynamic_modifier = { modifier = shi_akigahai_rulership }
+					country_event = { id = sd_shi.1 }
+		}
+	}
+
+		focus = {
+			id = SHI_dragon_school_reborn
+			icon = GFX_goal_shi_dragon_school_reborn
+			cost = 20
+		relative_position_id = SHI_dragon_ascends
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_dragon_ascends}
+			completion_reward = {
+					add_dynamic_modifier = { modifier = shi_new_dragon_school }
+					country_event = { id = sd_shi.2 }
+		}
+	}
+
+		focus = {
+			id = SHI_dragons_inner_circle
+			icon = GFX_goal_shi_dragons_inner_circle
+			cost = 20
+		relative_position_id = SHI_mandate_of_tradition
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_mandate_of_tradition}
+			completion_reward = {
+					custom_effect_tooltip = shi_innercircle.tt
+					add_to_variable = { akigahai_political_power = 0.10 }
+		}
+	}
+
+		focus = {
+			id = SHI_rituals_of_allegiance
+			icon = GFX_goal_shi_rituals_allegiance
+			cost = 20
+		relative_position_id = SHI_dragon_school_reborn
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_dragon_school_reborn}
+			completion_reward = {
+					custom_effect_tooltip = shi_rituals_allegiance.tt
+					add_to_variable = { dragon_experience_gain_factor = 0.20 }
+					add_to_variable = { dragon_recruitable_factor = -0.02 }
+		}
+	}
+
+		focus = {
+			id = SHI_purge_the_opposition
+			icon = GFX_goal_shi_purge_opposition
+			cost = 20
+		relative_position_id = SHI_dragons_inner_circle
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_dragons_inner_circle}
+			prerequisite = {focus = SHI_rituals_of_allegiance}
+			completion_reward = {
+					add_popularity = {
+						ideology = elites
+						popularity = 0.40
+					}
+					add_to_variable = { akigahai_weekly_war_support = 0.01 }
+					custom_effect_tooltip = shi_purge_opposition.tt
+		}
+	}
+
+############# POLITICAL BRANCH #############
+
+		focus = {
+			id = SHI_storm_the_steel_palace
+			icon = GFX_goal_shi_storm_steel_palace
+			cost = 20
+		relative_position_id = SHI_purge_the_opposition
+		x = 0
+		y = 2
+			prerequisite = {focus = SHI_purge_the_opposition}
+			completion_reward = {
+					country_event = { id = sd_shi.3 }
+					add_to_variable = { akigahai_research_speed = 0.05 }
+					custom_effect_tooltip = shi_storm_palace.tt
+		}
+	}
+
+		focus = {
+			id = SHI_the_shi_state_supreme
+			icon = GFX_goal_shi_supreme
+			cost = 20
+		relative_position_id = SHI_storm_the_steel_palace
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_storm_the_steel_palace}
+			completion_reward = {
+					add_to_variable = { akigahai_war_stability = 0.2 }
+					custom_effect_tooltip = shi_state_supreme.tt
+		}
+	}
+
+		focus = {
+			id = SHI_new_code_of_laws
+			icon = GFX_goal_shi_new_law_code
+			cost = 20
+		relative_position_id = SHI_storm_the_steel_palace
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_storm_the_steel_palace}
+			completion_reward = {
+					custom_effect_tooltip = shi_innercircle.tt
+					add_to_variable = { akigahai_political_power = 0.10 }
+		}
+	}
+
+		focus = {
+			id = SHI_imperial_bureaucracy
+			icon = GFX_goal_shi_imperial_bureaucracy
+			cost = 20
+		relative_position_id = SHI_new_code_of_laws
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_new_code_of_laws}
+			completion_reward = {
+					add_to_variable = { akigahai_efficiency_gain = 0.05 }
+					custom_effect_tooltip = akigahai_5_efficiency_gain.tt
+		}
+	}
+
+		focus = {
+			id = SHI_meritocratic_governance
+			icon = GFX_goal_shi_meritocracy
+			cost = 20
+		relative_position_id = SHI_the_shi_state_supreme
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_the_shi_state_supreme}
+			completion_reward = {
+					add_to_variable = { akigahai_efficiency_cap = 0.05 }
+					custom_effect_tooltip = akigahai_5_efficiency_cap.tt
+		}
+	}
+
+		focus = {
+			id = SHI_all_under_heaven
+			icon = GFX_goal_shi_all_under_heaven
+			cost = 20
+		relative_position_id = SHI_meritocratic_governance
+		x = 1
+		y = 1
+		available = { NCR = { all_core_land_owned_by_prev_sphere = yes } }
+			prerequisite = {focus = SHI_meritocratic_governance}
+			prerequisite = {focus = SHI_imperial_bureaucracy}
+			completion_reward = {
+					country_event = { id = sd_shi.4 }
+					every_state = {
+					limit = { is_core_of = NCR }
+					add_core_of = SHI
+								}
+		}
+	}
+
+		focus = {
+			id = SHI_claim_mandate_of_heaven
+			icon = GFX_goal_shi_mandate_of_heaven
+			cost = 20
+		relative_position_id = SHI_new_code_of_laws
+		x = 2
+		y = 1
+			prerequisite = {focus = SHI_new_code_of_laws}
+			completion_reward = {
+					add_to_variable = { akigahai_compliance_growth = 0.10 }
+					custom_effect_tooltip = akigahai_10_compliance_growth.tt
+		}
+	}
+
+		focus = {
+			id = SHI_sinicization
+			icon = GFX_goal_shi_sinicization
+			cost = 20
+		relative_position_id = SHI_all_under_heaven
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_all_under_heaven}
+			completion_reward = {
+					custom_effect_tooltip = shi_sinicization.tt
+		}
+	}
+
+		focus = {
+			id = SHI_chinese_folk_religion
+			icon = GFX_goal_shi_chinese_folk_religion
+			cost = 20
+		relative_position_id = SHI_the_shi_state_supreme
+		x = -2
+		y = 1
+			prerequisite = {focus = SHI_the_shi_state_supreme}
+			completion_reward = {
+					add_to_variable = { akigahai_resistance_activity = -0.10 }
+					custom_effect_tooltip = akigahai_10_resistance_activity.tt
+		}
+	}
+
+		focus = {
+			id = SHI_incorporate_brahmin_barons
+			icon = GFX_goal_shi_brahmin_barons
+			cost = 20
+		relative_position_id = SHI_all_under_heaven
+		x = 2
+		y = 1
+			prerequisite = {focus = SHI_all_under_heaven}
+			completion_reward = {
+					add_to_variable = { akigahai_consumer_goods = -0.05 }
+					custom_effect_tooltip = akigahai_5_consumer_goods.tt
+		}
+	}
+
+		focus = {
+			id = SHI_absolute_rulership
+			icon = GFX_goal_shi_absolutism
+			cost = 20
+		relative_position_id = SHI_all_under_heaven
+		x = -2
+		y = 1
+			prerequisite = {focus = SHI_all_under_heaven}
+			completion_reward = {
+					add_to_variable = { akigahai_justify_war_time = -0.25 }
+					custom_effect_tooltip = akigahai_jutify_war_time_25.tt
+		}
+	}
+
+		focus = {
+			id = SHI_the_dragon_of_the_west_coast
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_sinicization
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_sinicization}
+			prerequisite = {focus = SHI_absolute_rulership}
+			prerequisite = {focus = SHI_incorporate_brahmin_barons}
+			completion_reward = {
+					add_country_leader_trait = shi_golden_monarch
+		}
+	}
+
+############# SOCIETY BRANCH #############
+
+		focus = {
+			id = SHI_the_benevolent_dragon
+			icon = GFX_goal_shi_focus_golden_dragon
+			cost = 20
+		relative_position_id = SHI_purge_the_opposition
+		x = -8
+		y = 2
+			prerequisite = {focus = SHI_purge_the_opposition}
+			completion_reward = {
+					add_to_variable = { akigahai_efficiency_cap = 0.05 }
+					custom_effect_tooltip = akigahai_5_efficiency_cap.tt
+		}
+	}
+
+		focus = {
+			id = SHI_research_for_the_state_not_the_emperor
+			icon = GFX_goal_shi_state_research
+			cost = 20
+		relative_position_id = SHI_the_benevolent_dragon
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_the_benevolent_dragon}
+			completion_reward = {
+					add_research_slot = 1
+		}
+	}
+
+		focus = {
+			id = SHI_city_restoration
+			icon = GFX_goal_shi_city_restoration
+			cost = 20
+		relative_position_id = SHI_the_benevolent_dragon
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_the_benevolent_dragon}
+			completion_reward = {
+					add_to_variable = { akigahai_construction_speed = 0.10 }
+					add_to_variable = { akigahai_consumer_goods = 0.03 }
+					custom_effect_tooltip = akigahai_city_restoration.tt
+		}
+	}
+
+		focus = {
+			id = SHI_tax_standardization
+			icon = GFX_goal_shi_tax_standardization
+			cost = 20
+		relative_position_id = SHI_research_for_the_state_not_the_emperor
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_research_for_the_state_not_the_emperor}
+			completion_reward = {
+					add_to_variable = { akigahai_consumer_goods = -0.05 }
+					custom_effect_tooltip = akigahai_5_consumer_goods.tt
+		}
+	}
+
+		focus = {
+			id = SHI_farming_lands_for_the_state
+			icon = GFX_goal_shi_farming_state
+			cost = 20
+		relative_position_id = SHI_city_restoration
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_city_restoration}
+			completion_reward = {
+					add_to_variable = { akigahai_monthly_population = 0.05 }
+					custom_effect_tooltip = akigahai_5_monthly_population.tt
+		}
+	}
+
+		focus = {
+			id = SHI_the_examination_system
+			icon = GFX_goal_generic_books
+			cost = 20
+		relative_position_id = SHI_farming_lands_for_the_state
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_farming_lands_for_the_state}
+			prerequisite = {focus = SHI_tax_standardization}
+			completion_reward = {
+					add_to_variable = { akigahai_efficiency_cap = 0.05 }
+					add_to_variable = { akigahai_research_speed = 0.05 }
+					custom_effect_tooltip = akigahai_examination_system.tt
+		}
+	}
+
+		focus = {
+			id = SHI_traditional_chinese_architecture
+			icon = GFX_goal_shi_chinese_architecture
+			cost = 20
+		relative_position_id = SHI_city_restoration
+		x = 2
+		y = 1
+			prerequisite = {focus = SHI_city_restoration}
+			completion_reward = {
+					add_to_variable = { akigahai_construction_speed = 0.05 }
+					custom_effect_tooltip = akigahai_construction_speed_5.tt
+					163 = {
+						add_to_variable = { steel_palace_construction = 0.15 }
+						add_to_variable = { steel_palace_resources = 0.50 }
+						add_to_variable = { steel_palace_building_slots = 4 }
+					}
+		}
+	}
+
+		focus = {
+			id = SHI_renovate_the_steel_palace
+			icon = GFX_goal_shi_renovate_steel_palace
+			cost = 20
+		relative_position_id = SHI_traditional_chinese_architecture
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_traditional_chinese_architecture}
+			completion_reward = {
+					163 = {
+						add_dynamic_modifier = { modifier = shi_steel_palace }
+					}
+		}
+	}
+
+		focus = {
+			id = SHI_high_tech_farming
+			icon = GFX_goal_generic_combine_drone
+			cost = 20
+		relative_position_id = SHI_research_for_the_state_not_the_emperor
+		x = -2
+		y = 1
+			prerequisite = {focus = SHI_research_for_the_state_not_the_emperor}
+			completion_reward = {
+					add_to_variable = { akigahai_monthly_population = 0.05 }
+					custom_effect_tooltip = akigahai_5_monthly_population.tt
+		}
+	}
+
+		focus = {
+			id = SHI_population_census
+			icon = GFX_goal_generic_advanced_technology_focus
+			cost = 20
+		relative_position_id = SHI_high_tech_farming
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_high_tech_farming}
+			completion_reward = {
+					add_to_variable = { akigahai_consumer_goods = -0.05 }
+					custom_effect_tooltip = akigahai_5_consumer_goods.tt
+		}
+	}
+
+		focus = {
+			id = SHI_weisuo_system
+			icon = GFX_goal_generic_power_armor_blue
+			cost = 20
+		relative_position_id = SHI_population_census
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_population_census}
+			prerequisite = {focus = SHI_the_examination_system}
+			completion_reward = {
+					add_to_variable = { dragon_recruitable_factor = 0.02 }
+					custom_effect_tooltip = akigahai_2_recruitable_population.tt
+		}
+	}
+
+		focus = {
+			id = SHI_da_xiyang_baochao
+			icon = GFX_goal_ancient_wealth_2
+			cost = 20
+		relative_position_id = SHI_renovate_the_steel_palace
+		x = -3
+		y = 2
+			prerequisite = {focus = SHI_the_examination_system}
+			prerequisite = {focus = SHI_weisuo_system}
+			prerequisite = {focus = SHI_imperial_infrastructure_projects}
+			available = {
+				has_completed_focus = SHI_all_under_heaven
+			}
+			completion_reward = {
+					swap_ideas = {
+			remove_idea = currencygenericcap
+			add_idea = currencyxiyangtreasurenote
+			}
+			}
+	}
+
+		focus = {
+			id = SHI_imperial_infrastructure_projects
+			icon = GFX_goal_shi_infrastucture
+			cost = 20
+		relative_position_id = SHI_renovate_the_steel_palace
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_the_examination_system}
+			prerequisite = {focus = SHI_renovate_the_steel_palace}
+			completion_reward = {
+					add_to_variable = { akigahai_building_slot = 0.10 }
+					custom_effect_tooltip = akigahai_10_building_slot_factor.tt
+		}
+	}
+
+############# MILITARY BRANCH #############
+
+		focus = {
+			id = SHI_barbarians_all_around
+			icon = GFX_goal_shi_barbarians_all_around
+			cost = 20
+		relative_position_id = SHI_purge_the_opposition
+		x = 8
+		y = 2
+			prerequisite = {focus = SHI_purge_the_opposition}
+			completion_reward = {
+					add_to_variable = { dragon_attack_factor = 0.10 }
+					custom_effect_tooltip = dragon_10_attack_factor.tt
+		}
+	}
+
+		focus = {
+			id = SHI_nothward_expansion
+			icon = GFX_goal_shi_northward_expansion
+			cost = 20
+		relative_position_id = SHI_barbarians_all_around
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_barbarians_all_around}
+			completion_reward = {
+				custom_effect_tooltip = northward_expansion.tt
+				hidden_effect = {
+			EUR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			PAC = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			UMB = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			ARR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			DIS = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			}
+		}
+	}
+
+		focus = {
+			id = SHI_elite_dragon_warriors
+			icon = GFX_goal_shi_elite_dragon_warriors
+			cost = 20
+		relative_position_id = SHI_barbarians_all_around
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_barbarians_all_around}
+			completion_reward = {
+					add_to_variable = { dragon_org_factor = 0.05 }
+					add_to_variable = { dragon_morale_factor = 0.05 }
+					custom_effect_tooltip = dragon_elite_warriors.tt
+		}
+	}
+
+		focus = {
+			id = SHI_consolidate_our_conquest
+			icon = GFX_goal_shi_consolidation
+			cost = 20
+		relative_position_id = SHI_nothward_expansion
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_nothward_expansion}
+			available = { EUR = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { PAC = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { UMB = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { ARR = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { DIS = { all_core_land_owned_by_prev_sphere = yes } }
+			completion_reward = {
+				custom_effect_tooltip = consolidate_our_conquest.tt
+				hidden_effect = {
+					every_state = {
+					limit = { is_core_of = EUR }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = PAC }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = UMB }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = ARR }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = DIS }
+					add_core_of = SHI
+								}
+		}
+	}
+	}
+
+		focus = {
+			id = SHI_a_worthy_navy
+			icon = GFX_goal_shi_worthy_navy
+			cost = 20
+		relative_position_id = SHI_elite_dragon_warriors
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_elite_dragon_warriors}
+			completion_reward = {
+					add_to_variable = { dragon_dockyard_output = 0.15 }
+					custom_effect_tooltip = dragon_15_dockyard_output.tt
+		}
+	}
+
+		focus = {
+			id = SHI_the_dragon_against_the_bear
+			icon = GFX_goal_shi_dragon_against_bear
+			cost = 20
+		relative_position_id = SHI_a_worthy_navy
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_a_worthy_navy}
+			prerequisite = {focus = SHI_consolidate_our_conquest}
+			completion_reward = {
+					NCR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
+		focus = {
+			id = SHI_our_new_great_wall
+			icon = GFX_goal_shi_new_great_wall
+			cost = 20
+		relative_position_id = SHI_the_dragon_against_the_bear
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_the_dragon_against_the_bear}
+			available = { owns_state = 252 }
+			completion_reward = {
+					add_to_variable = { dragon_defence_factor = 0.10 }
+					custom_effect_tooltip = dragon_10_defence_factor.tt
+		}
+	}
+
+		focus = {
+			id = SHI_the_march_inland
+			icon = GFX_goal_shi_march_inland
+			cost = 20
+		relative_position_id = SHI_consolidate_our_conquest
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_consolidate_our_conquest}
+			completion_reward = {
+				custom_effect_tooltip = march_inland.tt
+				hidden_effect = {
+			KLA = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			MXS = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			FOU = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			TDN = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			SLA = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			MOD = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			NEW = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			YKZ = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+	}
+
+#		focus = {
+#			id = SHI_new_cefeng_system
+#			icon = GFX_goal_shi_cefeng_system
+#			cost = 20
+#		relative_position_id = SHI_our_new_great_wall
+#		x = 0
+#		y = 1
+#			prerequisite = {focus = SHI_our_new_great_wall}
+#			completion_reward = {
+#					add_political_power = 10
+#		}
+#	}
+
+		focus = {
+			id = SHI_the_dragons_airforce
+			icon = GFX_goal_shi_dragons_airforce
+			cost = 20
+		relative_position_id = SHI_a_worthy_navy
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_a_worthy_navy}
+			completion_reward = {
+					add_to_variable = { dragon_air_accident_chance = -0.20 }
+					add_to_variable = { dragon_air_xp_factor = 0.10 }
+					custom_effect_tooltip = dragon_airforce.tt
+		}
+	}
+
+#####################################################
+################### Emperor Branch ##################
+#####################################################
+
+		focus = {
+			id = SHI_triumph_of_intellectualism
+			icon = GFX_goal_generic_books
+			cost = 20
+		relative_position_id = shi_resolve_power_struggle
+		x = 0
+		y = 1
+			prerequisite = {focus = shi_resolve_power_struggle}
+			allow_branch = {
+			has_country_flag = emperor_rule
+		}
+			completion_reward = {
+					add_political_power = 100
+					add_popularity = {
+						ideology = intellectuals
+						popularity = 0.10
+					}
+		}
+	}
+
+	focus = {
+			id = SHI_direct_rule_from_the_emperor
+			icon = GFX_goal_generic_electronics_focus
+			cost = 20
+		relative_position_id = SHI_triumph_of_intellectualism
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_triumph_of_intellectualism}
+			mutually_exclusive = { focus = SHI_invite_the_brotherhood }
+			completion_reward = {
+				country_event = { id = sd_shi.5 }
+		}
+	}
+
+############# COMMUNIST STARTING BRANCH #############
+
+	focus = {
+			id = SHI_back_to_our_roots
+			icon = GFX_goal_shi_back_to_basics
+			cost = 20
+		relative_position_id = SHI_direct_rule_from_the_emperor
+		x = 1
+		y = 3
+			allow_branch = {
+			has_country_flag = communist_branch_allowed
+		}
+			completion_reward = {
+				country_event = { id = sd_shi.7 }
+		}
+	}
+
+	focus = {
+			id = SHI_salvage_the_archives
+			icon = GFX_goal_shi_salvage_archives
+			cost = 20
+		relative_position_id = SHI_back_to_our_roots
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_back_to_our_roots}
+			completion_reward = {
+				add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+			id = SHI_convince_ken_lee
+			icon = GFX_goal_shi_cpc_convince
+			cost = 20
+		relative_position_id = SHI_back_to_our_roots
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_back_to_our_roots}
+			completion_reward = {
+				add_stability = 0.10
+		}
+	}
+
+	focus = {
+			id = SHI_input_new_data
+			icon = GFX_goal_shi_cpc_emperor
+			cost = 20
+		relative_position_id = SHI_salvage_the_archives
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_salvage_the_archives}
+			completion_reward = {
+				add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+			id = SHI_loyal_inner_circle
+			icon = GFX_goal_shi_cpc_inner_circle
+			cost = 20
+		relative_position_id = SHI_convince_ken_lee
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_convince_ken_lee}
+			completion_reward = {
+				add_stability = 0.10
+		}
+	}
+
+	focus = {
+			id = SHI_formulate_the_theory
+			icon = GFX_goal_shi_cpc_marxism_leninism
+			cost = 20
+		relative_position_id = SHI_loyal_inner_circle
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_loyal_inner_circle}
+			prerequisite = {focus = SHI_input_new_data}
+			completion_reward = {
+				add_political_power = 100
+		}
+	}
+
+focus = {
+			id = SHI_the_new_identity
+			icon = GFX_goal_shi_cpc_new_identity
+			cost = 20
+		relative_position_id = SHI_formulate_the_theory
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_formulate_the_theory}
+			completion_reward = {
+				country_event = { id = sd_shi.8 }
+		}
+	}
+
+############# LITTLE BEIJING BRANCH #############
+
+focus = {
+			id = SHI_our_little_beijing
+			icon = GFX_goal_shi_cpc_little_beijing
+			cost = 20
+		relative_position_id = SHI_back_to_our_roots
+		x = -5
+		y = -1
+			allow_branch = {
+			has_country_flag = mao_rule
+		}
+			completion_reward = {
+				custom_effect_tooltip = little_beijing.tt
+				hidden_effect = {
+				every_state = {
+				limit = {
+				OR = {
+                state = 163
+                state = 539
+                state = 473
+                state = 132
+                state = 474
+                state = 511
+				}
+			}
+				add_to_variable = { san_fran_resources = 0.10 }
+				}
+			}
+		}
+	}
+
+focus = {
+			id = SHI_not_a_palace_anymore
+			icon = GFX_goal_shi_cpc_not_palace
+			cost = 20
+		relative_position_id = SHI_our_little_beijing
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_our_little_beijing}
+			completion_reward = {
+				custom_effect_tooltip = san_francisco_works.tt
+				163 = {
+					add_to_variable = { central_government_resources = 0.5 }
+				}
+		}
+	}
+
+focus = {
+			id = SHI_great_hall_of_the_people
+			icon = GFX_goal_shi_cpc_great_hall
+			cost = 20
+		relative_position_id = SHI_our_little_beijing
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_our_little_beijing}
+			completion_reward = {
+				custom_effect_tooltip = san_francisco_works.tt
+				163 = {
+					add_to_variable = { central_government_bs = 2 }
+				}
+		}
+	}
+
+focus = {
+			id = SHI_new_supreme_peoples_court
+			icon = GFX_goal_shi_cpc_peoples_court
+			cost = 20
+		relative_position_id = SHI_great_hall_of_the_people
+		x = 0
+		y = 2
+			prerequisite = {focus = SHI_great_hall_of_the_people}
+			completion_reward = {
+				custom_effect_tooltip = san_francisco_works.tt
+				163 = {
+					add_to_variable = { central_government_bs = 3 }
+				}
+		}
+	}
+
+focus = {
+			id = SHI_our_own_tiananmen_square
+			icon = GFX_goal_shi_cpc_our_own_square
+			cost = 20
+		relative_position_id = SHI_not_a_palace_anymore
+		x = 0
+		y = 2
+			prerequisite = {focus = SHI_not_a_palace_anymore}
+			completion_reward = {
+				custom_effect_tooltip = san_francisco_works.tt
+				163 = {
+					add_to_variable = { central_government_construction = 0.20 }
+				}
+		}
+	}
+
+focus = {
+			id = SHI_san_francisco_adress
+			icon = GFX_goal_shi_cpc_san_francisco_adress
+			cost = 20
+		relative_position_id = SHI_our_own_tiananmen_square
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_our_own_tiananmen_square}
+			prerequisite = {focus = SHI_new_supreme_peoples_court}
+			prerequisite = {focus = SHI_san_francisco_municipality}
+			completion_reward = {
+				163 = {
+						add_dynamic_modifier = { modifier = shi_san_fran_central_government }
+					}
+		}
+	}
+
+focus = {
+			id = SHI_san_francisco_municipality
+			icon = GFX_goal_shi_cpc_san_francisco_municipality
+			cost = 20
+		relative_position_id = SHI_our_little_beijing
+		x = 0
+		y = 2
+			prerequisite = {focus = SHI_our_little_beijing}
+			completion_reward = {
+				every_state = {
+				limit = {
+				OR = {
+                state = 163
+                state = 539
+                state = 473
+                state = 132
+                state = 474
+                state = 511
+				}
+			}
+				add_dynamic_modifier = { modifier = shi_san_fran_municipality }
+				}
+			}
+	}
+
+############# REFORMING THE CPC BRANCH #############
+
+focus = {
+			id = SHI_the_new_vanguard
+			icon = GFX_goal_shi_cpc_new_vanguard
+			cost = 20
+		relative_position_id = SHI_back_to_our_roots
+		x = 5
+		y = -1
+			allow_branch = {
+			has_country_flag = mao_rule
+		}
+			completion_reward = {
+				add_dynamic_modifier = { modifier = shi_cpc_party_rule }
+		}
+	}
+
+focus = {
+			id = SHI_selective_membership
+			icon = GFX_goal_shi_cpc_selective_membership
+			cost = 20
+		relative_position_id = SHI_the_new_vanguard
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_the_new_vanguard}
+			completion_reward = {
+				add_to_variable = { cpc_stability = 0.10 }
+				add_to_variable = { cpc_recruitable_pop = -0.02 }
+				custom_effect_tooltip = selective_membership.tt
+		}
+	}
+
+focus = {
+			id = SHI_democratic_centralism
+			icon = GFX_goal_shi_cpc_democratic_centralism
+			cost = 20
+		relative_position_id = SHI_the_new_vanguard
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_the_new_vanguard}
+			completion_reward = {
+				add_to_variable = { cpc_stability = 0.05 }
+				add_to_variable = { cpc_political_power_gain = 0.05 }
+				custom_effect_tooltip = democratic_centralism.tt
+		}
+	}
+
+focus = {
+			id = SHI_public_manifesto
+			icon = GFX_goal_shi_cpc_public_manifesto
+			cost = 20
+		relative_position_id = SHI_the_new_vanguard
+		x = 0
+		y = 2
+			prerequisite = {focus = SHI_the_new_vanguard}
+			completion_reward = {
+				add_to_variable = { cpc_political_power_gain = 0.05 }
+				custom_effect_tooltip = public_manifesto.tt
+		}
+	}
+
+focus = {
+			id = SHI_meritocratic_ranks
+			icon = GFX_goal_shi_cpc_meritocracy
+			cost = 20
+		relative_position_id = SHI_selective_membership
+		x = 0
+		y = 2
+			prerequisite = {focus = SHI_selective_membership}
+			completion_reward = {
+				add_to_variable = { cpc_research_speed = 0.05 }
+				custom_effect_tooltip = meritocratic_ranks.tt
+		}
+	}
+
+focus = {
+			id = SHI_uphold_mao_zedong_thought
+			icon = GFX_goal_shi_cpc_uphold_mao_zedong_thought
+			cost = 20
+		relative_position_id = SHI_democratic_centralism
+		x = 0
+		y = 2
+			prerequisite = {focus = SHI_democratic_centralism}
+			completion_reward = {
+				add_to_variable = { cpc_surrender_limit = 0.10 }
+				add_to_variable = { cpc_consumer_goods = -0.02 }
+				custom_effect_tooltip = mao_zedong_thought.tt
+		}
+	}
+
+focus = {
+			id = SHI_serve_the_people
+			icon = GFX_goal_shi_cpc_serve_the_people
+			cost = 20
+		relative_position_id = SHI_uphold_mao_zedong_thought
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_uphold_mao_zedong_thought}
+			prerequisite = {focus = SHI_meritocratic_ranks}
+			prerequisite = {focus = SHI_public_manifesto}
+			completion_reward = {
+				set_variable = { var = stability_raw value = 0 }  # goes from 0 to 100
+				update_stability_variable = yes # Do it every time the variable changes
+				add_dynamic_modifier = { modifier = stability_from_var }
+				custom_effect_tooltip = shi_cpc.tt
+		}
+	}
+
+############# INITIAL EXPANSION BRANCH #############
+
+focus = {
+			id = SHI_arise_slaves_afflicted_by_hunger_and_cold
+			icon = GFX_goal_shi_cpc_arise
+			cost = 20
+		relative_position_id = SHI_the_new_identity
+		x = 0
+		y = 2
+			allow_branch = {
+			has_country_flag = mao_rule
+		}
+			completion_reward = {
+				add_war_support = 0.10
+		}
+	}
+
+focus = {
+			id = SHI_no_mercenaries_on_our_borders
+			icon = GFX_goal_shi_cpc_no_mercenaries
+			cost = 20
+		relative_position_id = SHI_arise_slaves_afflicted_by_hunger_and_cold
+		x = 2
+		y = 1
+			prerequisite = {focus = SHI_arise_slaves_afflicted_by_hunger_and_cold}
+			completion_reward = {
+				EUR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
+focus = {
+			id = SHI_pack_up_the_packers
+			icon = GFX_goal_shi_cpc_brawler
+			cost = 20
+		relative_position_id = SHI_arise_slaves_afflicted_by_hunger_and_cold
+		x = -2
+		y = 1
+			prerequisite = {focus = SHI_arise_slaves_afflicted_by_hunger_and_cold}
+			completion_reward = {
+				PAC = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
+focus = {
+			id = SHI_only_one_way_for_the_fourways
+			icon = GFX_goal_shi_cpc_basher
+			cost = 20
+		relative_position_id = SHI_arise_slaves_afflicted_by_hunger_and_cold
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_arise_slaves_afflicted_by_hunger_and_cold}
+			completion_reward = {
+				FOU = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			MXS = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
+focus = {
+			id = SHI_no_more_opium_empires
+			icon = GFX_goal_shi_cpc_chinese_rifle
+			cost = 20
+		relative_position_id = SHI_only_one_way_for_the_fourways
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_only_one_way_for_the_fourways}
+			prerequisite = {focus = SHI_pack_up_the_packers}
+			completion_reward = {
+				TDN = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
+focus = {
+			id = SHI_march_to_arroyo
+			icon = GFX_goal_shi_cpc_running
+			cost = 20
+		relative_position_id = SHI_only_one_way_for_the_fourways
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_only_one_way_for_the_fourways}
+			prerequisite = {focus = SHI_no_mercenaries_on_our_borders}
+			completion_reward = {
+				ARR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			KLA = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			UMB = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
+focus = {
+			id = SHI_empower_the_peasantry
+			icon = GFX_goal_shi_cpc_empower_peasantry
+			cost = 20
+		relative_position_id = SHI_no_more_opium_empires
+		x = 1
+		y = 2
+			prerequisite = {focus = SHI_no_more_opium_empires}
+			prerequisite = {focus = SHI_march_to_arroyo}
+			available = { EUR = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { PAC = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { UMB = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { ARR = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { TDN = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { KLA = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { MXS = { all_core_land_owned_by_prev_sphere = yes } }
+			completion_reward = {
+				custom_effect_tooltip = consolidate_our_conquest.tt
+				hidden_effect = {
+					every_state = {
+					limit = { is_core_of = EUR }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = PAC }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = UMB }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = ARR }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = TDN }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = FOU }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = KLA }
+					add_core_of = SHI
+								}
+					every_state = {
+					limit = { is_core_of = MXS }
+					add_core_of = SHI
+								}
+				hidden_effect = {
+				every_state = {
+				limit = {
+				OR = {
+                state = 216
+				state = 441
+				state = 548
+				state = 340
+				state = 353
+				state = 56
+				state = 39
+				state = 182
+				state = 239
+				state = 372
+				state = 32
+				state = 337
+				state = 96
+				state = 251
+				state = 467
+				state = 369
+				state = 454
+				state = 59
+				state = 57
+				}
+			}
+				add_to_variable = { north_cali_resources = 0.10 }
+				}
+			}
+		}
+		}
+	}
+
+focus = {
+			id = SHI_the_countryside_encircles_the_cities
+			icon = GFX_goal_shi_cpc_countryside_encircles_cities
+			cost = 20
+		relative_position_id = SHI_empower_the_peasantry
+		x = 0
+		y = 1
+			prerequisite = {focus = SHI_empower_the_peasantry}
+			completion_reward = {
+				add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.5
+				uses = 1
+				category = support_tech_category
+			}
+		}
+	}
+
+focus = {
+			id = SHI_north_california_province
+			icon = GFX_goal_shi_cpc_north_california
+			cost = 20
+		relative_position_id = SHI_empower_the_peasantry
+		x = -3
+		y = 1
+			prerequisite = {focus = SHI_empower_the_peasantry}
+			completion_reward = {
+				every_state = {
+				limit = {
+				OR = {
+                state = 216
+				state = 441
+				state = 548
+				state = 340
+				state = 353
+				state = 56
+				state = 39
+				state = 182
+				state = 239
+				state = 372
+				state = 32
+				state = 337
+				state = 96
+				state = 251
+				state = 467
+				state = 369
+				state = 454
+				state = 59
+				state = 57
+				}
+			}
+				add_dynamic_modifier = { modifier = shi_north_cali_province }
+				}
+		}
+	}
+
+focus = {
+			id = SHI_take_chelmut_station
+			icon = GFX_goal_shi_cpc_sword
+			cost = 20
+		relative_position_id = SHI_empower_the_peasantry
+		x = -5
+		y = 1
+			prerequisite = {focus = SHI_empower_the_peasantry}
+			completion_reward = {
+				CHE = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
+focus = {
+			id = SHI_fate_of_modoc
+			icon = GFX_goal_shi_cpc_soviet_gun
+			cost = 20
+		relative_position_id = SHI_empower_the_peasantry
+		x = 3
+		y = 1
+			prerequisite = {focus = SHI_empower_the_peasantry}
+			completion_reward = {
+				MOD = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
+focus = {
+			id = SHI_end_the_empire_of_sin
+			icon = GFX_goal_shi_cpc_warrior
+			cost = 20
+		relative_position_id = SHI_empower_the_peasantry
+		x = 5
+		y = 1
+			prerequisite = {focus = SHI_empower_the_peasantry}
+			completion_reward = {
+				NEW = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
+focus = {
+			id = SHI_convince_their_population
+			icon = GFX_goal_shi_cpc_convince_population
+			cost = 20
+		relative_position_id = SHI_the_countryside_encircles_the_cities
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_the_countryside_encircles_the_cities}
+			mutually_exclusive = { focus = SHI_sway_their_soldiers }
+			completion_reward = {
+				NCR = {
+                add_timed_idea = {
+				idea = convince_population
+				days = 365
+				}
+            }
+		}
+	}
+
+focus = {
+			id = SHI_sway_their_soldiers
+			icon = GFX_goal_shi_cpc_sway_soldiers
+			cost = 20
+		relative_position_id = SHI_the_countryside_encircles_the_cities
+		x = -1
+		y = 1
+			prerequisite = {focus = SHI_the_countryside_encircles_the_cities}
+			mutually_exclusive = { focus = SHI_convince_their_population }
+			completion_reward = {
+				NCR = {
+                add_timed_idea = {
+				idea = sway_soldiers
+				days = 365
+				}
+            }
+		}
+	}
+
+focus = {
+			id = SHI_unite_together_towards_tomorrow
+			icon = GFX_goal_shi_cpc_unite_together
+			cost = 20
+		relative_position_id = SHI_sway_their_soldiers
+		x = 1
+		y = 1
+			prerequisite = {
+				focus = SHI_sway_their_soldiers
+				focus = SHI_convince_their_population
+			}
+			completion_reward = {
+				add_war_support = 0.10
+		}
+	}
+
+focus = {
+			id = SHI_this_is_the_final_struggle
+			icon = GFX_goal_shi_cpc_final_struggle
+			cost = 20
+		relative_position_id = SHI_unite_together_towards_tomorrow
+		x = 0
+		y = 1
+			prerequisite = { focus = SHI_unite_together_towards_tomorrow }
+			completion_reward = {
+				NCR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
+focus = {
+			id = SHI_provisional_nevada_occupation
+			icon = GFX_goal_shi_cpc_nevada
+			cost = 20
+		relative_position_id = SHI_fate_of_modoc
+		x = 1
+		y = 2
+			prerequisite = { focus = SHI_fate_of_modoc }
+			prerequisite = { focus = SHI_end_the_empire_of_sin }
+			available = { NEW = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { MOD = { all_core_land_owned_by_prev_sphere = yes } }
+			available = { SLA = { all_core_land_owned_by_prev_sphere = yes } }
+			completion_reward = {
+				every_state = {
+					limit = { is_core_of = NEW }
+					add_core_of = SHI
+								}
+				every_state = {
+					limit = { is_core_of = MOD }
+					add_core_of = SHI
+								}
+				every_state = {
+					limit = { is_core_of = SLA }
+					add_core_of = SHI
+								}
+		}
+	}
+
+focus = {
+			id = SHI_important_crossroad
+			icon = GFX_goal_shi_cpc_crossroad
+			cost = 20
+		relative_position_id = SHI_take_chelmut_station
+		x = 1
+		y = 2
+			prerequisite = { focus = SHI_take_chelmut_station }
+			completion_reward = {
+				every_state = {
+					limit = { is_core_of = CHE }
+					add_core_of = SHI
+								}
+		}
+	}
+
+focus = {
+			id = SHI_masters_of_the_world
+			icon = GFX_goal_shi_cpc_new_vanguard
+			cost = 20
+		relative_position_id = SHI_this_is_the_final_struggle
+		x = 0
+		y = 1
+			prerequisite = { focus = SHI_this_is_the_final_struggle }
+			available = { NCR = { all_core_land_owned_by_prev_sphere = yes } }
+			completion_reward = {
+				set_cosmetic_tag = SHI_MAO
+				country_event = { id = sd_shi.9 }
+		}
+	}
+
+############# STARTING ECONOMIC BRANCH #############
+
+focus = {
+			id = SHI_basic_land_reform
+			icon = GFX_goal_shi_cpc_land_reform
+			cost = 20
+		relative_position_id = SHI_serve_the_people
+		x = 2
+		y = 2
+			allow_branch = {
+			has_country_flag = mao_rule
+			}
+			completion_reward = {
+				add_dynamic_modifier = { modifier = shi_communist_economy }
+				add_to_variable = { communist_econ_monthly_population = 0.05 }
+				custom_effect_tooltip = basic_land_reform.tt
+		}
+	}
+
+focus = {
+			id = SHI_voluntary_collectivization
+			icon = GFX_goal_shi_cpc_voluntary_collectivization
+			cost = 20
+		relative_position_id = SHI_basic_land_reform
+		x = 1
+		y = 1
+			prerequisite = { focus = SHI_basic_land_reform }
+			completion_reward = {
+				add_to_variable = { communist_econ_consumer_goods = -0.05 }
+				custom_effect_tooltip = voluntary_collectivization.tt
+		}
+	}
+
+focus = {
+			id = SHI_literacy_programs
+			icon = GFX_goal_shi_cpc_literacy
+			cost = 20
+		relative_position_id = SHI_basic_land_reform
+		x = -1
+		y = 1
+			prerequisite = { focus = SHI_basic_land_reform }
+			completion_reward = {
+				add_to_variable = { communist_econ_research_speed = 0.10 }
+				custom_effect_tooltip = literacy_programs.tt
+		}
+	}
+
+focus = {
+			id = SHI_peoples_workshops
+			icon = GFX_goal_shi_cpc_workshop
+			cost = 20
+		relative_position_id = SHI_voluntary_collectivization
+		x = 0
+		y = 1
+			prerequisite = { focus = SHI_voluntary_collectivization }
+			completion_reward = {
+				add_to_variable = { communist_econ_efficiency_gain = 0.05 }
+				custom_effect_tooltip = peoples_workshops.tt
+		}
+	}
+
+focus = {
+			id = SHI_rural_electrification
+			icon = GFX_goal_shi_cpc_electrification
+			cost = 20
+		relative_position_id = SHI_literacy_programs
+		x = 0
+		y = 1
+			prerequisite = { focus = SHI_literacy_programs }
+			completion_reward = {
+				add_to_variable = { communist_econ_efficiency_cap = 0.05 }
+				custom_effect_tooltip = rural_electrification.tt
+		}
+	}
+
+focus = {
+			id = SHI_control_the_trade_flow
+			icon = GFX_goal_shi_cpc_control_trade
+			cost = 20
+		relative_position_id = SHI_peoples_workshops
+		x = 0
+		y = 1
+			prerequisite = { focus = SHI_peoples_workshops }
+			completion_reward = {
+				add_to_variable = { communist_econ_min_export = -0.10 }
+				custom_effect_tooltip = control_the_trade_flow.tt
+		}
+	}
+
+focus = {
+			id = SHI_state_projects
+			icon = GFX_goal_shi_cpc_state_projects
+			cost = 20
+		relative_position_id = SHI_rural_electrification
+		x = 0
+		y = 1
+			prerequisite = { focus = SHI_rural_electrification }
+			completion_reward = {
+				add_to_variable = { communist_econ_construction_speed = 0.10 }
+				custom_effect_tooltip = state_projects.tt
+		}
+	}
+
+focus = {
+			id = SHI_self_sufficiency
+			icon = GFX_goal_shi_cpc_self_sufficiency
+			cost = 20
+		relative_position_id = SHI_state_projects
+		x = 1
+		y = 1
+			prerequisite = { focus = SHI_state_projects }
+			prerequisite = { focus = SHI_control_the_trade_flow }
+			completion_reward = {
+				add_to_variable = { communist_econ_resources_factor = 0.10 }
+				custom_effect_tooltip = self_sufficiency.tt
+		}
+	}
+
+############# BOS STUFF #############
+
+	focus = {
+			id = SHI_invite_the_brotherhood
+			icon = GFX_goal_bos_flag_shi
+			cost = 20
+		relative_position_id = SHI_triumph_of_intellectualism
+		x = 1
+		y = 1
+			prerequisite = {focus = SHI_triumph_of_intellectualism}
+			mutually_exclusive = { focus = SHI_direct_rule_from_the_emperor }
+			completion_reward = {
+				set_country_flag = bos_rule
+		}
+	}
+
+	focus = {
+		id = shi_contact_lost_hills
+		icon = GFX_goal_SHI_BOS_Phone
+		x = 0
+		y = 1
+		relative_position_id = SHI_invite_the_brotherhood
+		prerequisite = {
+			focus = SHI_invite_the_brotherhood
+		}
+		allow_branch = {
+			has_country_flag = bos_rule
+		}
+		available = {
+			has_government = intellectuals
+			BOS = {
+				exists = yes
+			}
+		}
+		cost = 50
+		completion_reward = {
+			set_technology = {
+				power_armour_tech_level_settler = 1
+				power_armour_tech_level_scientific = 1
+			}
+			SHI = { bos_add_to_ledger = yes }
+		}
+	}
+
+	focus = {
+		id = shi_bos_bunkers
+		icon = GFX_goal_generic_t45d_power_armour_focus
+		x = 0
+		y = 1
+		relative_position_id = shi_contact_lost_hills
+		prerequisite = {
+			focus = shi_contact_lost_hills
+		}
+		available = {
+			has_government = intellectuals
+		}
+		cost = 50
+		completion_reward = {
+			add_ideas = bunkerblues
+			163 = {
+				add_building_construction = {
+					type = bunker2
+					level = 2
+					instant_build = yes
+					province = 2422
+				}
+			}
+			473 = {
+				add_building_construction = {
+					type = bunker2
+					level = 2
+					instant_build = yes
+					province = 2416
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = shi_bos_aid
+		icon = GFX_goal_SHI_norton_bos
+		x = 0
+		y = 1
+		relative_position_id = shi_bos_bunkers
+		prerequisite = {
+			focus = shi_bos_bunkers
+		}
+		available = {
+			BOS = { exists = yes }
+		}
+		cost = 50
+		completion_reward = {
+			BOS = {country_event = nf_shi.23}
+		}
+	}
+
+############# TECHNOCRATIC BRANCH #############
+
+	focus = {
+			id = SHI_a_technocratic_state
+			icon = GFX_goal_shi_technocratic_state
+			cost = 20
+		relative_position_id = SHI_direct_rule_from_the_emperor
+		x = 1
+		y = 3
+			allow_branch = {
+			has_country_flag = technocracy_branch_allowed
+		}
+			completion_reward = {
+				add_dynamic_modifier = { modifier = shi_technate }
+		}
+	}
+
+	focus = {
+			id = SHI_hold_local_elections
+			icon = GFX_goal_shi_local_elections
+			cost = 20
+		relative_position_id = SHI_a_technocratic_state
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SHI_a_technocratic_state
+		}
+			completion_reward = {
+				add_stability = 0.10
+		}
+	}
+
+	focus = {
+			id = SHI_leadership_through_expertise
+			icon = GFX_goal_shi_leadership_expertise
+			cost = 20
+		relative_position_id = SHI_a_technocratic_state
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = SHI_a_technocratic_state
+		}
+			completion_reward = {
+				add_to_variable = { technate_efficiency_gain = 0.05 }
+				custom_effect_tooltip = technate_5_efficiency_gain.tt
+		}
+	}
+
+	focus = {
+			id = SHI_science_at_the_helm
+			icon = GFX_goal_shi_science_at_the_helm
+			cost = 20
+		relative_position_id = SHI_leadership_through_expertise
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SHI_leadership_through_expertise
+		}
+			completion_reward = {
+				add_to_variable = { technate_research_speed = 0.05 }
+				custom_effect_tooltip = technate_5_research.tt
+		}
+	}
+
+	focus = {
+			id = SHI_accountable_officials
+			icon = GFX_goal_shi_accountable_officials
+			cost = 20
+		relative_position_id = SHI_hold_local_elections
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SHI_hold_local_elections
+		}
+			completion_reward = {
+				add_to_variable = { technate_efficiency_cap = 0.05 }
+				custom_effect_tooltip = technate_5_efficiency_cap.tt
+		}
+	}
+
+	focus = {
+			id = SHI_meritocratic_bureaucracy
+			icon = GFX_goal_shi_meritocratic_bureaucracy
+			cost = 20
+		relative_position_id = SHI_leadership_through_expertise
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = SHI_leadership_through_expertise
+		}
+			completion_reward = {
+				add_to_variable = { technate_efficiency_gain = 0.05 }
+				custom_effect_tooltip = technate_5_efficiency_gain.tt
+		}
+	}
+
+	focus = {
+			id = SHI_cybernetic_governance
+			icon = GFX_goal_shi_cybernetic_governance
+			cost = 20
+		relative_position_id = SHI_hold_local_elections
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = SHI_hold_local_elections
+		}
+			completion_reward = {
+				add_to_variable = { technate_efficiency_cap = 0.05 }
+				custom_effect_tooltip = technate_5_efficiency_cap.tt
+		}
+	}
+
+	focus = {
+			id = SHI_rationalize_the_economy
+			icon = GFX_goal_shi_rationalize_economy
+			cost = 20
+		relative_position_id = SHI_science_at_the_helm
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SHI_science_at_the_helm
+		}
+			completion_reward = {
+				add_to_variable = { technate_efficiency_cap = 0.05 }
+				custom_effect_tooltip = technate_5_efficiency_cap.tt
+		}
+	}
+
+	focus = {
+			id = SHI_advanced_education_initiative
+			icon = GFX_goal_shi_advanced_education
+			cost = 20
+		relative_position_id = SHI_meritocratic_bureaucracy
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SHI_meritocratic_bureaucracy
+		}
+			completion_reward = {
+				add_to_variable = { technate_research_speed = 0.05 }
+				custom_effect_tooltip = technate_5_research.tt
+		}
+	}
+
+	focus = {
+			id = SHI_high_efficiency_agriculture
+			icon = GFX_goal_shi_tech_agriculture
+			cost = 20
+		relative_position_id = SHI_meritocratic_bureaucracy
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_meritocratic_bureaucracy }
+		prerequisite = { focus = SHI_science_at_the_helm }
+			completion_reward = {
+				add_to_variable = { technate_pop = 0.15 }
+				custom_effect_tooltip = technate_15_population.tt
+		}
+	}
+
+	focus = {
+			id = SHI_algorithmic_resource_allocation
+			icon = GFX_goal_shi_algorithmic_resource_allocation
+			cost = 20
+		relative_position_id = SHI_rationalize_the_economy
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SHI_rationalize_the_economy
+		}
+			completion_reward = {
+				add_to_variable = { technate_resources = 0.10 }
+				custom_effect_tooltip = technate_10_resources.tt
+		}
+	}
+
+	focus = {
+			id = SHI_codify_rationality
+			icon = GFX_goal_shi_codify_rationality
+			cost = 20
+		relative_position_id = SHI_accountable_officials
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SHI_accountable_officials
+		}
+			completion_reward = {
+				add_stability = 0.10
+		}
+	}
+
+	focus = {
+			id = SHI_regularly_updated_census
+			icon = GFX_goal_shi_tech_census
+			cost = 20
+		relative_position_id = SHI_cybernetic_governance
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SHI_cybernetic_governance
+		}
+			completion_reward = {
+				add_to_variable = { technate_efficiency_cap = 0.05 }
+				custom_effect_tooltip = technate_5_efficiency_cap.tt
+		}
+	}
+
+	focus = {
+			id = SHI_a_state_above_petty_politics
+			icon = GFX_goal_shi_above_petty_politics
+			cost = 20
+		relative_position_id = SHI_codify_rationality
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SHI_codify_rationality
+		}
+			completion_reward = {
+				add_to_variable = { technate_research_speed = 0.05 }
+				custom_effect_tooltip = technate_5_research.tt
+		}
+	}
+
+	focus = {
+			id = SHI_expert_committees
+			icon = GFX_goal_shi_expert_committees
+			cost = 20
+		relative_position_id = SHI_advanced_education_initiative
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SHI_advanced_education_initiative
+		}
+			completion_reward = {
+				add_to_variable = { technate_efficiency_gain = 0.05 }
+				custom_effect_tooltip = technate_5_efficiency_gain.tt
+		}
+	}
+
+	focus = {
+			id = SHI_evidence_based_policies
+			icon = GFX_goal_shi_evidence_based_policies
+			cost = 20
+		relative_position_id = SHI_regularly_updated_census
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SHI_regularly_updated_census
+		}
+			completion_reward = {
+				add_to_variable = { technate_efficiency_gain = 0.05 }
+				custom_effect_tooltip = technate_5_efficiency_gain.tt
+		}
+	}
+
+	focus = {
+			id = SHI_rank_by_merit
+			icon = GFX_goal_shi_rank_by_merit
+			cost = 20
+		relative_position_id = SHI_cybernetic_governance
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_cybernetic_governance }
+		prerequisite = { focus = SHI_accountable_officials }
+			completion_reward = {
+				add_to_variable = { technate_experience_gain = 0.20 }
+				custom_effect_tooltip = technate_20_experience_gain.tt
+		}
+	}
+
+	focus = {
+			id = SHI_automation_initiative
+			icon = GFX_goal_shi_automation_initiative
+			cost = 20
+		relative_position_id = SHI_expert_committees
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_expert_committees }
+		prerequisite = { focus = SHI_algorithmic_resource_allocation }
+			completion_reward = {
+				add_to_variable = { technate_efficiency_gain = 0.05 }
+				custom_effect_tooltip = technate_5_efficiency_gain.tt
+		}
+	}
+
+	focus = {
+			id = SHI_extensive_data_archives
+			icon = GFX_goal_shi_cybernetic_governance
+			cost = 20
+		relative_position_id = SHI_a_state_above_petty_politics
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_a_state_above_petty_politics }
+		prerequisite = { focus = SHI_evidence_based_policies }
+			completion_reward = {
+				add_to_variable = { technate_research_speed = 0.05 }
+				custom_effect_tooltip = technate_5_research.tt
+		}
+	}
+
+	focus = {
+			id = SHI_citizenship_by_merit
+			icon = GFX_goal_shi_citizenship_by_merit
+			cost = 20
+		relative_position_id = SHI_a_state_above_petty_politics
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_a_state_above_petty_politics }
+		prerequisite = { focus = SHI_algorithmic_resource_allocation }
+			completion_reward = {
+				add_to_variable = { technate_research_speed = 0.10 }
+				add_to_variable = { technate_pop = 0.10 }
+				custom_effect_tooltip = technate_citizenship.tt
+		}
+	}
+
+	focus = {
+			id = SHI_update_the_emperor
+			icon = GFX_goal_shi_update_emperor
+			cost = 20
+		relative_position_id = SHI_citizenship_by_merit
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_citizenship_by_merit }
+		prerequisite = { focus = SHI_extensive_data_archives }
+			completion_reward = {
+				add_to_variable = { technate_research_speed = 0.05 }
+				custom_effect_tooltip = technate_5_research.tt
+		}
+	}
+
+	focus = {
+			id = SHI_advanced_manufactoring_hub
+			icon = GFX_goal_shi_advanced_manufacturing
+			cost = 20
+		relative_position_id = SHI_citizenship_by_merit
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_citizenship_by_merit }
+		prerequisite = { focus = SHI_automation_initiative }
+			completion_reward = {
+				add_to_variable = { technate_consumer_goods = -0.15 }
+				custom_effect_tooltip = technate_15_consumer.tt
+		}
+	}
+
+	focus = {
+			id = SHI_an_elected_supreme_council
+			icon = GFX_goal_shi_supreme_council
+			cost = 20
+		relative_position_id = SHI_advanced_manufactoring_hub
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_advanced_manufactoring_hub }
+		prerequisite = { focus = SHI_update_the_emperor }
+			completion_reward = {
+				promote_character = SHI_technocratic_council
+		}
+	}
+
+}

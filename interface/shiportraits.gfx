@@ -1,0 +1,11 @@
+spriteTypes = {
+
+spriteType = {
+	name = "GFX_Portrait_emperor"
+	texturefile = "gfx/leaders/SHI/Portrait_SHI_emperor.dds"
+}
+spriteType = {
+	name = "GFX_Portrait_technocratic_council"
+	texturefile = "gfx/leaders/SHI/portrait_SHI_technocratic_council.dds"
+}
+}

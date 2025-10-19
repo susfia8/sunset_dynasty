@@ -1,0 +1,111 @@
+shi_akigahai_rulership = {
+	icon = GFX_idea_akigahai_rulership
+	
+	political_power_gain = akigahai_political_power
+	war_support_weekly = akigahai_weekly_war_support
+	research_speed_factor = akigahai_research_speed
+	offensive_war_stability_factor = akigahai_war_stability
+	production_factory_efficiency_gain_factor = akigahai_efficiency_gain
+	production_factory_max_efficiency_factor = akigahai_efficiency_cap
+	compliance_growth = akigahai_compliance_growth
+	resistance_activity = akigahai_resistance_activity
+	consumer_goods_factor = akigahai_consumer_goods
+	justify_war_goal_time = akigahai_justify_war_time
+	monthly_population = akigahai_monthly_population
+	production_speed_buildings_factor = akigahai_construction_speed
+	global_building_slots_factor = akigahai_building_slot
+}
+
+shi_new_dragon_school = {
+	icon = GFX_idea_dragon_school
+	
+
+	experience_gain_army_unit_factor = dragon_experience_gain_factor
+	recruitable_population_factor = dragon_recruitable_factor
+	army_attack_factor = dragon_attack_factor
+	army_org_factor = dragon_org_factor
+	army_morale_factor = dragon_morale_factor
+	industrial_capacity_dockyard = dragon_dockyard_output
+	air_accidents_factor = dragon_air_accident_chance
+	air_mission_xp_gain_factor = dragon_air_xp_factor
+	army_defence_factor = dragon_defence_factor
+}
+
+shi_steel_palace = {
+	icon = GFX_idea_steel_palace
+
+	production_speed_buildings_factor = steel_palace_construction
+	local_building_slots = steel_palace_building_slots
+	local_resources	= steel_palace_resources
+}
+
+stability_from_var = {
+    stability_factor = stability_scaled
+	war_support_factor = stability_scaled
+}
+
+shi_san_fran_municipality = {
+	icon = GFX_idea_SHI_cpc_seal
+	enable = { controller = SHI }
+
+	local_resources_factor = san_fran_resources
+}
+
+shi_san_fran_central_government = {
+	icon = GFX_idea_steel_palace
+	enable = { controller = SHI }
+
+	local_resources = central_government_resources
+	local_building_slots = central_government_bs
+	production_speed_buildings_factor = central_government_construction
+}
+
+shi_cpc_party_rule = {
+	icon = GFX_idea_SHI_cpc_seal
+
+	stability_factor = cpc_stability
+	recruitable_population_factor = cpc_recruitable_pop
+	political_power_gain = cpc_political_power_gain
+	research_speed_factor = cpc_research_speed
+	surrender_limit = cpc_surrender_limit
+	consumer_goods_factor = cpc_consumer_goods
+
+}
+
+shi_communist_economy = {
+	icon = GFX_idea_SHI_cpc_econ
+
+	stability_factor = communist_econ_stability
+	recruitable_population_factor = communist_econ_recruitable_pop
+	political_power_gain = communist_econ_political_power_gain
+	research_speed_factor = communist_econ_research_speed
+	surrender_limit = communist_econ_surrender_limit
+	consumer_goods_factor = communist_econ_consumer_goods
+	monthly_population = communist_econ_monthly_population
+	production_factory_efficiency_gain_factor = communist_econ_efficiency_gain
+	production_factory_max_efficiency_factor = communist_econ_efficiency_cap
+	min_export = communist_econ_min_export
+	production_speed_buildings_factor = communist_econ_construction_speed
+	local_resources_factor = communist_econ_resources_factor
+
+}
+
+shi_north_cali_province = {
+	icon = GFX_idea_SHI_cpc_seal
+	enable = { controller = SHI }
+
+	local_resources_factor = north_cali_resources
+}
+
+shi_technate = {
+	icon = GFX_idea_SHI_technocracy
+
+	monthly_population = technate_pop
+	research_speed_factor = technate_research_speed
+	local_resources_factor = technate_resources
+	production_factory_efficiency_gain_factor = technate_efficiency_gain
+	production_factory_max_efficiency_factor = technate_efficiency_cap
+	production_factory_start_efficiency_factor = technate_efficiency_base
+	consumer_goods_factor = technate_consumer_goods
+	experience_gain_army_unit_factor = technate_experience_gain
+}

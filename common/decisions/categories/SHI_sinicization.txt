@@ -1,0 +1,11 @@
+SHIsinicization = {
+	priority = 8
+	icon = corruption_20
+	visible = {
+		has_completed_focus = SHI_sinicization
+	}
+	visible_when_empty = yes
+	allowed = {
+		always = yes
+	}
+}

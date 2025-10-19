@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+			name = "GFX_idea_akigahai_rulership"
+			texturefile = "gfx/interface/ideas/shi_akigahai_rulership.dds"
+		}
+	spriteType = {
+			name = "gov_idea_xiyang_treasure_note"
+			texturefile = "gfx/interface/ideas/xiyang_treasure_note.dds"
+		}
+	spriteType = {
+			name = "GFX_steel_palace_icon"
+			texturefile = "gfx/texticons/steel_palace_icon.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_idea_steel_palace"
+			texturefile = "gfx/interface/ideas/shi_steel_palace.dds"
+		}
+	spriteType = {
+			name = "GFX_idea_dragon_school"
+			texturefile = "gfx/interface/ideas/shi_dragon_school.dds"
+		}
+	spriteType = {
+			name = "GFX_idea_shi_support"
+			texturefile = "gfx/interface/ideas/shi_support.dds"
+		}
+	spriteType = {
+		name = "GFX_decision_SHI_cpc_icon"
+		texturefile = "gfx/interface/decisions/shi_cpc_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SHI_cpc_seal"
+		texturefile = "gfx/interface/ideas/shi_cpc_seal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SHI_cpc_econ"
+		texturefile = "gfx/interface/ideas/shi_cpc_econ.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SHI_technocracy"
+		texturefile = "gfx/interface/ideas/shi_technocracy.dds"
+	}
+	}

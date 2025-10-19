@@ -1,0 +1,597 @@
+﻿add_namespace = nf_navarro
+
+news_event = {
+	id = nf_navarro.1
+	title = nf_navarro.1.t
+	desc = nf_navarro.1.d
+	picture = GFX_event_NCR_money_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_navarro.1.a
+		add_war_support = 0.01
+		add_political_power = -10
+		set_global_flag = nvarro_civil_war
+	}
+
+}
+
+news_event = {
+	id = nf_navarro.2
+	title = nf_navarro.2.t
+	desc = nf_navarro.2.d
+	picture = GFX_event_SHI_shitown
+
+	is_triggered_only = yes
+
+	immediate = { hidden_effect = { add_ideas = shi_navarro_tension } }
+
+	option = {
+		name = nf_navarro.2.a
+		effect_tooltip = { add_ideas = shi_navarro_tension }
+	}
+
+}
+
+news_event = {
+	id = nf_navarro.3
+	title = nf_navarro.3.t
+	desc = nf_navarro.3.d
+	picture = GFX_event_BOS_our_founding
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_navarro.3.a
+	}
+}
+
+news_event = {
+	id = nf_navarro.4
+	title = nf_navarro.4.t
+	desc = nf_navarro.4.d
+	picture = GFX_event_BOS_our_founding
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			SHI = {
+				#remove_country_leader_role = {
+				#	character = SHI_dragon
+				#	ideology = survivalism
+				#}
+				SHI_dragon = {
+					set_nationality = NVS
+				}
+			}
+			NAT = {
+				NAT_kurisu = {
+					set_nationality = NVT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = nf_navarro.4.a
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = NAT
+				}
+				set_state_flag = do_not_exodus
+			}
+			NCR = {
+				end_puppet = NAT
+			}
+			leave_new_california = yes
+			add_ai_strategy = {
+				type = ignore
+				id = "NCR"
+				value = 500
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = "NCR"
+				value = 500
+			}
+			add_opinion_modifier = {
+				modifier = ncrrepublicmember
+				target = NCR
+			}
+			NCR = {
+				add_opinion_modifier = {
+					modifier = ncrrepublicmember
+					target = NAT
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "NAT"
+					value = 500
+				}
+			}
+			NVS = {
+				create_new_owb_country = yes
+				set_cosmetic_tag = NAT_shi
+				set_politics = {
+					ruling_party = intellectuals
+				}
+				set_popularities = {
+					elites = 10
+					intellectuals = 80
+					people = 5
+					ruler = 5
+				}
+			}
+			if = {
+				limit = {
+					NAT = { controls_state = 216 }
+				}
+				NVS = {
+					transfer_state = 216
+				}
+			}
+			if = {
+				limit = {
+					NAT = { controls_state = 441 }
+				}
+				NVS = {
+					transfer_state = 441
+				}
+			}
+			NVS = {
+				add_country_leader_role = {
+					character = SHI_dragon
+					promote_leader = yes
+					country_leader = {
+						desc = SHI_dragon_desc
+						ideology = meritocracy
+						expire = "3000.01.01.01"
+						id = -1
+						traits = { local_patriot }
+					}
+				}
+			}
+			NVT = {
+				create_new_owb_country = yes
+				set_cosmetic_tag = NAT_tri
+				set_politics = {
+					ruling_party = people
+				}
+				set_popularities = {
+					elites = 10
+					intellectuals = 5
+					people = 80
+					ruler = 5
+				}
+			}
+			if = {
+				limit = {
+					NAT = { controls_state = 340 }
+				}
+				NVT = {
+					transfer_state = 340
+				}
+			}
+			if = {
+				limit = {
+					NAT = { controls_state = 548 }
+				}
+				NVT = {
+					transfer_state = 548
+				}
+			}
+			NAT = {
+				declare_war_on = {
+					target = NVS
+					type = civil_war
+				}
+				add_civil_war_target = NVS
+				declare_war_on = {
+					target = NVT
+					type = civil_war
+				}
+				add_civil_war_target = NVT
+			}
+			NVT = {
+				declare_war_on = {
+					target = NVS
+					type = civil_war
+				}
+				add_civil_war_target = NVS
+				declare_war_on = {
+					target = NAT
+					type = civil_war
+				}
+				add_civil_war_target = NAT
+				load_oob = free_folk_2275
+
+			}
+			NVT = {
+				promote_character = NAT_kurisu
+			}
+			NVS = {
+				declare_war_on = {
+					target = NAT
+					type = civil_war
+				}
+				add_civil_war_target = NAT
+				declare_war_on = {
+					target = NVT
+					type = civil_war
+				}
+				add_civil_war_target = NVT
+				load_oob = NVS_2275
+			}
+			NCR = {
+				news_event = nf_navarro.11
+			}
+			SHI = {
+				country_event = nf_navarro.5
+			}
+			EUR = {
+				news_event = nf_navarro.6
+			}
+			every_country = {
+				limit = {
+					OR = {
+						is_neighbor_of = NCR
+						is_neighbor_of = EUR
+						is_neighbor_of = SHI
+						news_is_west_tag = yes
+					}
+				}
+				news_event = { id = news_cali.8 hours = 12 random_hours = 3 }
+			}
+		}
+		custom_effect_tooltip = nf_navarro.4.a_tt
+	}
+}
+
+country_event = {
+	id = nf_navarro.5
+	title = nf_navarro.5.t
+	desc = nf_navarro.5.d
+	picture = GFX_event_SHI_good
+
+	is_triggered_only = yes
+
+	immediate = { hidden_effect = { remove_ideas = shi_navarro_tension } }
+
+	option = {
+		name = nf_navarro.5.a
+		effect_tooltip = { remove_ideas = shi_navarro_tension }
+		add_war_support = 0.1
+		add_stability = -0.05
+		custom_effect_tooltip = spacer_tt
+		add_ideas = shi_mercenaries
+		hidden_effect = {
+			NVS = {
+				load_oob = NVS_2275_mercenaries
+			}
+			NVS = {
+				add_ideas = shi_support
+			}
+			set_nationality = {
+				character = SHI_dragon
+				target_country = NVS
+			}
+			NVS = {
+				promote_character = SHI_dragon
+				set_politics = { ruling_party = intellectuals elections_allowed = no }
+			}
+		}
+		if = {
+			limit = { has_idea = ncr_bos_idea_allgood_truce }
+			swap_ideas = {
+				remove_idea = ncr_bos_idea_allgood_truce
+				add_idea = ncr_bos_idea_hostility_resumed
+			}
+		}
+		custom_effect_tooltip = spacer_tt
+		add_popularity = {
+			ideology = ruler
+			popularity = 0.05
+		}
+	}
+
+	option = {
+		name = nf_navarro.5.b
+		effect_tooltip = { remove_ideas = shi_navarro_tension }
+		add_war_support = 0.05
+		custom_effect_tooltip = spacer_tt
+		add_ideas = shi_volunteers
+		custom_effect_tooltip = nf_navarro_shi_hostile_tt
+		set_country_flag = shi_hostile
+		add_opinion_modifier = { target = NCR modifier = navarro_intervention }
+		reverse_add_opinion_modifier = { target = NCR modifier = navarro_intervention }
+		hidden_effect = {
+			NVS = {
+				load_oob = NVS_2275_mercenaries
+			}
+			NVS = {
+				add_ideas = shi_support
+			}
+			set_nationality = {
+				character = SHI_dragon
+				target_country = NVS
+			}
+			NVS = {
+				promote_character = SHI_dragon
+				set_politics = { ruling_party = intellectuals elections_allowed = no }
+			}
+		}
+		custom_effect_tooltip = spacer_tt
+		add_popularity = {
+			ideology = elites
+			popularity = 0.05
+		}
+		ai_chance = {
+			modifier = {
+				SHI_has_ai_behavior_ncr = yes
+				factor = 0
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = nf_navarro.6
+	title = nf_navarro.6.t
+	desc = nf_navarro.6.d
+	picture = GFX_event_SHI_good
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_navarro.6.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					EUR_has_ai_behavior_regulators = yes
+					EUR_has_ai_behavior_hubologists = yes
+					EUR_has_ai_behavior_eurekaclave = yes
+				}
+			}
+		}
+		add_ai_strategy = {
+			type = send_volunteers_desire
+			id = "NAT"
+			value = -900
+		}
+	}
+	option = {
+		name = nf_navarro.6.b
+		set_country_flag = granite_plots
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = nf_navarro.6.b_tt
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					EUR_has_ai_behavior_regulators = yes
+					EUR_has_ai_behavior_hubologists = yes
+					EUR_has_ai_behavior_eurekaclave = yes
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = nf_navarro.7
+	title = nf_navarro.7.t
+	desc = nf_navarro.7.d
+	picture = GFX_event_SHI_good
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_navarro.7.a
+		annex_country = {
+			target = NVS
+			transfer_troops = yes
+		}
+		if = {
+			limit = {
+				has_idea = shi_volunteers
+			}
+			remove_ideas = shi_volunteers
+		}
+		if = {
+			limit = {
+				has_idea = shi_mercenaries
+			}
+			remove_ideas = shi_mercenaries
+		}
+		if = {
+			limit = { has_idea = ncr_bos_idea_hostility_resumed }
+			remove_ideas = ncr_bos_idea_hostility_resumed
+		}
+		NCR = {
+			if = {
+				limit = { has_idea = ncr_bos_idea_hostility_resumed }
+				remove_ideas = ncr_bos_idea_hostility_resumed
+			}
+		}
+		NVS = {
+			remove_country_leader_role = {
+				character = SHI_dragon
+				ideology = meritocracy
+			}
+			SHI_dragon = {
+				set_nationality = SHI
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = NAT
+			}
+			add_compliance = 20
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_neighbor_of = NCR
+					is_neighbor_of = SHI
+					news_is_west_tag = yes
+				}
+			}
+			news_event = { id = news_cali.2 hours = 6 random_hours = 3 }
+
+		}
+
+		#SHI = {
+		#	add_country_leader_role = {
+		#		character = SHI_dragon
+		#		promote_leader = yes
+		#		country_leader = {
+		#			desc = SHI_dragon_desc
+		#			ideology = survivalism
+		#			expire = "3000.01.01.01"
+		#			id = -1
+		#			traits = { local_patriot }
+		#		}
+		#	}
+		#}
+	}
+}
+
+news_event = {
+	id = nf_navarro.8
+	title = nf_navarro.8.t
+	desc = nf_navarro.8.d
+	picture = GFX_event_ENC_assault_team
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_navarro.8.a
+		annex_country = {
+			target = NVT
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = NVT
+			}
+			add_compliance = 70
+		}
+		NCR = {
+			if = {
+				limit = { has_idea = ncr_bos_idea_hostility_resumed }
+				remove_ideas = ncr_bos_idea_hostility_resumed
+			}
+		}
+		SHI = {
+			if = {
+				limit = { has_idea = ncr_bos_idea_hostility_resumed }
+				remove_ideas = ncr_bos_idea_hostility_resumed
+			}
+		}
+		add_to_variable = { EUR_suspicion = 7 }
+		custom_effect_tooltip = nf_eureka_suspicious_very_tt
+		set_country_flag = conquered_navarro
+		mark_focus_tree_layout_dirty = yes
+		every_country = {
+			limit = {
+				OR = {
+					is_neighbor_of = NCR
+					is_neighbor_of = SHI
+					news_is_west_tag = yes
+				}
+			}
+			news_event = { id = news_cali.3 hours = 6 random_hours = 3 }
+		}
+	}
+}
+
+news_event = {
+	id = nf_navarro.9
+	title = nf_navarro.9.t
+	desc = nf_navarro.9.d
+	picture = GFX_event_NCR_mojave_camp
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_navarro.9.a
+		annex_country = {
+			target = NAT
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = NAT
+			}
+			add_core_of = NCR
+		}
+		remove_ideas = navarro_intervention
+		add_war_support = 0.02
+		add_stability = 0.02
+		if = {
+			limit = { has_idea = ncr_bos_idea_hostility_resumed }
+			remove_ideas = ncr_bos_idea_hostility_resumed
+		}
+		SHI = {
+			if = {
+				limit = { has_idea = ncr_bos_idea_hostility_resumed }
+				remove_ideas = ncr_bos_idea_hostility_resumed
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_neighbor_of = NCR
+					is_neighbor_of = SHI
+					news_is_west_tag = yes
+				}
+			}
+			news_event = { id = news_cali.1 hours = 6 random_hours = 3 }
+		}
+	}
+}
+
+news_event = {
+	id = nf_navarro.10
+	title = nf_navarro.10.t
+	desc = nf_navarro.10.d
+	picture = GFX_event_ENC_camp_navarro
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_navarro.10.a
+	}
+}
+
+news_event = {
+	id = nf_navarro.11
+	title = nf_navarro.11.t
+	desc = nf_navarro.11.d
+	picture = GFX_event_SHI_good
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_navarro.11.a
+		if = {
+			limit = { has_idea = ncr_bos_idea_allgood_truce }
+			swap_ideas = {
+				remove_idea = ncr_bos_idea_allgood_truce
+				add_idea = ncr_bos_idea_hostility_resumed
+			}
+		}
+		add_ideas = navarro_intervention
+		complete_national_focus = ncr_motion_of_no_confidence
+		NAT = {
+			leave_new_california = yes
+		}
+	}
+}

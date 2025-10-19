@@ -1,0 +1,15 @@
+﻿add_namespace = SHI_sinicization
+
+country_event = {
+    id = SHI_sinicization.1
+    title = SHI_sinicization.1.t
+    desc = SHI_sinicization.1.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = SHI_sinicization.1.a
+        set_country_flag = SHI_sinicization
+    }
+}

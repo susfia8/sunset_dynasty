@@ -1,0 +1,21 @@
+update_stability_variable = {
+    # copy raw -> working var
+	clamp_variable = { var = stability_raw min = 0 max = 100 }
+    set_variable = { var = stability_scaled value = stability_raw }
+
+    if = {
+        limit = { check_variable = { stability_raw < 50 } }
+        # 0–50  → -50%..0%
+        # Formula: (stability_raw - 50) * 0.01
+        subtract_from_variable = { var = stability_scaled value = 50 }
+        multiply_variable = { var = stability_scaled value = 0.01 }    # -0.5 → 0
+    }
+    else = {
+        # 50–100 → 0%..+25%
+        # Formula: (stability_raw - 50) * 0.005
+        subtract_from_variable = { var = stability_scaled value = 50 }
+        multiply_variable = { var = stability_scaled value = 0.005 }   # 0 → +0.25
+    }
+
+    clamp_variable = { var = stability_scaled min = -0.50 max = 0.25 }
+}
