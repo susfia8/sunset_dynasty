@@ -428,4 +428,8 @@ spriteType = {
 	name = "GFX_goal_shi_supreme_council"
 	texturefile = "gfx/interface/goals/shi_supreme_council.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_pla"
+	texturefile = "gfx/interface/goals/shi_pla.dds"
+}
 }

@@ -2133,6 +2133,8 @@ focus = {
 			completion_reward = {
 				set_cosmetic_tag = SHI_MAO
 				country_event = { id = sd_shi.9 }
+				set_country_flag = communist_unlock_everything
+				mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -2251,6 +2253,509 @@ focus = {
 			completion_reward = {
 				add_to_variable = { communist_econ_resources_factor = 0.10 }
 				custom_effect_tooltip = self_sufficiency.tt
+		}
+	}
+
+############# PLA BRANCH #############
+
+focus = {
+			id = SHI_pla
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_back_to_our_roots
+		x = 20
+		y = -1
+		allow_branch = {
+			has_country_flag = communist_unlock_everything
+		}
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_reform_pla_ground_force
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_pla
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_pla }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_reform_pla_airforce
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_pla
+		x = 6
+		y = 1
+		prerequisite = { focus = SHI_pla }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_reform_pla_navy
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_pla
+		x = -6
+		y = 1
+		prerequisite = { focus = SHI_pla }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_revive_central_military_commission
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_pla
+		x = 10
+		y = 1
+		prerequisite = { focus = SHI_pla }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_peoples_armed_police
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_pla
+		x = -10
+		y = 1
+		prerequisite = { focus = SHI_pla }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_little_red_book
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reform_pla_ground_force
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_reform_pla_ground_force }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_weapons_training
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reform_pla_ground_force
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_reform_pla_ground_force }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_infantry_school
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_little_red_book
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_little_red_book }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_disciplined_soldiers
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_infantry_school
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_infantry_school }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_rank_and_file_infantry
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_disciplined_soldiers
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_disciplined_soldiers }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_specialist_training
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_weapons_training
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_weapons_training }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_new_generation_of_chinese_power_armor
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_specialist_training
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_specialist_training }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_power_armor_integration
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_new_generation_of_chinese_power_armor
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_new_generation_of_chinese_power_armor }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_the_new_peoples_army
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_power_armor_integration
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_power_armor_integration }
+		prerequisite = { focus = SHI_rank_and_file_infantry }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_mechanized_logistics
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reform_pla_ground_force
+		x = 3
+		y = 1
+		prerequisite = { focus = SHI_reform_pla_ground_force }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_support_brigades
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_mechanized_logistics
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_mechanized_logistics }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_joint_logistics_support_force
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_support_brigades
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_support_brigades }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_peoples_war_machines
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reform_pla_ground_force
+		x = -3
+		y = 1
+		prerequisite = { focus = SHI_reform_pla_ground_force }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_self_repair_protocols
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_peoples_war_machines
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_peoples_war_machines }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_pla_robotics_force
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_self_repair_protocols
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_self_repair_protocols }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_fuel_efficiency
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reform_pla_airforce
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_reform_pla_airforce }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_flight_school
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reform_pla_airforce
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_reform_pla_airforce }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_reclaim_the_skies
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reform_pla_airforce
+		x = 0
+		y = 2
+		prerequisite = { focus = SHI_reform_pla_airforce }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_theater_command_air_forces
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reclaim_the_skies
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_reclaim_the_skies }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_rolling_thunder
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_theater_command_air_forces
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_theater_command_air_forces }
+		mutually_exclusive = { focus = SHI_into_the_danger_zone }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_into_the_danger_zone
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_theater_command_air_forces
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_theater_command_air_forces }
+		mutually_exclusive = { focus = SHI_rolling_thunder }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_the_peoples_airforce
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_into_the_danger_zone
+		x = -1
+		y = 1
+		prerequisite = { 
+			focus = SHI_into_the_danger_zone 
+			focus = SHI_rolling_thunder
+		}
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_anti_smuggling_operations
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reform_pla_navy
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_reform_pla_navy }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_life_at_the_sea
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reform_pla_navy
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_reform_pla_navy }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_state_owned_shipyards
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_reform_pla_navy
+		x = 0
+		y = 2
+		prerequisite = { focus = SHI_reform_pla_navy }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_improved_naval_propulsion
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_state_owned_shipyards
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_state_owned_shipyards }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_liberation_at_sea
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_improved_naval_propulsion
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_improved_naval_propulsion }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_naval_officers
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_improved_naval_propulsion
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_improved_naval_propulsion }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_pride_of_the_people
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_naval_officers
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_naval_officers }
+		prerequisite = { focus = SHI_liberation_at_sea }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_internal_security_forces
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_peoples_armed_police
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_peoples_armed_police }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_airborne_detachment
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_internal_security_forces
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_internal_security_forces }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_militia_of_china
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_airborne_detachment
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_airborne_detachment }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_officer_academy
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_revive_central_military_commission
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_revive_central_military_commission }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_party_control_over_the_army
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_officer_academy
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_officer_academy }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_joint_staff_of_the_CMC
+			icon = GFX_goal_
+			cost = 20
+		relative_position_id = SHI_party_control_over_the_army
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_party_control_over_the_army }
+			completion_reward = {
 		}
 	}
 
