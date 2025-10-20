@@ -2129,7 +2129,12 @@ focus = {
 		x = 0
 		y = 1
 			prerequisite = { focus = SHI_this_is_the_final_struggle }
-			available = { NCR = { all_core_land_owned_by_prev_sphere = yes } }
+			available = {
+			NCR = { all_core_land_owned_by_prev_sphere = yes } 
+			has_completed_focus = SHI_serve_the_people 
+			has_completed_focus = SHI_san_francisco_adress
+			has_completed_focus = SHI_self_sufficiency
+			}
 			completion_reward = {
 				set_cosmetic_tag = SHI_MAO
 				country_event = { id = sd_shi.9 }
