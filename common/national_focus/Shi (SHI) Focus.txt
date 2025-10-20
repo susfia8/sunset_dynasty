@@ -2759,6 +2759,429 @@ focus = {
 		}
 	}
 
+############# POST NCR REBUILDING BRANCH #############
+
+focus = {
+			id = SHI_rebirth_of_the_revolution
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_back_to_our_roots
+		x = -20
+		y = -1
+		allow_branch = {
+			has_country_flag = communist_unlock_everything
+		}
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_under_the_guidance_of_the_party
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_rebirth_of_the_revolution
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_rebirth_of_the_revolution }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_patriotic_health_campaign
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_under_the_guidance_of_the_party
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_under_the_guidance_of_the_party }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_revolutionary_education
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_under_the_guidance_of_the_party
+		x = -2
+		y = 1
+		prerequisite = { focus = SHI_under_the_guidance_of_the_party }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_nationalize_all_broadcasting
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_under_the_guidance_of_the_party
+		x = 2
+		y = 1
+		prerequisite = { focus = SHI_under_the_guidance_of_the_party }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_radical_land_reform
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_rebirth_of_the_revolution
+		x = 7
+		y = 1
+		prerequisite = { focus = SHI_rebirth_of_the_revolution }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_a_peasants_struggle
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_radical_land_reform
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_radical_land_reform }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_from_the_bottom_up
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_radical_land_reform
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_radical_land_reform }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_agricultural_production_cooperatives
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_radical_land_reform
+		x = 0
+		y = 2
+		prerequisite = { focus = SHI_radical_land_reform }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_peoples_communes
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_agricultural_production_cooperatives
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_agricultural_production_cooperatives }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_public_trial_of_the_landlords
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_from_the_bottom_up
+		x = 1
+		y = 2
+		prerequisite = { focus = SHI_from_the_bottom_up }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_unrestricted_violence_on_brahmin_barons
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_a_peasants_struggle
+		x = -1
+		y = 2
+		prerequisite = { focus = SHI_a_peasants_struggle }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_a_peasants_paradise
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_peoples_communes
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_peoples_communes }
+		prerequisite = { focus = SHI_unrestricted_violence_on_brahmin_barons }
+		prerequisite = { focus = SHI_public_trial_of_the_landlords }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_promote_revolutionary_artists
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_revolutionary_education
+		x = 2
+		y = 1
+		prerequisite = { focus = SHI_revolutionary_education }
+		prerequisite = { focus = SHI_nationalize_all_broadcasting }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_marxist_feminism
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_revolutionary_education
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_revolutionary_education }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_broaden_the_fight_against_illiteracy
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_revolutionary_education
+		x = -2
+		y = 1
+		prerequisite = { focus = SHI_revolutionary_education }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_three_antis
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_nationalize_all_broadcasting
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_nationalize_all_broadcasting }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_militant_atheism
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_nationalize_all_broadcasting
+		x = 2
+		y = 1
+		prerequisite = { focus = SHI_nationalize_all_broadcasting }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_fight_all_forms_of_prejudice
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_promote_revolutionary_artists
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_promote_revolutionary_artists }
+		prerequisite = { focus = SHI_marxist_feminism }
+		prerequisite = { focus = SHI_three_antis }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_party_rectification
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_promote_revolutionary_artists
+		x = 2
+		y = 1
+		prerequisite = { focus = SHI_promote_revolutionary_artists }
+		prerequisite = { focus = SHI_militant_atheism }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_broaden_party_membership
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_promote_revolutionary_artists
+		x = -2
+		y = 1
+		prerequisite = { focus = SHI_promote_revolutionary_artists }
+		prerequisite = { focus = SHI_broaden_the_fight_against_illiteracy }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_constitution_of_the_peoples_republic
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_fight_all_forms_of_prejudice
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_broaden_party_membership }
+		prerequisite = { focus = SHI_fight_all_forms_of_prejudice }
+		prerequisite = { focus = SHI_party_rectification }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_reorganize_californias_economy
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_rebirth_of_the_revolution
+		x = -7
+		y = 1
+		prerequisite = { focus = SHI_rebirth_of_the_revolution }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_mass_nationalization
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_reorganize_californias_economy
+		x = -1
+		y = 1
+		prerequisite = { focus = SHI_reorganize_californias_economy }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_worker_takeover
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_reorganize_californias_economy
+		x = 1
+		y = 1
+		prerequisite = { focus = SHI_reorganize_californias_economy }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_all_china_federation_of_trade_unions
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_reorganize_californias_economy
+		x = 0
+		y = 2
+		prerequisite = { focus = SHI_reorganize_californias_economy }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_state_planning_commission
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_mass_nationalization
+		x = -1
+		y = 2
+		prerequisite = { focus = SHI_mass_nationalization }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_collective_ownership
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_worker_takeover
+		x = 1
+		y = 2
+		prerequisite = { focus = SHI_worker_takeover }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_bridging_the_rural_urban_divide
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_all_china_federation_of_trade_unions
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_all_china_federation_of_trade_unions }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_introduce_the_five_year_plans
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_bridging_the_rural_urban_divide
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_bridging_the_rural_urban_divide }
+		prerequisite = { focus = SHI_state_planning_commission }
+		prerequisite = { focus = SHI_collective_ownership }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_peoples_bank_of_china
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_rebirth_of_the_revolution
+		x = -4
+		y = 1
+		prerequisite = { focus = SHI_rebirth_of_the_revolution }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_introduce_the_renminbi
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_peoples_bank_of_china
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_peoples_bank_of_china }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_ministry_of_ecology_and_environment
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_rebirth_of_the_revolution
+		x = 4
+		y = 1
+		prerequisite = { focus = SHI_rebirth_of_the_revolution }
+			completion_reward = {
+		}
+	}
+
+focus = {
+			id = SHI_state_planned_geck_deployments
+			icon = GFX_goal_shi_pla
+			cost = 20
+		relative_position_id = SHI_ministry_of_ecology_and_environment
+		x = 0
+		y = 1
+		prerequisite = { focus = SHI_ministry_of_ecology_and_environment }
+			completion_reward = {
+		}
+	}
+
 ############# BOS STUFF #############
 
 	focus = {
