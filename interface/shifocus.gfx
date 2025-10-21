@@ -432,4 +432,64 @@ spriteType = {
 	name = "GFX_goal_shi_pla"
 	texturefile = "gfx/interface/goals/shi_pla.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_ground_force"
+	texturefile = "gfx/interface/goals/shi_cpc_ground_force.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_airforce"
+	texturefile = "gfx/interface/goals/shi_pla_airforce.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_navy"
+	texturefile = "gfx/interface/goals/shi_pla_navy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_peoples_police"
+	texturefile = "gfx/interface/goals/shi_pla_peoples_police.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_cmc"
+	texturefile = "gfx/interface/goals/shi_cmc.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_red_book"
+	texturefile = "gfx/interface/goals/shi_pla_red_book.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_guns"
+	texturefile = "gfx/interface/goals/shi_pla_guns.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_inf"
+	texturefile = "gfx/interface/goals/shi_pla_inf.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_discipline"
+	texturefile = "gfx/interface/goals/shi_pla_discipline.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_rank_and_file"
+	texturefile = "gfx/interface/goals/shi_pla_rank_and_file.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_specialist"
+	texturefile = "gfx/interface/goals/shi_pla_specialist.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_chinese_pa"
+	texturefile = "gfx/interface/goals/shi_pla_chinese_pa.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_pa_integration"
+	texturefile = "gfx/interface/goals/shi_pla_pa_integration.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_new_peoples_army"
+	texturefile = "gfx/interface/goals/shi_pla_new_peoples_army.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_mechanized_logistics"
+	texturefile = "gfx/interface/goals/shi_pla_mechanized_logistics.dds"
+}
 }
