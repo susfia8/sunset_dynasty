@@ -492,4 +492,28 @@ spriteType = {
 	name = "GFX_goal_shi_pla_mechanized_logistics"
 	texturefile = "gfx/interface/goals/shi_pla_mechanized_logistics.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_pla_support"
+	texturefile = "gfx/interface/goals/shi_pla_support.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_joint_logistics"
+	texturefile = "gfx/interface/goals/shi_pla_joint_logistics.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_liberator"
+	texturefile = "gfx/interface/goals/shi_pla_liberator.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_self_repair"
+	texturefile = "gfx/interface/goals/shi_pla_self_repair.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_robotics"
+	texturefile = "gfx/interface/goals/shi_pla_robotics.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_flight_school"
+	texturefile = "gfx/interface/goals/shi_pla_flight_school.dds"
+}
 }

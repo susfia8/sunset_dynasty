@@ -2460,7 +2460,7 @@ focus = {
 
 focus = {
 			id = SHI_support_brigades
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_support
 			cost = 20
 		relative_position_id = SHI_mechanized_logistics
 		x = 0
@@ -2472,7 +2472,7 @@ focus = {
 
 focus = {
 			id = SHI_joint_logistics_support_force
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_joint_logistics
 			cost = 20
 		relative_position_id = SHI_support_brigades
 		x = 0
@@ -2484,7 +2484,7 @@ focus = {
 
 focus = {
 			id = SHI_peoples_war_machines
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_liberator
 			cost = 20
 		relative_position_id = SHI_reform_pla_ground_force
 		x = -3
@@ -2496,7 +2496,7 @@ focus = {
 
 focus = {
 			id = SHI_self_repair_protocols
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_self_repair
 			cost = 20
 		relative_position_id = SHI_peoples_war_machines
 		x = 0
@@ -2508,7 +2508,7 @@ focus = {
 
 focus = {
 			id = SHI_pla_robotics_force
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_robotics
 			cost = 20
 		relative_position_id = SHI_self_repair_protocols
 		x = 0
@@ -2532,7 +2532,7 @@ focus = {
 
 focus = {
 			id = SHI_flight_school
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_flight_school
 			cost = 20
 		relative_position_id = SHI_reform_pla_airforce
 		x = 1
