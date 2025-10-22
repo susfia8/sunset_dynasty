@@ -12,4 +12,4 @@ Easy Guide to install Sunset Dynasty Github version:
 
 -Copy/Paste the entire contents of the Sunset Dynasty github zip file (contents inside sunset_dynasty-main) into the blank mod file you just created (in ...\Documents\Paradox Interactive\Hearts of Iron IV\mod) and replace all contents when prompted
 
--enable the new manual KX Sunset Dynasty in the launcher mod list and enjoy
+-enable the new manual Sunset Dynasty in the launcher mod list and enjoy
