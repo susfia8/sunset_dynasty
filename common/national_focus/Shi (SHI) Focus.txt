@@ -2609,7 +2609,7 @@ focus = {
 
 focus = {
 			id = SHI_anti_smuggling_operations
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_pirate
 			cost = 20
 		relative_position_id = SHI_reform_pla_navy
 		x = -1
@@ -2621,7 +2621,7 @@ focus = {
 
 focus = {
 			id = SHI_life_at_the_sea
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_ship
 			cost = 20
 		relative_position_id = SHI_reform_pla_navy
 		x = 1
@@ -2633,7 +2633,7 @@ focus = {
 
 focus = {
 			id = SHI_state_owned_shipyards
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_blueprint
 			cost = 20
 		relative_position_id = SHI_reform_pla_navy
 		x = 0
@@ -2645,7 +2645,7 @@ focus = {
 
 focus = {
 			id = SHI_improved_naval_propulsion
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_atom
 			cost = 20
 		relative_position_id = SHI_state_owned_shipyards
 		x = 0
@@ -2657,7 +2657,7 @@ focus = {
 
 focus = {
 			id = SHI_liberation_at_sea
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_liberation_at_sea
 			cost = 20
 		relative_position_id = SHI_improved_naval_propulsion
 		x = -1
@@ -2669,7 +2669,7 @@ focus = {
 
 focus = {
 			id = SHI_naval_officers
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_naval_officers
 			cost = 20
 		relative_position_id = SHI_improved_naval_propulsion
 		x = 1
@@ -2681,7 +2681,7 @@ focus = {
 
 focus = {
 			id = SHI_pride_of_the_people
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_carrier
 			cost = 20
 		relative_position_id = SHI_naval_officers
 		x = -1

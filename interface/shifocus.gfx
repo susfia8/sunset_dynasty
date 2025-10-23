@@ -540,4 +540,32 @@ spriteType = {
 	name = "GFX_goal_shi_pla_airforce_badge"
 	texturefile = "gfx/interface/goals/shi_pla_airforce_badge.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_pla_pirate"
+	texturefile = "gfx/interface/goals/shi_pla_pirate.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_ship"
+	texturefile = "gfx/interface/goals/shi_pla_ship.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_blueprint"
+	texturefile = "gfx/interface/goals/shi_pla_blueprint.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_atom"
+	texturefile = "gfx/interface/goals/shi_pla_atom.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_liberation_at_sea"
+	texturefile = "gfx/interface/goals/shi_pla_liberation_at_sea.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_naval_officers"
+	texturefile = "gfx/interface/goals/shi_pla_naval_officers.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_carrier"
+	texturefile = "gfx/interface/goals/shi_pla_carrier.dds"
+}
 }
