@@ -2520,7 +2520,7 @@ focus = {
 
 focus = {
 			id = SHI_fuel_efficiency
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_vertibird
 			cost = 20
 		relative_position_id = SHI_reform_pla_airforce
 		x = -1
@@ -2544,7 +2544,7 @@ focus = {
 
 focus = {
 			id = SHI_reclaim_the_skies
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_xian
 			cost = 20
 		relative_position_id = SHI_reform_pla_airforce
 		x = 0
@@ -2556,7 +2556,7 @@ focus = {
 
 focus = {
 			id = SHI_theater_command_air_forces
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_airforce_emblem
 			cost = 20
 		relative_position_id = SHI_reclaim_the_skies
 		x = 0
@@ -2568,7 +2568,7 @@ focus = {
 
 focus = {
 			id = SHI_rolling_thunder
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_rolling_thunder
 			cost = 20
 		relative_position_id = SHI_theater_command_air_forces
 		x = -1
@@ -2581,7 +2581,7 @@ focus = {
 
 focus = {
 			id = SHI_into_the_danger_zone
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_danger_zone
 			cost = 20
 		relative_position_id = SHI_theater_command_air_forces
 		x = 1
@@ -2594,7 +2594,7 @@ focus = {
 
 focus = {
 			id = SHI_the_peoples_airforce
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_airforce_badge
 			cost = 20
 		relative_position_id = SHI_into_the_danger_zone
 		x = -1

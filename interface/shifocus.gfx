@@ -516,4 +516,28 @@ spriteType = {
 	name = "GFX_goal_shi_pla_flight_school"
 	texturefile = "gfx/interface/goals/shi_pla_flight_school.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_pla_xian"
+	texturefile = "gfx/interface/goals/shi_pla_xian.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_vertibird"
+	texturefile = "gfx/interface/goals/shi_pla_vertibird.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_airforce_emblem"
+	texturefile = "gfx/interface/goals/shi_pla_airforce_emblem.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_rolling_thunder"
+	texturefile = "gfx/interface/goals/shi_pla_rolling_thunder.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_danger_zone"
+	texturefile = "gfx/interface/goals/shi_pla_danger_zone.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_airforce_badge"
+	texturefile = "gfx/interface/goals/shi_pla_airforce_badge.dds"
+}
 }
