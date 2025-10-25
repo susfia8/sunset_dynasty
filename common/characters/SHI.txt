@@ -23,7 +23,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = technocracy
+			ideology = marxism_leninism_mao
 			desc = SHI_MAO_DESC
 			traits = {
 				sentient_ai

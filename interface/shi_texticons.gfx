@@ -29,4 +29,9 @@ spriteTypes = {
 			texturefile = "gfx/texticons/SHI_north_cali_icon.dds"
 			legacy_lazy_load = no
 		}
+	spriteType = {
+			name = "GFX_mlm_icon"
+			texturefile = "gfx/texticons/SHI_Mao_zedong_thought.dds"
+			legacy_lazy_load = no
+		}
 	}
