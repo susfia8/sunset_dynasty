@@ -568,4 +568,28 @@ spriteType = {
 	name = "GFX_goal_shi_pla_carrier"
 	texturefile = "gfx/interface/goals/shi_pla_carrier.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_pla_internal_security"
+	texturefile = "gfx/interface/goals/shi_pla_internal_security.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_airborne_detachment"
+	texturefile = "gfx/interface/goals/shi_pla_airborne_detachment.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_militia_of_china"
+	texturefile = "gfx/interface/goals/shi_pla_militia_of_china.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_officer_academy"
+	texturefile = "gfx/interface/goals/shi_pla_officer_academy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_control_over_the_army"
+	texturefile = "gfx/interface/goals/shi_pla_control_over_the_army.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_pla_joint_staff"
+	texturefile = "gfx/interface/goals/shi_pla_joint_staff.dds"
+}
 }

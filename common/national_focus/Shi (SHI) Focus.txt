@@ -2430,6 +2430,9 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_new_generation_of_chinese_power_armor }
 			completion_reward = {
+				set_technology = {
+				chinese_mk2_pa_tech = 1
+			}
 		}
 	}
 
@@ -2694,7 +2697,7 @@ focus = {
 
 focus = {
 			id = SHI_internal_security_forces
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_internal_security
 			cost = 20
 		relative_position_id = SHI_peoples_armed_police
 		x = 0
@@ -2706,7 +2709,7 @@ focus = {
 
 focus = {
 			id = SHI_airborne_detachment
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_airborne_detachment
 			cost = 20
 		relative_position_id = SHI_internal_security_forces
 		x = 0
@@ -2718,7 +2721,7 @@ focus = {
 
 focus = {
 			id = SHI_militia_of_china
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_militia_of_china
 			cost = 20
 		relative_position_id = SHI_airborne_detachment
 		x = 0
@@ -2730,7 +2733,7 @@ focus = {
 
 focus = {
 			id = SHI_officer_academy
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_officer_academy
 			cost = 20
 		relative_position_id = SHI_revive_central_military_commission
 		x = 0
@@ -2742,7 +2745,7 @@ focus = {
 
 focus = {
 			id = SHI_party_control_over_the_army
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_control_over_the_army
 			cost = 20
 		relative_position_id = SHI_officer_academy
 		x = 0
@@ -2754,7 +2757,7 @@ focus = {
 
 focus = {
 			id = SHI_joint_staff_of_the_CMC
-			icon = GFX_goal_
+			icon = GFX_goal_shi_pla_joint_staff
 			cost = 20
 		relative_position_id = SHI_party_control_over_the_army
 		x = 0
