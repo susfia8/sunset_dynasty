@@ -2274,6 +2274,8 @@ focus = {
 			has_country_flag = communist_unlock_everything
 		}
 			completion_reward = {
+				add_dynamic_modifier = { modifier = shi_pla_dm }
+				custom_effect_tooltip = pla_5_org_factor.tt
 		}
 	}
 
@@ -2286,6 +2288,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_pla }
 			completion_reward = {
+				add_to_variable = { pla_org_factor = 0.05 }
+				custom_effect_tooltip = pla_5_org_factor.tt
 		}
 	}
 
@@ -2298,6 +2302,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_pla }
 			completion_reward = {
+				add_to_variable = { pla_org_factor = 0.05 }
+				custom_effect_tooltip = pla_5_org_factor.tt
 		}
 	}
 
@@ -2310,6 +2316,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_pla }
 			completion_reward = {
+				add_to_variable = { pla_org_factor = 0.05 }
+				custom_effect_tooltip = pla_5_org_factor.tt
 		}
 	}
 
@@ -2322,6 +2330,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_pla }
 			completion_reward = {
+				add_to_variable = { pla_org_factor = 0.05 }
+				custom_effect_tooltip = pla_5_org_factor.tt
 		}
 	}
 
@@ -2334,6 +2344,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_pla }
 			completion_reward = {
+				add_to_variable = { pla_org_factor = 0.05 }
+				custom_effect_tooltip = pla_5_org_factor.tt
 		}
 	}
 
@@ -2382,6 +2394,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_infantry_school }
 			completion_reward = {
+				add_to_variable = { pla_org_factor = 0.05 }
+				custom_effect_tooltip = pla_5_org_factor.tt
 		}
 	}
 
@@ -2494,6 +2508,11 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reform_pla_ground_force }
 			completion_reward = {
+				add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = robotics_tech_category
+			}
 		}
 	}
 
@@ -2506,6 +2525,9 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_peoples_war_machines }
 			completion_reward = {
+				add_to_variable = { pla_combat_robot_attack = 0.05 }
+				add_to_variable = { pla_combat_robot_defence = 0.05 }
+				custom_effect_tooltip = pla_5_robot_attack_and_defence.tt
 		}
 	}
 
@@ -2518,6 +2540,9 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_self_repair_protocols }
 			completion_reward = {
+				add_to_variable = { pla_combat_robot_attack = 0.05 }
+				add_to_variable = { pla_combat_robot_defence = 0.05 }
+				custom_effect_tooltip = pla_5_robot_attack_and_defence.tt
 		}
 	}
 
@@ -2655,6 +2680,11 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_state_owned_shipyards }
 			completion_reward = {
+				add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = naval_tech_category
+			}
 		}
 	}
 
@@ -2667,6 +2697,11 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_improved_naval_propulsion }
 			completion_reward = {
+				add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = naval_module_tech_category
+			}
 		}
 	}
 

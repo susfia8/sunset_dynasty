@@ -109,3 +109,19 @@ shi_technate = {
 	consumer_goods_factor = technate_consumer_goods
 	experience_gain_army_unit_factor = technate_experience_gain
 }
+
+shi_pla_dm = {
+	icon = GFX_idea_SHI_pla_logo
+
+	experience_gain_army_unit_factor = pla_experience_gain_factor
+	recruitable_population_factor = pla_recruitable_factor
+	army_attack_factor = pla_attack_factor
+	army_org_factor = pla_org_factor
+	army_morale_factor = pla_morale_factor
+	industrial_capacity_dockyard = pla_dockyard_output
+	air_accidents_factor = pla_air_accident_chance
+	air_mission_xp_gain_factor = pla_air_xp_factor
+	army_defence_factor = pla_defence_factor
+	modifier_army_sub_unit_combat_robot_attack_factor = pla_combat_robot_attack
+	modifier_army_sub_unit_combat_robot_defence_factor = pla_combat_robot_defence
+}

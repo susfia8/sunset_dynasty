@@ -52,3 +52,5 @@ technate_5_efficiency_cap.tt: "Adds to §CThe Technate§!:\nEfficiency Cap Facto
 technate_citizenship.tt: "Adds to §CThe Technate§!:\nResearch Speed Factor: §G+10%§!\nMonthly Population Factor: §G+10%§!"
 technate_15_consumer.tt: "Adds to §CThe Technate§!:\nConsumer Goods Factor: §G-15%§!"
 technate_20_experience_gain.tt: "Adds to §CThe Technate§!:\nDivision Experience Gain: §G+20%§!"
+pla_5_org_factor.tt: "Adds to People's Liberation Army:\nOrganization Factor: §G+5%§!"
+pla_5_robot_attack_and_defence.tt: "Adds to People's Liberation Army:\nCombat Robot Attack: §G+5%§!\nCombat Robot Defence: §G+5%§!"

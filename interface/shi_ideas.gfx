@@ -40,4 +40,8 @@ spriteTypes = {
 		name = "GFX_idea_SHI_technocracy"
 		texturefile = "gfx/interface/ideas/shi_technocracy.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SHI_pla_logo"
+		texturefile = "gfx/interface/ideas/shi_pla_logo.dds"
+	}
 	}
