@@ -2555,6 +2555,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reform_pla_airforce }
 			completion_reward = {
+				add_to_variable = { pla_air_range = 0.15 }
+				custom_effect_tooltip = pla_15_air_range.tt
 		}
 	}
 
@@ -2567,6 +2569,9 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reform_pla_airforce }
 			completion_reward = {
+				add_to_variable = { pla_air_accident_chance = -0.10 }
+				add_to_variable = { pla_air_xp_factor = 0.10 }
+				custom_effect_tooltip = pla_10_air_xp_and_minus_accident_chance.tt
 		}
 	}
 
@@ -2579,6 +2584,11 @@ focus = {
 		y = 2
 		prerequisite = { focus = SHI_reform_pla_airforce }
 			completion_reward = {
+				add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = air_tech_category
+			}
 		}
 	}
 
@@ -2591,6 +2601,9 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reclaim_the_skies }
 			completion_reward = {
+				add_to_variable = { pla_air_attack = 0.10 }
+				add_to_variable = { pla_air_defence = 0.10 }
+				custom_effect_tooltip = pla_10_air_attack_and_defence.tt
 		}
 	}
 
@@ -2604,6 +2617,8 @@ focus = {
 		prerequisite = { focus = SHI_theater_command_air_forces }
 		mutually_exclusive = { focus = SHI_into_the_danger_zone }
 			completion_reward = {
+				add_to_variable = { pla_strategic_bombing = 0.15 }
+				custom_effect_tooltip = pla_15_strategic_bombing.tt
 		}
 	}
 
@@ -2617,6 +2632,8 @@ focus = {
 		prerequisite = { focus = SHI_theater_command_air_forces }
 		mutually_exclusive = { focus = SHI_rolling_thunder }
 			completion_reward = {
+				add_to_variable = { ground_attack_factor = 0.15 }
+				custom_effect_tooltip = pla_15_ground_attack.tt
 		}
 	}
 
@@ -2632,6 +2649,9 @@ focus = {
 			focus = SHI_rolling_thunder
 		}
 			completion_reward = {
+				add_to_variable = { pla_ace_generation = 0.10 }
+				add_to_variable = { pla_air_mission_efficiency = 0.15 }
+				custom_effect_tooltip = pla_peoples_airforce.tt
 		}
 	}
 
@@ -2763,6 +2783,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_airborne_detachment }
 			completion_reward = {
+				add_to_variable = { pla_recruitable_factor = 0.05 }
+				custom_effect_tooltip = pla_5_recruitable_factor.tt
 		}
 	}
 

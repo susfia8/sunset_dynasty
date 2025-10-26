@@ -124,4 +124,10 @@ shi_pla_dm = {
 	army_defence_factor = pla_defence_factor
 	modifier_army_sub_unit_combat_robot_attack_factor = pla_combat_robot_attack
 	modifier_army_sub_unit_combat_robot_defence_factor = pla_combat_robot_defence
+	air_range_factor = pla_air_range
+	air_attack_factor = pla_air_attack
+	air_defence_factor = pla_air_defence
+	air_strategic_bomber_bombing_factor = pla_strategic_bombing
+	air_ace_generation_chance_factor = pla_ace_generation
+	air_mission_efficiency = pla_air_mission_efficiency
 }
