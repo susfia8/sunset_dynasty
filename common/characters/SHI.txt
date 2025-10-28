@@ -41,7 +41,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = technocracy
+			ideology = san_fran_technocracy
 			desc = SHI_technocratic_council_DESC
 			traits = {
 				techno_council

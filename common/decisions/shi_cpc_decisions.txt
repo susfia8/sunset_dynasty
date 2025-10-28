@@ -11,7 +11,7 @@ SHIcpc = {
         always = no
     }
     icon = mission_icon
-    days_mission_timeout = 30
+    days_mission_timeout = 45
     complete_effect = {
         add_ideas = my_idea
     }
@@ -27,6 +27,9 @@ SHIcpc = {
 	cpc_popular_concessions = {
 	icon = GFX_goal_generic_focus
 	visible = { has_completed_focus = SHI_serve_the_people }
+    ai_will_do = {
+	factor = 1
+        }
 	cost = 50
 	days_remove = 10
 	available = {

@@ -3699,6 +3699,11 @@ focus = {
 		prerequisite = { focus = SHI_update_the_emperor }
 			completion_reward = {
 				promote_character = SHI_technocratic_council
+				set_party_name = {
+            ideology = intellectuals
+            long_name = TECHNOCRACY_NAME_LONG
+            name = TECHNOCRACY_NAME_SHORT
+        }
 		}
 	}
 

@@ -3,4 +3,8 @@ spriteTypes = {
 			name = GFX_ideology_marxism_leninism_mao
 			texturefile = gfx/interface/ideologies/marxism_leninism_mao.dds
 		}
+	spriteType = {
+			name = GFX_ideology_san_fran_technocracy
+			texturefile = gfx/interface/ideologies/san_fran_technocracy.dds
+		}
 	}

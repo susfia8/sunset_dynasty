@@ -62,6 +62,8 @@ ideologies = {
 			}
 			marxism_leninism_mao = {
 			}
+			san_fran_technocracy = {
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_INTELLECTUALS_1"

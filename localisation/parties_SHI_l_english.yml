@@ -26,3 +26,9 @@ CPC_NAME_SHORT: "CPC"
 
 marxism_leninism_mao: "Marxism-Leninism-Mao Zedong Thought"
 marxism_leninism_mao_desc: "\n\n\n\n£GFX_mlm_icon \n\n\n\n\n§RMarxism-Leninism-Mao Zedong Thought§!\n\nMarxism-Leninism-Mao Zedong Thought is an ideology which serves to Marxism-Leninism not as a replacement, but as the cumulative, quantitative practical experience and contributions of Mao Zedong during the 20th century in China. It advocates for classical Marxist-Leninist Policies while adapting to the material conditions Mao found himself in."
+
+san_fran_technocracy: "San Francisco Technocracy"
+san_fran_technocracy_desc: "\n\n\n\n£GFX_technocracy_icon \n\n\n\n\n§CSan Francisco Technocracy§!\n\nThe San Francisco Technocracy bases itself in the scientific method and a strict model of technocracy where technical experts rule the nation through different councils in their respective areas. Using meritocracy and local elections, the system ensures only the brightest individuals rise to power while still keeping some democratic process."
+
+TECHNOCRACY_NAME_LONG: "§CTechnocratic Councils§!"
+TECHNOCRACY_NAME_SHORT: "Technocrats"

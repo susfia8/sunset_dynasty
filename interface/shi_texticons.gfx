@@ -34,4 +34,9 @@ spriteTypes = {
 			texturefile = "gfx/texticons/SHI_Mao_zedong_thought.dds"
 			legacy_lazy_load = no
 		}
+	spriteType = {
+			name = "GFX_technocracy_icon"
+			texturefile = "gfx/texticons/SHI_technocracy.dds"
+			legacy_lazy_load = no
+		}
 	}
