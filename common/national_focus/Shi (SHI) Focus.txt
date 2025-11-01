@@ -2518,8 +2518,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_mechanized_logistics }
 			completion_reward = {
-				add_to_variable = { pla_supply_grace = 15 }
-				custom_effect_tooltip = pla_15_supply_grace.tt
+				add_to_variable = { pla_supply_grace = 24 }
+				custom_effect_tooltip = pla_24_supply_grace.tt
 		}
 	}
 

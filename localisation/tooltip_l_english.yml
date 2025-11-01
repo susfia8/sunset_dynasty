@@ -69,3 +69,4 @@ pla_specialist_training.tt: "Adds to People's Liberation Army:\nDivision Organiz
 pla_power_armor_integration.tt: "Adds to People's Liberation Army:\nDivisions Speed: §G+4%§!\nDivision Organization: §G+2%§!\nDivision Attack: §G+3%§!\nSpecial Forces Capacity: §G+5%§!"
 pla_new_peoples_army.tt: "Adds to People's Liberation Army:\nDivisions Speed: §G+6%§!\nRecruitable Population Factor: §G+2%§!\nDivision Recovery Rate: §G+10%§!\nDivision Attack: §G+5%§!!\nPlanning Speed: §G+5%§!"
 pla_5_supply_consumption.tt: "Adds to People's Liberation Army:\nSupply Consumption: §G-5%§!"
+pla_24_supply_grace.tt: "Adds to People's Liberation Army:\nSupply Grace: §G+24 Hours§!"
