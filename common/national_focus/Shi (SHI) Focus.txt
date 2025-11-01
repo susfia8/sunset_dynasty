@@ -2358,6 +2358,9 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reform_pla_ground_force }
 			completion_reward = {
+				add_to_variable = { pla_army_org = 0.2 }
+				add_to_variable = { pla_org_regain = 0.03 }
+				custom_effect_tooltip = pla_little_red_book.tt
 		}
 	}
 
@@ -2370,6 +2373,10 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reform_pla_ground_force }
 			completion_reward = {
+				add_to_variable = { pla_org_factor = 0.05 }
+				add_to_variable = { pla_morale_factor = 0.02 }
+				add_to_variable = { pla_attack_factor = 0.025 }
+				custom_effect_tooltip = pla_weapons_training.tt
 		}
 	}
 
@@ -2382,6 +2389,10 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_little_red_book }
 			completion_reward = {
+				add_to_variable = { pla_army_org = 0.2 }
+				add_to_variable = { pla_org_regain = 0.02 }
+				add_to_variable = { pla_org_loss_moving = -0.04 }
+				custom_effect_tooltip = pla_infantry_school.tt
 		}
 	}
 
@@ -2408,6 +2419,11 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_disciplined_soldiers }
 			completion_reward = {
+				add_to_variable = { pla_org_factor = 0.05 }
+				add_to_variable = { pla_recruitable_factor = 0.02 }
+				add_to_variable = { pla_morale_factor = 0.10 }
+				add_to_variable = { pla_planning_speed = 0.05 }
+				custom_effect_tooltip = pla_rank_and_file.tt
 		}
 	}
 
@@ -2420,6 +2436,11 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_weapons_training }
 			completion_reward = {
+				add_to_variable = { pla_org_factor = 0.05 }
+				add_to_variable = { pla_morale_factor = 0.03 }
+				add_to_variable = { pla_recruitable_factor = -0.05 }
+				add_to_variable = { pla_planning_speed = -0.05 }
+				custom_effect_tooltip = pla_specialist_training.tt
 		}
 	}
 
@@ -2432,6 +2453,9 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_specialist_training }
 			completion_reward = {
+				set_technology = {
+				chinese_mk2_pa_tech = 1
+			}
 		}
 	}
 
@@ -2444,9 +2468,11 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_new_generation_of_chinese_power_armor }
 			completion_reward = {
-				set_technology = {
-				chinese_mk2_pa_tech = 1
-			}
+				add_to_variable = { pla_speed_factor = 0.04 }
+				add_to_variable = { pla_org_factor = 0.02 }
+				add_to_variable = { pla_attack_factor = 0.03 }
+				add_to_variable = { pla_special_forces_cap = 0.05 }
+				custom_effect_tooltip = pla_power_armor_integration.tt
 		}
 	}
 
@@ -2460,6 +2486,12 @@ focus = {
 		prerequisite = { focus = SHI_power_armor_integration }
 		prerequisite = { focus = SHI_rank_and_file_infantry }
 			completion_reward = {
+				add_to_variable = { pla_speed_factor = 0.06 }
+				add_to_variable = { pla_recruitable_factor = 0.02 }
+				add_to_variable = { pla_morale_factor = 0.10 }
+				add_to_variable = { pla_attack_factor = 0.05 }
+				add_to_variable = { pla_planning_speed = 0.05 }
+				custom_effect_tooltip = pla_new_peoples_army.tt
 		}
 	}
 
@@ -2472,6 +2504,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reform_pla_ground_force }
 			completion_reward = {
+				add_to_variable = { pla_supply_consumption = -0.05 }
+				custom_effect_tooltip = pla_5_supply_consumption.tt
 		}
 	}
 
@@ -2484,6 +2518,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_mechanized_logistics }
 			completion_reward = {
+				add_to_variable = { pla_supply_grace = 15 }
+				custom_effect_tooltip = pla_15_supply_grace.tt
 		}
 	}
 
@@ -2496,6 +2532,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_support_brigades }
 			completion_reward = {
+				add_to_variable = { pla_supply_consumption = -0.05 }
+				custom_effect_tooltip = pla_5_supply_consumption.tt
 		}
 	}
 

@@ -130,4 +130,12 @@ shi_pla_dm = {
 	air_strategic_bomber_bombing_factor = pla_strategic_bombing
 	air_ace_generation_chance_factor = pla_ace_generation
 	air_mission_efficiency = pla_air_mission_efficiency
+	army_org = pla_army_org
+	army_org_regain = pla_org_regain
+	org_loss_when_moving = pla_org_loss_moving
+	planning_speed = pla_planning_speed
+	army_speed_factor = pla_speed_factor
+	special_forces_cap = pla_special_forces_cap
+	supply_consumption_factor = pla_supply_consumption
+	no_supply_grace = pla_supply_grace
 }
