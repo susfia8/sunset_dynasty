@@ -2702,6 +2702,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reform_pla_navy }
 			completion_reward = {
+				add_to_variable = { pla_naval_coordination = 0.10 }
+				custom_effect_tooltip = pla_10_naval_coordination.tt
 		}
 	}
 
@@ -2714,6 +2716,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reform_pla_navy }
 			completion_reward = {
+				add_to_variable = { pla_naval_recovery_rate = 0.10 }
+				custom_effect_tooltip = pla_10_naval_recovery_rate.tt
 		}
 	}
 
@@ -2726,6 +2730,8 @@ focus = {
 		y = 2
 		prerequisite = { focus = SHI_reform_pla_navy }
 			completion_reward = {
+				add_to_variable = { pla_dockyard_output = 0.15 }
+				custom_effect_tooltip = pla_15_dockyard_output.tt
 		}
 	}
 
@@ -2772,6 +2778,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_improved_naval_propulsion }
 			completion_reward = {
+				add_to_variable = { pla_ship_experience_gain = 0.20 }
+				custom_effect_tooltip = pla_20_ship_experience_gain.tt
 		}
 	}
 
@@ -2785,6 +2793,8 @@ focus = {
 		prerequisite = { focus = SHI_naval_officers }
 		prerequisite = { focus = SHI_liberation_at_sea }
 			completion_reward = {
+				add_to_variable = { pla_pride_fleet_attack = 0.10 }
+				custom_effect_tooltip = pla_10_pride_fleet_attack.tt
 		}
 	}
 
@@ -2797,6 +2807,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_peoples_armed_police }
 			completion_reward = {
+				add_to_variable = { pla_core_defence = 0.10 }
+				custom_effect_tooltip = pla_10_core_defence.tt
 		}
 	}
 
@@ -2809,6 +2821,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_internal_security_forces }
 			completion_reward = {
+				add_to_variable = { pla_breakthrough = 0.05 }
+				custom_effect_tooltip = pla_5_breakthrough.tt
 		}
 	}
 
@@ -2835,6 +2849,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_revive_central_military_commission }
 			completion_reward = {
+				add_to_variable = { pla_experience_gain_factor = 0.05 }
+				custom_effect_tooltip = pla_5_experience_gain_factor.tt
 		}
 	}
 
@@ -2847,6 +2863,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_officer_academy }
 			completion_reward = {
+				add_to_variable = { pla_experience_gain_factor = 0.05 }
+				custom_effect_tooltip = pla_5_experience_gain_factor.tt
 		}
 	}
 
@@ -2859,6 +2877,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_party_control_over_the_army }
 			completion_reward = {
+				add_to_variable = { pla_org_loss_moving = -0.10 }
+				custom_effect_tooltip = pla_10_org_loss_moving.tt
 		}
 	}
 

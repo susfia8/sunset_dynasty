@@ -138,4 +138,10 @@ shi_pla_dm = {
 	special_forces_cap = pla_special_forces_cap
 	supply_consumption_factor = pla_supply_consumption
 	no_supply_grace = pla_supply_grace
+	naval_coordination = pla_naval_coordination
+	naval_morale_factor = pla_naval_recovery_rate
+	experience_gain_navy_unit_factor = pla_ship_experience_gain
+	naval_has_potf_in_combat_attack = pla_pride_fleet_attack
+	army_core_defence_factor = pla_core_defence
+	breakthrough_factor = pla_breakthrough
 }
