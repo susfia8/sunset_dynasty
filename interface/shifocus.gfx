@@ -592,4 +592,28 @@ spriteType = {
 	name = "GFX_goal_shi_pla_joint_staff"
 	texturefile = "gfx/interface/goals/shi_pla_joint_staff.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_cpc_emblem"
+	texturefile = "gfx/interface/goals/shi_cpc_emblem.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_family"
+	texturefile = "gfx/interface/goals/shi_cpc_family.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_guidance_of_the_party"
+	texturefile = "gfx/interface/goals/shi_cpc_guidance_of_the_party.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_peoples_bank"
+	texturefile = "gfx/interface/goals/shi_cpc_peoples_bank.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_patriotic_health"
+	texturefile = "gfx/interface/goals/shi_cpc_patriotic_health.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_revolutionary_education"
+	texturefile = "gfx/interface/goals/shi_cpc_revolutionary_education.dds"
+}
 }

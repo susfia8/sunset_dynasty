@@ -2886,7 +2886,7 @@ focus = {
 
 focus = {
 			id = SHI_rebirth_of_the_revolution
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_emblem
 			cost = 20
 		relative_position_id = SHI_back_to_our_roots
 		x = -20
@@ -2900,7 +2900,7 @@ focus = {
 
 focus = {
 			id = SHI_under_the_guidance_of_the_party
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_guidance_of_the_party
 			cost = 20
 		relative_position_id = SHI_rebirth_of_the_revolution
 		x = 0
@@ -2912,7 +2912,7 @@ focus = {
 
 focus = {
 			id = SHI_patriotic_health_campaign
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_patriotic_health
 			cost = 20
 		relative_position_id = SHI_under_the_guidance_of_the_party
 		x = 0
@@ -2924,7 +2924,7 @@ focus = {
 
 focus = {
 			id = SHI_revolutionary_education
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_revolutionary_education
 			cost = 20
 		relative_position_id = SHI_under_the_guidance_of_the_party
 		x = -2
@@ -3032,7 +3032,7 @@ focus = {
 
 focus = {
 			id = SHI_a_peasants_paradise
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_family
 			cost = 20
 		relative_position_id = SHI_peoples_communes
 		x = 0
@@ -3161,7 +3161,7 @@ focus = {
 
 focus = {
 			id = SHI_reorganize_californias_economy
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_family
 			cost = 20
 		relative_position_id = SHI_rebirth_of_the_revolution
 		x = -7
@@ -3259,7 +3259,7 @@ focus = {
 
 focus = {
 			id = SHI_peoples_bank_of_china
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_peoples_bank
 			cost = 20
 		relative_position_id = SHI_rebirth_of_the_revolution
 		x = -4
