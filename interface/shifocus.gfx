@@ -616,4 +616,44 @@ spriteType = {
 	name = "GFX_goal_shi_cpc_revolutionary_education"
 	texturefile = "gfx/interface/goals/shi_cpc_revolutionary_education.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_cpc_revolutionary_artists"
+	texturefile = "gfx/interface/goals/CPC_revolutionary_artists.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_marxist_feminism"
+	texturefile = "gfx/interface/goals/CPC_marxist_feminism.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_three_antis"
+	texturefile = "gfx/interface/goals/CPC_three_antis.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_renminbi"
+	texturefile = "gfx/interface/goals/CPC_renminbi.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_ecology"
+	texturefile = "gfx/interface/goals/CPC_ecology.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_geck"
+	texturefile = "gfx/interface/goals/CPC_geck.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_trade_unions"
+	texturefile = "gfx/interface/goals/shi_cpc_trade_unions.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_peoples_communes"
+	texturefile = "gfx/interface/goals/shi_cpc_peoples_communes.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_agricultural_cooperatives"
+	texturefile = "gfx/interface/goals/shi_cpc_agricultural_cooperatives.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_mass_nacionalization"
+	texturefile = "gfx/interface/goals/shi_cpc_mass_nacionalization.dds"
+}
 }
