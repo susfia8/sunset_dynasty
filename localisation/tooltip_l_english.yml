@@ -79,3 +79,4 @@ pla_10_core_defence.tt: "Adds to People's Liberation Army:\nDefence In Core Terr
 pla_5_breakthrough.tt: "Adds to People's Liberation Army:\nArmy Breakthrough: §G+5%§!"
 pla_5_experience_gain_factor.tt: "Adds to People's Liberation Army:\nArmy Experience Gain Factor: §G+5%§!"
 pla_10_org_loss_moving.tt: "Adds to People's Liberation Army:\nOrganization Loss When Moving: §G-10%§!"
+pla_little_red_book.tt: "Adds to People's Liberation Army:\nDivision Organization: §G+0.2§!\nArmy Organization Regain: §G+3%§!"
