@@ -2138,6 +2138,7 @@ focus = {
 			completion_reward = {
 				set_cosmetic_tag = SHI_MAO
 				country_event = { id = sd_shi.9 }
+				country_event = { id = sd_shi.10 }
 				set_country_flag = communist_unlock_everything
 				mark_focus_tree_layout_dirty = yes
 		}
@@ -2974,7 +2975,7 @@ focus = {
 
 focus = {
 			id = SHI_from_the_bottom_up
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_land_reform
 			cost = 20
 		relative_position_id = SHI_radical_land_reform
 		x = 1
@@ -3022,7 +3023,7 @@ focus = {
 
 focus = {
 			id = SHI_unrestricted_violence_on_brahmin_barons
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_unrestricted_violence
 			cost = 20
 		relative_position_id = SHI_a_peasants_struggle
 		x = -1
@@ -3109,7 +3110,7 @@ focus = {
 
 focus = {
 			id = SHI_fight_all_forms_of_prejudice
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_fight_prejudice
 			cost = 20
 		relative_position_id = SHI_promote_revolutionary_artists
 		x = 0
@@ -3136,7 +3137,7 @@ focus = {
 
 focus = {
 			id = SHI_broaden_party_membership
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_broaden_membership
 			cost = 20
 		relative_position_id = SHI_promote_revolutionary_artists
 		x = -2
@@ -3149,7 +3150,7 @@ focus = {
 
 focus = {
 			id = SHI_constitution_of_the_peoples_republic
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_constitution
 			cost = 20
 		relative_position_id = SHI_fight_all_forms_of_prejudice
 		x = 0
@@ -3187,7 +3188,7 @@ focus = {
 
 focus = {
 			id = SHI_worker_takeover
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_worker_takeover
 			cost = 20
 		relative_position_id = SHI_reorganize_californias_economy
 		x = 1
@@ -3211,7 +3212,7 @@ focus = {
 
 focus = {
 			id = SHI_state_planning_commission
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_state_planning
 			cost = 20
 		relative_position_id = SHI_mass_nationalization
 		x = -1
@@ -3223,7 +3224,7 @@ focus = {
 
 focus = {
 			id = SHI_collective_ownership
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_collective_ownership
 			cost = 20
 		relative_position_id = SHI_worker_takeover
 		x = 1
@@ -3235,7 +3236,7 @@ focus = {
 
 focus = {
 			id = SHI_bridging_the_rural_urban_divide
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_rural_urban_divide
 			cost = 20
 		relative_position_id = SHI_all_china_federation_of_trade_unions
 		x = 0
@@ -3247,7 +3248,7 @@ focus = {
 
 focus = {
 			id = SHI_introduce_the_five_year_plans
-			icon = GFX_goal_shi_pla
+			icon = GFX_goal_shi_cpc_first_five_year_plan
 			cost = 20
 		relative_position_id = SHI_bridging_the_rural_urban_divide
 		x = 0

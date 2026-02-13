@@ -656,4 +656,40 @@ spriteType = {
 	name = "GFX_goal_shi_cpc_mass_nacionalization"
 	texturefile = "gfx/interface/goals/shi_cpc_mass_nacionalization.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_cpc_unrestricted_violence"
+	texturefile = "gfx/interface/goals/shi_cpc_unrestricted_violence.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_fight_prejudice"
+	texturefile = "gfx/interface/goals/shi_cpc_fight_prejudice.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_broaden_membership"
+	texturefile = "gfx/interface/goals/shi_cpc_broaden_membership.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_worker_takeover"
+	texturefile = "gfx/interface/goals/shi_cpc_worker_takeover.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_collective_ownership"
+	texturefile = "gfx/interface/goals/shi_cpc_collective_ownership.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_state_planning"
+	texturefile = "gfx/interface/goals/shi_cpc_state_planning.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_rural_urban_divide"
+	texturefile = "gfx/interface/goals/shi_cpc_rural_urban_divide.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_first_five_year_plan"
+	texturefile = "gfx/interface/goals/shi_cpc_first_five_year_plan.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_cpc_constitution"
+	texturefile = "gfx/interface/goals/shi_cpc_constitution.dds"
+}
 }

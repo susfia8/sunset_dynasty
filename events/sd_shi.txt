@@ -158,3 +158,18 @@ country_event = {
         set_cosmetic_tag = SHI_MAO5
     }
 }
+
+country_event = {
+    id = sd_shi.10
+    title = sd_shi.10.t
+    desc = sd_shi.10.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.10.a
+        add_dynamic_modifier = { modifier = shi_land_reform_needed }
+        add_dynamic_modifier = { modifier = shi_economy_devastated }
+    }
+}
