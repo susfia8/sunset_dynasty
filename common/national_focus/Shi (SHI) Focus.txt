@@ -3044,6 +3044,7 @@ focus = {
 		prerequisite = { focus = SHI_unrestricted_violence_on_brahmin_barons }
 		prerequisite = { focus = SHI_public_trial_of_the_landlords }
 			completion_reward = {
+				remove_ideas = land_reform_needed
 		}
 	}
 
@@ -3159,6 +3160,7 @@ focus = {
 		prerequisite = { focus = SHI_fight_all_forms_of_prejudice }
 		prerequisite = { focus = SHI_party_rectification }
 			completion_reward = {
+				remove_ideas = government_overextended
 		}
 	}
 
@@ -3257,6 +3259,7 @@ focus = {
 		prerequisite = { focus = SHI_state_planning_commission }
 		prerequisite = { focus = SHI_collective_ownership }
 			completion_reward = {
+				remove_ideas = economy_crashed
 		}
 	}
 

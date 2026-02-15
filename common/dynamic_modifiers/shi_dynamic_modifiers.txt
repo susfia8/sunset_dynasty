@@ -145,13 +145,3 @@ shi_pla_dm = {
 	army_core_defence_factor = pla_core_defence
 	breakthrough_factor = pla_breakthrough
 }
-
-shi_land_reform_needed = {
-	icon = GFX_idea_SHI_pla_logo
-
-}
-
-shi_economy_devastated = {
-	icon = GFX_idea_SHI_pla_logo
-
-}

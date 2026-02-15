@@ -169,7 +169,8 @@ country_event = {
 
     option = {
         name = sd_shi.10.a
-        add_dynamic_modifier = { modifier = shi_land_reform_needed }
-        add_dynamic_modifier = { modifier = shi_economy_devastated }
+        add_ideas = economy_crashed
+        add_ideas = land_reform_needed
+        add_ideas = government_overextended
     }
 }

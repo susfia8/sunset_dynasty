@@ -36,3 +36,9 @@ shi_north_cali_province_desc: "\n\n\n\n£GFX_north_cali_icon \n\n\n\n\nThis Stat
 shi_technate: "§CThe Technate§!"
 
 shi_pla_dm: "People's Liberation Army"
+
+economy_crashed: "Crashed Economy"
+
+land_reform_needed: "Land Reform Needed"
+
+government_overextended: "Overextended Government"
