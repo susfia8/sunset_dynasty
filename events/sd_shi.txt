@@ -134,7 +134,7 @@ country_event = {
     id = sd_shi.9
     title = sd_shi.9.t
     desc = sd_shi.9.d
-    picture = GFX_event_SHI_shitown
+    picture = GFX_report_event_flag_of_china
 
     is_triggered_only = yes
 

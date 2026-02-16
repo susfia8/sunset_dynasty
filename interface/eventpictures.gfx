@@ -1,0 +1,11 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_flag_of_china"
+		texturefile = "gfx/event_pictures/report_flag_of_china.dds"
+	}
+
+}
+
+
+
