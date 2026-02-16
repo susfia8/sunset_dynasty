@@ -344,6 +344,12 @@ defined_text = {
 		localization_key = "gov_idea_xiyang_treasure_note"
 	}
 	text = {
+		trigger = {
+			ROOT = { has_idea = currencyrenminbi }
+		}
+		localization_key = "gov_idea_renminbi"
+	}
+	text = {
 		localization_key = "capdisplaygeneric"
 	}
 
@@ -534,6 +540,22 @@ defined_text = {
 		localization_key = "currencyxiyangtreasurenote"
 	}
 	text = {
+		trigger = {
+			if = {
+				limit = {
+					exists = yes
+				}
+				has_idea = currencyrenminbi
+			}
+			else = {
+				CONTROLLER = {
+					has_idea = currencyrenminbi
+				}
+			}
+		}
+		localization_key = "currencyrenminbi"
+	}
+	text = {
 		localization_key = "genericcap"
 	}
 
@@ -606,6 +628,12 @@ defined_text = {
 			CONTROLLER = { has_idea = currencyxiyangtreasurenote }
 		}
 		localization_key = "currencyxiyangtreasurenote"
+	}
+	text = {
+		trigger = {
+			CONTROLLER = { has_idea = currencyrenminbi }
+		}
+		localization_key = "currencyrenminbi"
 	}
 	text = {
 		localization_key = "currencygenericcap"
@@ -817,6 +845,24 @@ defined_text = {
 	text = {
 		trigger = {
 			has_global_flag = caps_enabled_global_flag
+			#ROOT = { has_idea = currencyrenminbi }
+			if = {
+				limit = {
+					exists = yes
+				}
+				has_idea = currencyrenminbi
+			}
+			else = {
+				CONTROLLER = {
+					has_idea = currencyrenminbi
+				}
+			}
+		}
+		localization_key = "capdisplayrenminbitxt"
+	}
+	text = {
+		trigger = {
+			has_global_flag = caps_enabled_global_flag
 		}
 		localization_key = "capdisplaygenerictxt"
 	}
@@ -893,6 +939,12 @@ defined_text = {
 			ROOT = { has_idea = currencyxiyangtreasurenote }
 		}
 		localization_key = "currencyxiyangtreasurenote_info"
+	}
+	text = {
+		trigger = {
+			ROOT = { has_idea = currencyrenminbi }
+		}
+		localization_key = "currencyrenminbi_info"
 	}
 	text = {
 		localization_key = "currencygenericcap_info"

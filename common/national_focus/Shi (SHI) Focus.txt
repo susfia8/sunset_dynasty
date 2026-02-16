@@ -2898,6 +2898,7 @@ focus = {
 		}
 		available = { has_country_flag = communist_unlock_everything }
 			completion_reward = {
+				add_stability = 10
 		}
 	}
 
@@ -2910,6 +2911,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_rebirth_of_the_revolution }
 			completion_reward = {
+				add_political_power = 50
 		}
 	}
 
@@ -2922,6 +2924,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_under_the_guidance_of_the_party }
 			completion_reward = {
+				add_to_variable = { communist_econ_monthly_population = 0.05 }
+				custom_effect_tooltip = basic_land_reform.tt
 		}
 	}
 
@@ -2934,6 +2938,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_under_the_guidance_of_the_party }
 			completion_reward = {
+				add_to_variable = { cpc_research_speed = 0.05 }
+				custom_effect_tooltip = meritocratic_ranks.tt
 		}
 	}
 
@@ -2946,6 +2952,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_under_the_guidance_of_the_party }
 			completion_reward = {
+				add_stability = 10
 		}
 	}
 
@@ -2958,6 +2965,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_rebirth_of_the_revolution }
 			completion_reward = {
+				add_to_variable = { communist_econ_monthly_population = 0.05 }
+				custom_effect_tooltip = radical_land_reform.tt
 		}
 	}
 
@@ -3284,6 +3293,11 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_peoples_bank_of_china }
 			completion_reward = {
+						swap_ideas = {
+			remove_idea = currencygenericcap
+			add_idea = currencyrenminbi
+			}
+
 		}
 	}
 

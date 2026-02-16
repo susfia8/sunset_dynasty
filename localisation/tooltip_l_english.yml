@@ -80,3 +80,4 @@ pla_5_breakthrough.tt: "Adds to People's Liberation Army:\nArmy Breakthrough: §
 pla_5_experience_gain_factor.tt: "Adds to People's Liberation Army:\nArmy Experience Gain Factor: §G+5%§!"
 pla_10_org_loss_moving.tt: "Adds to People's Liberation Army:\nOrganization Loss When Moving: §G-10%§!"
 pla_little_red_book.tt: "Adds to People's Liberation Army:\nDivision Organization: §G+0.2§!\nArmy Organization Regain: §G+3%§!"
+radical_land_reform.tt: "Adds to §CThe People's Economy§!:\nMonthly Population Factor: §G+5%§!"

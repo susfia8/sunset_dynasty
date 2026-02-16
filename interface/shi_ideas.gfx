@@ -8,6 +8,10 @@ spriteTypes = {
 			texturefile = "gfx/interface/ideas/xiyang_treasure_note.dds"
 		}
 	spriteType = {
+			name = "gov_idea_renminbi"
+			texturefile = "gfx/interface/ideas/renminbi.dds"
+		}
+	spriteType = {
 			name = "GFX_steel_palace_icon"
 			texturefile = "gfx/texticons/steel_palace_icon.dds"
 			legacy_lazy_load = no

@@ -42,3 +42,7 @@ economy_crashed: "Crashed Economy"
 land_reform_needed: "Land Reform Needed"
 
 government_overextended: "Overextended Government"
+
+currencyrenminbi: "Renminbi"
+currencyrenminbi_info: "Modifiers:\nConsumer Goods Expected: §G-3%§!\nPassive Caps: §G+12§!\n\nThe Renminbi was the official currency of China before the war, seeking legitimacy, the CPC adopted the new Renminbi to replace the NCR Dollar and reduce the use of caps within its territory."
+capdisplayrenminbitxt: "£currency_renminbi_text_icon"

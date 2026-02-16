@@ -39,4 +39,9 @@ spriteTypes = {
 			texturefile = "gfx/texticons/SHI_technocracy.dds"
 			legacy_lazy_load = no
 		}
+	spriteType = {
+			name = "currency_renminbi_text_icon"
+			texturefile = "gfx/texticons/currency_renminbi_text_icon.dds"
+			legacy_lazy_load = no
+		}
 	}

@@ -276,6 +276,7 @@
   capdisplaybawlsguaranatxt:0 "£currency_bawlsguarana_text_icon"
   capdisplaychargecardtxt:0 "£currency_ROS_text_icon"
   capdisplayxiyangtreasurenotetxt:0 "£currency_xiyangtreasurenote_text_icon"
+  capdisplayrenminbitxt:0 "£currency_renminbi_text_icon"
   capsdisplaypp:0 "£pol_power"
 
   ### TUTORIAL EVENT LOC ###
