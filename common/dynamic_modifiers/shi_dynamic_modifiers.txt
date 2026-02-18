@@ -87,6 +87,7 @@ shi_communist_economy = {
 	min_export = communist_econ_min_export
 	production_speed_buildings_factor = communist_econ_construction_speed
 	local_resources_factor = communist_econ_resources_factor
+	recruitable_population_factor = communist_econ_recruitable_population_factor
 
 }
 

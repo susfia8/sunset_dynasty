@@ -2979,6 +2979,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_radical_land_reform }
 			completion_reward = {
+				add_to_variable = { communist_econ_efficiency_gain = 0.05 }
+				custom_effect_tooltip = peasants_struggle.tt
 		}
 	}
 
@@ -2991,6 +2993,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_radical_land_reform }
 			completion_reward = {
+				add_to_variable = { communist_econ_monthly_population = 0.5 }
+				custom_effect_tooltip = radical_land_reform.tt
 		}
 	}
 
@@ -3003,6 +3007,8 @@ focus = {
 		y = 2
 		prerequisite = { focus = SHI_radical_land_reform }
 			completion_reward = {
+				add_to_variable = { communist_econ_efficiency_cap = 0.2 }
+				custom_effect_tooltip = agricultural_production_cooperatives.tt
 		}
 	}
 
@@ -3015,6 +3021,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_agricultural_production_cooperatives }
 			completion_reward = {
+				add_to_variable = { communist_econ_recruitable_population_factor = 0.2 }
+				custom_effect_tooltip = peoples_communes.tt
 		}
 	}
 
@@ -3281,6 +3289,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_rebirth_of_the_revolution }
 			completion_reward = {
+				add_stability = 5
 		}
 	}
 

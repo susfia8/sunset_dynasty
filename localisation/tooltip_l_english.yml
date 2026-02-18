@@ -81,3 +81,6 @@ pla_5_experience_gain_factor.tt: "Adds to People's Liberation Army:\nArmy Experi
 pla_10_org_loss_moving.tt: "Adds to People's Liberation Army:\nOrganization Loss When Moving: §G-10%§!"
 pla_little_red_book.tt: "Adds to People's Liberation Army:\nDivision Organization: §G+0.2§!\nArmy Organization Regain: §G+3%§!"
 radical_land_reform.tt: "Adds to §CThe People's Economy§!:\nMonthly Population Factor: §G+5%§!"
+peasants_struggle.tt: "Adds to §CThe People's Economy§!:\nEfficiency Gain Factor: §G+5%§!"
+agricultural_production_cooperatives.tt: "Adds to §CThe People's Economy§!:\nEfficiency Cap: §G+2%§!"
+peoples_communes.tt: "Adds to §CThe People's Economy§!:\nRecruitable Population Factor: §G+5%§!"
