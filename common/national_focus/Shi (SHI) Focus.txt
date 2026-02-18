@@ -3137,6 +3137,8 @@ focus = {
 		prerequisite = { focus = SHI_marxist_feminism }
 		prerequisite = { focus = SHI_three_antis }
 			completion_reward = {
+				add_to_variable = { communist_econ_recruitable_population_factor = 0.2 }
+				custom_effect_tooltip = peoples_communes.tt
 		}
 	}
 
@@ -3163,6 +3165,8 @@ focus = {
 		prerequisite = { focus = SHI_promote_revolutionary_artists }
 		prerequisite = { focus = SHI_broaden_the_fight_against_illiteracy }
 			completion_reward = {
+				add_to_variable = { communist_econ_recruitable_population_factor = 0.2 }
+				custom_effect_tooltip = peoples_communes.tt
 		}
 	}
 
