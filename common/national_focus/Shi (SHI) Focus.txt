@@ -3035,6 +3035,7 @@ focus = {
 		y = 2
 		prerequisite = { focus = SHI_from_the_bottom_up }
 			completion_reward = {
+				country_event = { id = sd_shi.11 }
 		}
 	}
 
