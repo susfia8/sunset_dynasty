@@ -50,7 +50,7 @@ ideas = {
     }
 
     economy_crashed = {
-        picture = shi_support
+        picture = cpc_crashed_economy
         allowed = {
             always = yes
         }
@@ -85,7 +85,7 @@ ideas = {
     }
 
     government_overextended = {
-        picture = shi_support
+        picture = cpc_overextended
         allowed = {
             always = yes
         }

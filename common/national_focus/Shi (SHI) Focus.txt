@@ -2898,7 +2898,7 @@ focus = {
 		}
 		available = { has_country_flag = communist_unlock_everything }
 			completion_reward = {
-				add_stability = 10
+				add_stability = 0.1
 		}
 	}
 
@@ -2952,7 +2952,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_under_the_guidance_of_the_party }
 			completion_reward = {
-				add_stability = 10
+				add_stability = 0.010
 		}
 	}
 
@@ -3048,6 +3048,8 @@ focus = {
 		y = 2
 		prerequisite = { focus = SHI_a_peasants_struggle }
 			completion_reward = {
+				add_stability = -0.05
+				add_political_power = 50
 		}
 	}
 
@@ -3076,6 +3078,8 @@ focus = {
 		prerequisite = { focus = SHI_revolutionary_education }
 		prerequisite = { focus = SHI_nationalize_all_broadcasting }
 			completion_reward = {
+				add_to_variable = { cpc_political_power_gain = 0.5 }
+				custom_effect_tooltip = revolutionary_artists.tt
 		}
 	}
 
@@ -3088,6 +3092,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_revolutionary_education }
 			completion_reward = {
+				add_to_variable = { cpc_recruitable_pop = 0.05 }
+				custom_effect_tooltip = marxist_feminism.tt
 		}
 	}
 
@@ -3100,6 +3106,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_revolutionary_education }
 			completion_reward = {
+				add_to_variable = { cpc_research_speed = 0.05 }
+				custom_effect_tooltip = meritocratic_ranks.tt
 		}
 	}
 
@@ -3112,6 +3120,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_nationalize_all_broadcasting }
 			completion_reward = {
+				add_to_variable = { cpc_political_power_gain = 0.5 }
+				custom_effect_tooltip = revolutionary_artists.tt
 		}
 	}
 
@@ -3124,6 +3134,9 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_nationalize_all_broadcasting }
 			completion_reward = {
+				add_to_variable = { cpc_political_power_gain = -0.5 }
+				add_to_variable = { cpc_research_speed = 0.05 }
+				custom_effect_tooltip = revolutionary_artists.tt
 		}
 	}
 
@@ -3153,6 +3166,7 @@ focus = {
 		prerequisite = { focus = SHI_promote_revolutionary_artists }
 		prerequisite = { focus = SHI_militant_atheism }
 			completion_reward = {
+				country_event = { id = sd_shi.12 }
 		}
 	}
 
@@ -3294,7 +3308,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_rebirth_of_the_revolution }
 			completion_reward = {
-				add_stability = 5
+				add_stability = 0.05
 		}
 	}
 
@@ -3324,6 +3338,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_rebirth_of_the_revolution }
 			completion_reward = {
+				add_to_variable = { communist_econ_monthly_population = 0.10 }
+				custom_effect_tooltip = ministry_of_ecology_and_environment.tt
 		}
 	}
 
@@ -3336,6 +3352,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_ministry_of_ecology_and_environment }
 			completion_reward = {
+				add_to_variable = { geck_count = 15}
+				custom_effect_tooltip = state_planned_geck_deployments.tt
 		}
 	}
 

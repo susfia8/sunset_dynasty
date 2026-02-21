@@ -48,4 +48,12 @@ spriteTypes = {
 		name = "GFX_idea_SHI_pla_logo"
 		texturefile = "gfx/interface/ideas/shi_pla_logo.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SHI_cpc_overextended"
+		texturefile = "gfx/interface/ideas/shi_cpc_overextented_gov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SHI_cpc_crashed_economy"
+		texturefile = "gfx/interface/ideas/shi_cpc_crashed_economy.dds"
+	}
 	}
