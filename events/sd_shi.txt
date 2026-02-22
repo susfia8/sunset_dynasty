@@ -174,3 +174,29 @@ country_event = {
         add_ideas = government_overextended
     }
 }
+
+country_event = {
+    id = sd_shi.11
+    title = sd_shi.11.t
+    desc = sd_shi.11.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.11.a
+    }
+}
+
+country_event = {
+    id = sd_shi.12
+    title = sd_shi.12.t
+    desc = sd_shi.12.d
+    picture = GFX_event_SHI_shitown
+
+    is_triggered_only = yes
+
+    option = {
+        name = sd_shi.12.a
+    }
+}
