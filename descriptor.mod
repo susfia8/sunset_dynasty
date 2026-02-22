@@ -10,5 +10,5 @@ dependencies={
 	"Old World Blues"
 }
 name="OWB - Sunset Dynasty"
-supported_version="1.16.10"
-remote_file_id="3573808976"
+supported_version="1.17.4.0"
+remote_file_id="3671104271"
