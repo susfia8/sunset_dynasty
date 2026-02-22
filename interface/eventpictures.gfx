@@ -5,6 +5,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_flag_of_china.dds"
 	}
 
+	spriteType = {
+		name = "GFX_report_event_landlord_trial"
+		texturefile = "gfx/event_pictures/report_landlord_trial.dds"
+	}
+
 }
 
 

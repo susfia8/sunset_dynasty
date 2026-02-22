@@ -3831,4 +3831,38 @@ focus = {
 		}
 	}
 
+	focus = {
+			id = SHI_ask_to_join_the_ncr
+			icon = GFX_goal_shi_accountable_officials
+			cost = 20
+		relative_position_id = SHI_an_elected_supreme_council
+		x = 2
+		y = 1
+		mutually_exclusive = {
+			focus = SHI_bear_on_our_sights
+		}
+			completion_reward = {
+				ask_to_join_new_california = yes
+		}
+	}
+
+	focus = {
+			id = SHI_bear_on_our_sights
+			icon = GFX_goal_shi_accountable_officials
+			cost = 20
+		relative_position_id = SHI_an_elected_supreme_council
+		x = -2
+		y = 1
+		mutually_exclusive = {
+			focus = SHI_ask_to_join_the_ncr
+		}
+			completion_reward = {
+				NCR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+
 }

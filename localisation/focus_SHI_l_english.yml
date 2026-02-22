@@ -266,7 +266,10 @@ SHI_advanced_manufactoring_hub: "Advanced Manufactoring Hub"
 SHI_advanced_manufactoring_hub_desc: "Seeing we have the whole NCR just next door, there is a big market of consumers we could sell to, lets improve our production and become a Manufactoring hub for all of California!"
 SHI_an_elected_supreme_council: "An Elected Supreme Council"
 SHI_an_elected_supreme_council_desc: "It is finally the time that we choose an actual leadership for our nation instead of relying just on Ken Lee, we should hold an election for a council of the brightest individuals of our nation to lead us, ensuring good governance and clear sucession."
-
+SHI_ask_to_join_the_ncr: "Ask to Join the NCR"
+SHI_ask_to_join_the_ncr_desc: "Joining the NCR alliance would guarantee our security as a beacon of knowlege on the west coast, and their huge market will be of great use to our mighty production capabilities."
+SHI_bear_on_our_sights: "Bear On Our Sights"
+SHI_bear_on_our_sights_desc: "The NCR poses a constant threat to our existence, their inferior form of government could turn on us on a dime. We should put an end to it and control the entirety of California and its markets."
 ############# PLA BRANCH #############
 
 SHI_pla: "People's Liberation Army"

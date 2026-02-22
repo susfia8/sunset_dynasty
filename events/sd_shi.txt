@@ -179,7 +179,7 @@ country_event = {
     id = sd_shi.11
     title = sd_shi.11.t
     desc = sd_shi.11.d
-    picture = GFX_event_SHI_shitown
+    picture = GFX_report_event_landlord_trial
 
     is_triggered_only = yes
 
