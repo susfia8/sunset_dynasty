@@ -8,6 +8,8 @@ sinicization_losangeles: "Sinicize The Boneyard"
 sinicization_sacramento: "Sinicize Sac-City"
 sinicization_san_diego: "Sinicize the Dayglow"
 sinicization_redding: "Sinicize Redding"
+sinicization_new_vegas: "Sinicize Vegas"
+sinicization_flagstaff: "Sinicize Flagstaff"
 
 SHIcpc: "Central Committee of the CPC "
 SHIcpc_desc: "\n\n\n\n\n\n\n£GFX_cpc_central_committee_icon \n\n\n\n\n\n\n\n\nThe Central Committee of the Communist Party of China is the highest organ within the party, tasked with carrying out the resolutions of the party and directing party work, the Central Committee is headed by the §RChairman§! himself, with his most loyal and high ranking people filling the other seats.\n\n§WThe Current Popularity Of The Party Is:§! §R[?stability_raw]%§! [stability_text]"

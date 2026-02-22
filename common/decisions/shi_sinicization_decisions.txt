@@ -70,4 +70,32 @@ SHIsinicization = {
 		}
 	}
 
+	sinicization_new_vegas = {
+	icon = GFX_goal_generic_focus
+	visible = { owns_state = 211 }
+	available = {
+	owns_state = 211
+    has_completed_focus = SHI_sinicization
+    }
+	fire_only_once = yes
+	complete_effect = {
+		set_province_name = { id = 3179 name = SHI_VEGAS }
+        211 = { set_state_name = SHI_VEGAS }
+		}
+	}
+
+	sinicization_flagstaff = {
+	icon = GFX_goal_generic_focus
+	visible = { owns_state = 520 }
+	available = {
+	owns_state = 520
+    has_completed_focus = SHI_sinicization
+    }
+	fire_only_once = yes
+	complete_effect = {
+		set_province_name = { id = 8951 name = SHI_FLAGSTAFF }
+        520 = { set_state_name = SHI_FLAGSTAFF }
+		}
+	}
+
 }
