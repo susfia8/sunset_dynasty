@@ -3838,6 +3838,9 @@ focus = {
 		relative_position_id = SHI_an_elected_supreme_council
 		x = 2
 		y = 1
+		allow_branch = {
+			has_country_flag = technocracy_branch_allowed
+		}
 		mutually_exclusive = {
 			focus = SHI_bear_on_our_sights
 		}
@@ -3853,6 +3856,9 @@ focus = {
 		relative_position_id = SHI_an_elected_supreme_council
 		x = -2
 		y = 1
+		allow_branch = {
+			has_country_flag = technocracy_branch_allowed
+		}
 		mutually_exclusive = {
 			focus = SHI_ask_to_join_the_ncr
 		}
