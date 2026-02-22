@@ -3209,6 +3209,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_rebirth_of_the_revolution }
 			completion_reward = {
+				add_to_variable = { communist_econ_consumer_goods = -0.02 }
+				custom_effect_tooltip = reorganize_californias_economy.tt
 		}
 	}
 
@@ -3221,6 +3223,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reorganize_californias_economy }
 			completion_reward = {
+				add_to_variable = { communist_econ_construction_speed = 0.05 }
+				custom_effect_tooltip = mass_nationalization.tt
 		}
 	}
 
@@ -3233,6 +3237,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_reorganize_californias_economy }
 			completion_reward = {
+				add_to_variable = { communist_econ_efficiency_gain = 0.05 }
+				custom_effect_tooltip = peoples_workshops.tt
 		}
 	}
 
@@ -3245,6 +3251,8 @@ focus = {
 		y = 2
 		prerequisite = { focus = SHI_reorganize_californias_economy }
 			completion_reward = {
+				add_to_variable = { communist_econ_efficiency_gain = 0.05 }
+				custom_effect_tooltip = communist_econ_efficiency_cap
 		}
 	}
 
@@ -3257,6 +3265,8 @@ focus = {
 		y = 2
 		prerequisite = { focus = SHI_mass_nationalization }
 			completion_reward = {
+				add_to_variable = { communist_econ_construction_speed = 0.05 }
+				custom_effect_tooltip = mass_nationalization.tt
 		}
 	}
 
@@ -3269,6 +3279,8 @@ focus = {
 		y = 2
 		prerequisite = { focus = SHI_worker_takeover }
 			completion_reward = {
+				add_to_variable = { communist_econ_resources_factor = 0.05 }
+				custom_effect_tooltip = self_sufficiency.tt
 		}
 	}
 
@@ -3281,6 +3293,8 @@ focus = {
 		y = 1
 		prerequisite = { focus = SHI_all_china_federation_of_trade_unions }
 			completion_reward = {
+				add_to_variable = { communist_econ_efficiency_gain = 0.05 }
+				custom_effect_tooltip = communist_econ_efficiency_cap
 		}
 	}
 

@@ -68,7 +68,7 @@ ideas = {
     }
 
     land_reform_needed = {
-        picture = shi_support
+        picture = SHI_cpc_combine
         allowed = {
             always = yes
         }
