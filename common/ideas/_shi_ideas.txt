@@ -126,8 +126,8 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                send_volunteer_size = 10
-                send_volunteer_divisions_required = -10
+                send_volunteer_size = 15
+                send_volunteer_divisions_required = -0.5
             }
         }
         shi_mercenaries = {
@@ -143,8 +143,8 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                send_volunteer_size = 6
-                send_volunteer_divisions_required = -5
+                send_volunteer_size = 12
+                send_volunteer_divisions_required = -0.5
             }
         }
         shi_farming_clearances = {
