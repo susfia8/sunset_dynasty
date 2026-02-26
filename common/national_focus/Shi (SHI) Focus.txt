@@ -2141,6 +2141,10 @@ focus = {
 				country_event = { id = sd_shi.10 }
 				set_country_flag = communist_unlock_everything
 				mark_focus_tree_layout_dirty = yes
+				every_state = {
+					limit = { is_core_of = NCR }
+					add_core_of = SHI
+				}
 		}
 	}
 
@@ -3252,7 +3256,7 @@ focus = {
 		prerequisite = { focus = SHI_reorganize_californias_economy }
 			completion_reward = {
 				add_to_variable = { communist_econ_efficiency_gain = 0.05 }
-				custom_effect_tooltip = communist_econ_efficiency_cap
+				custom_effect_tooltip = communist_econ_efficiency_cap.tt
 		}
 	}
 
@@ -3294,7 +3298,7 @@ focus = {
 		prerequisite = { focus = SHI_all_china_federation_of_trade_unions }
 			completion_reward = {
 				add_to_variable = { communist_econ_efficiency_gain = 0.05 }
-				custom_effect_tooltip = communist_econ_efficiency_cap
+				custom_effect_tooltip = communist_econ_efficiency_cap.tt
 		}
 	}
 
@@ -3384,6 +3388,7 @@ focus = {
 			mutually_exclusive = { focus = SHI_direct_rule_from_the_emperor }
 			completion_reward = {
 				set_country_flag = bos_rule
+				mark_focus_tree_layout_dirty = yes
 		}
 	}
 
