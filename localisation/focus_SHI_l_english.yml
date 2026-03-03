@@ -96,6 +96,11 @@ SHI_new_cefeng_system_desc: "."
 SHI_the_dragons_airforce: "The Dragon's Airforce"
 SHI_the_dragons_airforce_desc: "If we want to beat the NCR, we need to leverage all our strengths in our favor, this includes having a standing air force to not only defend our homeland, but to help the troops on the frontlines."
 
+############# SECRETARIAT BRANCH #############
+
+SHI_the_grand_secretariat: "The Grand Secretariat"
+SHI_the_grand_secretaria_desc: ""
+
 #####################################################
 ################### Emperor Branch ##################
 #####################################################

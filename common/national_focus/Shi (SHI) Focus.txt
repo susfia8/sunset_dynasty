@@ -867,6 +867,396 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+			id = SHI_the_grand_secretariat
+			icon = GFX_goal_shi_central_secretariat
+			cost = 20
+		relative_position_id = SHI_the_dragon_of_the_west_coast
+		x = 0
+		y = 2
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_ministry_of_personnel
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_the_grand_secretariat
+		x = -2
+		y = 2
+		prerequisite = {focus = SHI_the_grand_secretariat}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_ministry_of_revenue
+			icon = GFX_goal_shi_ministry_of_revenue
+			cost = 20
+		relative_position_id = SHI_the_grand_secretariat
+		x = 2
+		y = 2
+		prerequisite = {focus = SHI_the_grand_secretariat}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_ministry_of_rites
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_the_grand_secretariat
+		x = 6
+		y = 2
+		prerequisite = {focus = SHI_the_grand_secretariat}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_ministry_of_war
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_the_grand_secretariat
+		x = -6
+		y = 2
+		prerequisite = {focus = SHI_the_grand_secretariat}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_ministry_of_justice
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_the_grand_secretariat
+		x = -10
+		y = 2
+		prerequisite = {focus = SHI_the_grand_secretariat}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_ministry_of_public_works
+			icon = GFX_goal_shi_ministry_of_public_works
+			cost = 20
+		relative_position_id = SHI_the_grand_secretariat
+		x = 10
+		y = 2
+		prerequisite = {focus = SHI_the_grand_secretariat}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_confucionism
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_rites
+		x = 1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_rites}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_taoism
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_rites
+		x = -1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_rites}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_dealing_with_foreign_affairs
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_rites
+		x = 0
+		y = 2
+		prerequisite = {focus = SHI_ministry_of_rites}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_expand_the_examination_system
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_rites
+		x = 0
+		y = 3
+		prerequisite = {focus = SHI_dealing_with_foreign_affairs}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_general_accounts_bureau
+			icon = GFX_goal_shi_general_accounts_bureau
+			cost = 20
+		relative_position_id = SHI_ministry_of_revenue
+		x = 1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_revenue}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_treasury_bureau
+			icon = GFX_goal_shi_treasure_bureau
+			cost = 20
+		relative_position_id = SHI_ministry_of_revenue
+		x = -1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_revenue}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_granaries_bureau
+			icon = GFX_goal_shi_granaries_bureau
+			cost = 20
+		relative_position_id = SHI_ministry_of_revenue
+		x = 0
+		y = 2
+		prerequisite = {focus = SHI_ministry_of_revenue}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_aki_officer_academy
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_war
+		x = 0
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_war}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_aki_the_enemy_to_our_east
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_aki_officer_academy
+		x = 0
+		y = 1
+		prerequisite = {focus = SHI_aki_officer_academy}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_aki_infiltrate_their_ranks
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_aki_the_enemy_to_our_east
+		x = 1
+		y = 1
+		prerequisite = {focus = SHI_aki_the_enemy_to_our_east}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_aki_let_a_hundred_flowers_bloom
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_aki_the_enemy_to_our_east
+		x = -1
+		y = 1
+		prerequisite = {focus = SHI_aki_the_enemy_to_our_east}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_aki_its_purple_vs_red
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_aki_the_enemy_to_our_east
+		x = 0
+		y = 2
+		prerequisite = {focus = SHI_aki_infiltrate_their_ranks
+						focus = SHI_aki_let_a_hundred_flowers_bloom}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_aki_china_has_grown_larger
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_aki_its_purple_vs_red
+		x = 0
+		y = 1
+		prerequisite = {focus = SHI_aki_its_purple_vs_red}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_aki_military_installations
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_war
+		x = 1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_war}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_aki_courier_network
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_war
+		x = -1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_war}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_fair_justice
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_justice
+		x = 0
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_justice}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_penal_code
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_justice
+		x = 1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_justice}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_anti_corruption_drive
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_justice
+		x = -1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_justice}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_titles_of_honour
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_personnel
+		x = 1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_personnel}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_job_designations
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_personnel
+		x = -1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_personnel}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_standardized_weights_and_measures
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_public_works
+		x = 1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_public_works}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_the_canals_of_new_china
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_public_works
+		x = -1
+		y = 1
+		prerequisite = {focus = SHI_ministry_of_public_works}
+			completion_reward = {
+
+		}
+	}
+
+	focus = {
+			id = SHI_organized_extraction
+			icon = GFX_goal_shi_dragon_of_the_west_coast
+			cost = 20
+		relative_position_id = SHI_ministry_of_public_works
+		x = 0
+		y = 2
+		prerequisite = {focus = SHI_ministry_of_public_works}
+			completion_reward = {
+
+		}
+	}
+
 ############# SOCIETY BRANCH #############
 
 		focus = {

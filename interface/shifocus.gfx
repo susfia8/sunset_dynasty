@@ -692,4 +692,28 @@ spriteType = {
 	name = "GFX_goal_shi_cpc_constitution"
 	texturefile = "gfx/interface/goals/shi_cpc_constitution.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_central_secretariat"
+	texturefile = "gfx/interface/goals/shi_central_secretariat.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_ministry_of_revenue"
+	texturefile = "gfx/interface/goals/shi_ministry_of_revenue.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_treasure_bureau"
+	texturefile = "gfx/interface/goals/shi_treasure_bureau.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_general_accounts_bureau"
+	texturefile = "gfx/interface/goals/shi_general_accounts_bureau.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_granaries_bureau"
+	texturefile = "gfx/interface/goals/shi_granaries_bureau.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_ministry_of_public_works"
+	texturefile = "gfx/interface/goals/shi_ministry_of_public_works.dds"
+}
 }
