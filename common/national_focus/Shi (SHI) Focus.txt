@@ -881,7 +881,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_ministry_of_personnel
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_ministry_of_personnel
 			cost = 20
 		relative_position_id = SHI_the_grand_secretariat
 		x = -2
@@ -907,7 +907,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_ministry_of_rites
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_ministry_of_rites
 			cost = 20
 		relative_position_id = SHI_the_grand_secretariat
 		x = 6
@@ -920,10 +920,10 @@ focus_tree = {
 
 	focus = {
 			id = SHI_ministry_of_war
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_ministry_of_war
 			cost = 20
 		relative_position_id = SHI_the_grand_secretariat
-		x = -6
+		x = -7
 		y = 2
 		prerequisite = {focus = SHI_the_grand_secretariat}
 			completion_reward = {
@@ -933,10 +933,10 @@ focus_tree = {
 
 	focus = {
 			id = SHI_ministry_of_justice
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_meritocracy
 			cost = 20
 		relative_position_id = SHI_the_grand_secretariat
-		x = -10
+		x = -12
 		y = 2
 		prerequisite = {focus = SHI_the_grand_secretariat}
 			completion_reward = {
@@ -959,12 +959,13 @@ focus_tree = {
 
 	focus = {
 			id = SHI_confucionism
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_confucionism
 			cost = 20
 		relative_position_id = SHI_ministry_of_rites
 		x = 1
 		y = 1
 		prerequisite = {focus = SHI_ministry_of_rites}
+		mutually_exclusive = { focus = SHI_taoism }
 			completion_reward = {
 
 		}
@@ -972,12 +973,13 @@ focus_tree = {
 
 	focus = {
 			id = SHI_taoism
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_taoism
 			cost = 20
 		relative_position_id = SHI_ministry_of_rites
 		x = -1
 		y = 1
 		prerequisite = {focus = SHI_ministry_of_rites}
+		mutually_exclusive = { focus = SHI_confucionism }
 			completion_reward = {
 
 		}
@@ -985,25 +987,12 @@ focus_tree = {
 
 	focus = {
 			id = SHI_dealing_with_foreign_affairs
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_aki_foreign_affairs
 			cost = 20
 		relative_position_id = SHI_ministry_of_rites
 		x = 0
 		y = 2
 		prerequisite = {focus = SHI_ministry_of_rites}
-			completion_reward = {
-
-		}
-	}
-
-	focus = {
-			id = SHI_expand_the_examination_system
-			icon = GFX_goal_shi_dragon_of_the_west_coast
-			cost = 20
-		relative_position_id = SHI_ministry_of_rites
-		x = 0
-		y = 3
-		prerequisite = {focus = SHI_dealing_with_foreign_affairs}
 			completion_reward = {
 
 		}
@@ -1050,7 +1039,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_aki_officer_academy
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_aki_officer_academy
 			cost = 20
 		relative_position_id = SHI_ministry_of_war
 		x = 0
@@ -1063,7 +1052,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_aki_the_enemy_to_our_east
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_enemy_to_our_east
 			cost = 20
 		relative_position_id = SHI_aki_officer_academy
 		x = 0
@@ -1076,7 +1065,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_aki_infiltrate_their_ranks
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_
 			cost = 20
 		relative_position_id = SHI_aki_the_enemy_to_our_east
 		x = 1
@@ -1089,7 +1078,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_aki_let_a_hundred_flowers_bloom
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_aki_hundred_flowers_bloom
 			cost = 20
 		relative_position_id = SHI_aki_the_enemy_to_our_east
 		x = -1
@@ -1101,8 +1090,8 @@ focus_tree = {
 	}
 
 	focus = {
-			id = SHI_aki_its_purple_vs_red
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			id = SHI_aki_dragon_against_the_bull
+			icon = GFX_goal_
 			cost = 20
 		relative_position_id = SHI_aki_the_enemy_to_our_east
 		x = 0
@@ -1116,7 +1105,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_aki_china_has_grown_larger
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_
 			cost = 20
 		relative_position_id = SHI_aki_its_purple_vs_red
 		x = 0
@@ -1129,10 +1118,10 @@ focus_tree = {
 
 	focus = {
 			id = SHI_aki_military_installations
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_aki_military_installations
 			cost = 20
 		relative_position_id = SHI_ministry_of_war
-		x = 1
+		x = 2
 		y = 1
 		prerequisite = {focus = SHI_ministry_of_war}
 			completion_reward = {
@@ -1142,10 +1131,10 @@ focus_tree = {
 
 	focus = {
 			id = SHI_aki_courier_network
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_courier_network
 			cost = 20
 		relative_position_id = SHI_ministry_of_war
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = {focus = SHI_ministry_of_war}
 			completion_reward = {
@@ -1155,11 +1144,11 @@ focus_tree = {
 
 	focus = {
 			id = SHI_fair_justice
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_fair_justice
 			cost = 20
 		relative_position_id = SHI_ministry_of_justice
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = {focus = SHI_ministry_of_justice}
 			completion_reward = {
 
@@ -1168,7 +1157,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_penal_code
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_penal_code
 			cost = 20
 		relative_position_id = SHI_ministry_of_justice
 		x = 1
@@ -1180,21 +1169,8 @@ focus_tree = {
 	}
 
 	focus = {
-			id = SHI_anti_corruption_drive
-			icon = GFX_goal_shi_dragon_of_the_west_coast
-			cost = 20
-		relative_position_id = SHI_ministry_of_justice
-		x = -1
-		y = 1
-		prerequisite = {focus = SHI_ministry_of_justice}
-			completion_reward = {
-
-		}
-	}
-
-	focus = {
 			id = SHI_titles_of_honour
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_titles_of_honour
 			cost = 20
 		relative_position_id = SHI_ministry_of_personnel
 		x = 1
@@ -1207,7 +1183,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_job_designations
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_job_designations
 			cost = 20
 		relative_position_id = SHI_ministry_of_personnel
 		x = -1
@@ -1220,7 +1196,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_standardized_weights_and_measures
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_meritocracy
 			cost = 20
 		relative_position_id = SHI_ministry_of_public_works
 		x = 1
@@ -1233,7 +1209,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_the_canals_of_new_china
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_the_canals_of_new_china
 			cost = 20
 		relative_position_id = SHI_ministry_of_public_works
 		x = -1
@@ -1246,7 +1222,7 @@ focus_tree = {
 
 	focus = {
 			id = SHI_organized_extraction
-			icon = GFX_goal_shi_dragon_of_the_west_coast
+			icon = GFX_goal_shi_organized_extraction
 			cost = 20
 		relative_position_id = SHI_ministry_of_public_works
 		x = 0

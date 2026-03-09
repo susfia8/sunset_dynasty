@@ -716,4 +716,72 @@ spriteType = {
 	name = "GFX_goal_shi_ministry_of_public_works"
 	texturefile = "gfx/interface/goals/shi_ministry_of_public_works.dds"
 }
+spriteType = {
+	name = "GFX_goal_shi_the_canals_of_new_china"
+	texturefile = "gfx/interface/goals/shi_the_canals_of_new_china.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_organized_extraction"
+	texturefile = "gfx/interface/goals/shi_organized_extraction.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_ministry_of_rites"
+	texturefile = "gfx/interface/goals/shi_ministry_of_rites.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_confucionism"
+	texturefile = "gfx/interface/goals/shi_confucionism.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_taoism"
+	texturefile = "gfx/interface/goals/shi_taoism.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_aki_foreign_affairs"
+	texturefile = "gfx/interface/goals/shi_aki_foreign_affairs.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_ministry_of_personnel"
+	texturefile = "gfx/interface/goals/shi_ministry_of_personnel.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_titles_of_honour"
+	texturefile = "gfx/interface/goals/shi_titles_of_honour.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_job_designations"
+	texturefile = "gfx/interface/goals/shi_job_designations.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_ministry_of_war"
+	texturefile = "gfx/interface/goals/shi_ministry_of_war.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_penal_code"
+	texturefile = "gfx/interface/goals/shi_penal_code.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_fair_justice"
+	texturefile = "gfx/interface/goals/shi_fair_justice.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_courier_network"
+	texturefile = "gfx/interface/goals/shi_courier_network.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_aki_military_installations"
+	texturefile = "gfx/interface/goals/shi_aki_military_installations.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_aki_officer_academy"
+	texturefile = "gfx/interface/goals/shi_aki_officer_academy.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_enemy_to_our_east"
+	texturefile = "gfx/interface/goals/shi_enemy_to_our_east.dds"
+}
+spriteType = {
+	name = "GFX_goal_shi_aki_hundred_flowers_bloom"
+	texturefile = "gfx/interface/goals/shi_aki_hundred_flowers_bloom.dds"
+}
 }
